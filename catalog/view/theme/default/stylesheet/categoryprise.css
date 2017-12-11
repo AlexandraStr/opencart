@@ -1,0 +1,31 @@
+.table-price {
+    color: #397756;
+    border: 2px solid #618721;
+}
+.table-price tr {
+    text-align: center;
+    background-color: #b5bd9e;
+}
+.table-price thead {
+    color: inherit;
+    background-color: #3b771a;
+}
+.quant{
+    width: 80px;
+}
+.prod{
+    width:200px;
+}
+.table-price .warning {
+    color: #CC0000;
+}
+.table-price .danger {
+    color: #dc8704;
+}
+.table-price .success {
+    color: #2b542c;
+}
+.table-price tr:nth-child(odd) { background-color: #EAF2D3; }
+.table-price input{
+    width: 50px;
+}

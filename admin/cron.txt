@@ -1,0 +1,18 @@
+//Owner
+//     $userinfo = posix_getpwuid(posix_getuid());
+//     echo $userinfo['name'];
+
+//получаем список работ для пользователя user
+//     $currentJobs = shell_exec("crontab -u user -l");
+//вносим нужные изменения в расписание работ
+...
+//сохраняем все во временном файле
+//     $filename = tempnam(sys_get_temp_dir(), 'crontab');
+//     file_put_contents($filename, $currentJobs);
+//обновляем cron
+//     exec("crontab -u user " . $filename);
+
+
+crontab -l > /Applications/XAMPP/xamppfiles/htdocs/opencart/admin/crontab/crontab.txt && [ -f /Applications/XAMPP/xamppfiles/htdocs/opencart/admin/crontab/crontab.txt ] || > /Applications/XAMPP/xamppfiles/htdocs/opencart/admin/crontab/crontab.txt
+/Applications/XAMPP/xamppfiles/htdocs/opencart/admin/crontab/crontab.txt
+echo '2-10 14-18 * * 1-6 '/Applications/XAMPP/xamppfiles/htdocs/opencart/admin/controller/tool/import/cynchron>/dev/null' >> /Applications/XAMPP/xamppfiles/htdocs/opencart/admin/crontab/crontab.txt && crontab /Applications/XAMPP/xamppfiles/htdocs/opencart/admin/crontab/crontab.txt

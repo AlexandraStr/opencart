@@ -1,0 +1,1 @@
+a:1:{i:0;a:2:{s:3:"key";s:17:"backup/avtoExport";s:4:"time";a:5:{s:6:"minute";s:2:"10";s:4:"hour";s:4:"9-18";s:3:"day";s:1:"*";s:9:"dayofweek";s:3:"1-7";s:10:"dayofmonth";s:1:"*";}}}
