@@ -138,7 +138,12 @@ class ControllerToolSetCron extends Controller
     {
         $this->load->language('tool/set_cron');
 
-        $this->document->setTitle($this->language->get('heading_title'));
+
+        $filename= DIR_CSV.$this->config->get('synchron_name').".csv";
+        $file_flag= DIR_CSV.$this->config->get('synchron_flag').".sng";
+
+
+            $this->document->setTitle($this->language->get('heading_title'));
 
         $this->load->model('tool/set_cron');
 
@@ -150,6 +155,14 @@ class ControllerToolSetCron extends Controller
             if (isset($this->request->post['selected'])) {
                 foreach ($this->request->post['selected'] as $task_id) {
                     $task_info = $this->model_tool_set_cron->getTaskId($task_id);
+                    if($task_info['task_name']==="tool/import/synchron") {
+                        $parameters = array(
+                            'synchron_name' => $filename,
+                            'synchron_flag' => $file_flag,
+                        );
+                    } else {
+                        $parameters = array("param" => true);
+                    }
                     $new_cronjobs[] = array(
                         'key' => $task_info['task_name'],
                      //   'time'=> array( 'minute' => ($task_info['interval'] > 0) ? "*/" . $task_info['interval'] : "*",
@@ -159,11 +172,13 @@ class ControllerToolSetCron extends Controller
                         'dayofweek' => ($task_info['day_begin'] > 0 && $task_info['day_end'] > 0) ? $task_info['day_begin'] . "-" . $task_info['day_end'] : "*",
                         'dayofmonth' => $task_info['dayofmonth'],
                        ),
+                            'parameters' => $parameters,
+
                     );
                 }
 
                 $dataCron = serialize($new_cronjobs);
-                print_r($dataCron);
+
                 file_put_contents($cron_file, $dataCron);
 
             $this->session->data['success'] = $this->language->get('text_success');

@@ -8,12 +8,32 @@ class ControllerToolImport extends Controller
         $this->load->language('tool/import');
         $this->document->setTitle($this->language->get('heading_title'));
 
-        if (isset($this->session->data['error'])) {
-            $data['error_warning'] = $this->session->data['error'];
+        $data['entry_synchron_name ']=$this->language->get('entry_synchron_name ');
+        $data['entry_synchron_flag ']=$this->language->get('entry_synchron_flag ');
 
-            unset($this->session->data['error']);
+        if (isset($this->request->post['synchron_name'])) {
+            $data['synchron_name'] = $this->request->post['synchron_name'];
+        } else {
+            $data['synchron_name'] = $this->config->get('synchron_name');
+        }
+        if (isset($this->request->post['synchron_flag'])) {
+            $data['synchron_flag'] = $this->request->post['synchron_flag'];
+        } else {
+            $data['synchron_flag'] = $this->config->get('synchron_flag');
+        }
+
+        if (isset($this->error['warning'])) {
+            $data['error_warning'] = $this->error['warning'];
         } else {
             $data['error_warning'] = '';
+        }
+
+        if (isset($this->session->data['success'])) {
+            $data['success'] = $this->session->data['success'];
+
+            unset($this->session->data['success']);
+        } else {
+            $data['success'] = '';
         }
 
         $data['breadcrumbs'] = array();
@@ -30,10 +50,15 @@ class ControllerToolImport extends Controller
 
         $data['user_token'] = $this->session->data['user_token'];
         $data['export'] = $this->url->link('tool/import/export', 'user_token=' . $this->session->data['user_token'], true);
+        $data['save_name_synchron'] = $this->url->link('tool/import/save_name_synchron', 'user_token=' . $this->session->data['user_token'], true);
 
         $this->load->model('tool/import');
 
         $data['table_dates'] = $this->model_tool_import->showOrders();
+
+        $this->load->model('setting/setting');
+
+
         $data['header'] = $this->load->controller('common/header');
         $data['column_left'] = $this->load->controller('common/column_left');
         $data['footer'] = $this->load->controller('common/footer');
@@ -183,7 +208,7 @@ class ControllerToolImport extends Controller
 //Product
 
                     $result = $this->model_tool_import->getProduct($model);
-                    $stock_status_id=($quant > 0)?7:5;
+                    $stock_status_id = ($quant > 0) ? 7 : 5;
 
                     if (empty($result)) {
 
@@ -201,7 +226,7 @@ class ControllerToolImport extends Controller
 
                         for ($lg = 1; $lg <= 2; $lg++) {
                             $seo_url = strtr(mb_strtolower($name), $escape_table) . $product_id . $lg;
-                            $seo_query = "product_id=" .(int)$product_id;
+                            $seo_query = "product_id=" . (int)$product_id;
                             $this->db->query("INSERT INTO `seo_url` (store_id,language_id,query,keyword)
                           VALUES ('0','$lg','$seo_query','$seo_url')");
                         }
@@ -257,7 +282,8 @@ class ControllerToolImport extends Controller
 
     }
 
-    public function export(){
+    public function export()
+    {
 
         $this->load->language('tool/import');
 
@@ -282,99 +308,72 @@ class ControllerToolImport extends Controller
 
             $this->response->setOutput($this->model_tool_import->exportOrders($this->request->post['export']));
         }
-   }
+    }
 
-    public function synchron()
+    public function save_name_synchron()
     {
-        $file_label = DIR_CSV."upload.sng";
-        if (file_exists($file_label)) {
-
         $this->load->language('tool/import');
-        $this->load->model('tool/import');
+        $this->load->model('setting/setting');
 
-        $json = array();
+        if (($this->request->server['REQUEST_METHOD'] == 'POST')) {
+            $this->model_setting_setting->editSettingValue('tool_import','synchron_name', $this->request->post['synchron_name']);
+            $this->model_setting_setting->editSettingValue('tool_import','synchron_flag', $this->request->post['synchron_flag']);
 
-        if (isset($this->request->files['synchron']['tmp_name']) && is_uploaded_file($this->request->files['synchron']['tmp_name'])) {
-            $filename = tempnam(DIR_UPLOAD, 'csv');
-            move_uploaded_file($this->request->files['synchron']['tmp_name'], $filename);
-        } elseif (isset($this->request->get['synchron'])) {
-            $filename = html_entity_decode($this->request->get['synchron'], ENT_QUOTES, 'UTF-8');
-        } else {
-            $filename = '';
+            $this->session->data['success'] = $this->language->get('text_success');
         }
 
-        if (!$json) {
+        $this->response->redirect($this->url->link('tool/import', 'user_token=' . $this->session->data['user_token'], true));
+    }
 
-            if (!is_file($filename)) {
-                $json['error'] = $this->language->get('error_file');
-            }
+    public function synchron($parameters)
+    {
+        $filename=$parameters['synchron_name'];
+        $file_flag=$parameters['synchron_flag'];
+        $len = 1024;
+        $delim = ";";
+        $date_today = date("m.d.y");
+        $time = date("H:i:s");
+        $file_log = DIR_CSV . "logfile.txt";
 
-            if (isset($this->request->get['position'])) {
-                $position = $this->request->get['position'];
-            } else {
-                $position = 0;
-            }
-            $handle = fopen($filename, "r");
+        if (file_exists($file_log)) {
+            unlink($file_log);
+        }
 
-            if ($handle) {
+        if (file_exists($file_flag)) {
 
-                while (($row = fgetcsv($handle, 1024, ";")) !== FALSE) {
-                    $model = addslashes(trim($row[0]));
-                    if (strtoupper($model) == "KOD") {
-                        continue;
+            $this->load->language('tool/import');
+            $this->load->model('tool/import');
+              $handle = fopen($filename, "r");
+
+                if ($handle) {
+                    $fp = fopen($file_log, "a"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту),мы создаем файл
+                    while (($row = fgetcsv($handle, $len, $delim)) !== FALSE) {
+                        $model = addslashes(trim($row[0]));
+                        if (strtoupper($model) == "KOD") {
+                            continue;
+                        }
+                        $model = mb_convert_encoding($model, 'utf-8', 'windows-1251');
+                        $quant = trim($row[1]);
+                        fwrite($fp, "Записуємо дані " . $model . " і " . $quant);
+                        $this->model_tool_import->UpdateCsv($model,$quant);
+
                     }
-                    $model = mb_convert_encoding($model, 'utf-8', 'windows-1251');
-                    $quant = trim($row[4]);
-
-                    $this->db->query("UPDATE `product` 
-                SET model = '$model', quantity = '$quant' WHERE OpenCart.product.model = '$model'");
 
 
+                    fwrite($fp, "Синхрогізація відбулася " . $date_today . " в " . $time);
+                    fclose($fp);
+                    //       unlink($file_flag);
+
+                } else {
+                    echo "Неможливо прочитати файл " . $filename;
                 }
-            } else {
-                echo "Неможливо прочитати файл " . $filename;
-            }
-
-            $position = ftell($handle);
-
-            $size = filesize($filename);
-
-            $json['total'] = round(($position / $size) * 100);
-
-            if ($position && !feof($handle)) {
-                $json['next'] = str_replace('&amp;', '&', $this->url->link('tool/import/import', 'user_token=' . $this->session->data['user_token'] . '&import=' . $filename . '&position=' . $position, true));
-
-                fclose($handle);
-            } else {
-                fclose($handle);
-
-                unlink($filename);
-
-                $json['success'] = $this->language->get('text_success');
-
-                $this->cache->delete('*');
-            }
-
-            $this->response->addHeader('Content-Type: application/json');
-            $this->response->setOutput(json_encode($json));
-        }
-            $date_today = date("m.d.y");
-            $time = date("H:i:s");
-            $file_log = DIR_CSV."logfile.txt";
-            if (file_exists($file_log)) {
-                unlink($file_log);
-            }
-                $fp = fopen($file_log, "w"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту),мы создаем файл
-                fwrite($fp,"Синхрогізація відбулася ".$date_today." в ".$time);
-                fclose($fp);
 
 
-            unlink( $file_label );
 
         } else {
-            print_r( "Файл $file_label не существует");
+            echo "Файл". $file_flag." не существует";
         }
-        }
+    }
 
 
     private function unicode_escape($str)
@@ -383,4 +382,12 @@ class ControllerToolImport extends Controller
         return strtr($str, $escape_table);
     }
 
+
+    protected function validate()
+    {
+        if (!$this->user->hasPermission('modify', 'tool/import')) {
+            $this->error['warning'] = $this->language->get('error_permission');
+        }
+
+    }
 }

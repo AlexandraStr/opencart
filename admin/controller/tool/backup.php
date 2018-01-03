@@ -134,6 +134,7 @@ class ControllerToolBackup extends Controller {
 	}
 
 	public function export() {
+
 		$this->load->language('tool/backup');
 
 		if (!isset($this->request->post['backup'])) {

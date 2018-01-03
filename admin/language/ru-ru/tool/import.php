@@ -4,11 +4,14 @@ $_['heading_title']    = 'Импорт данных с 1С (синхрониза
 
 // Text
 $_['text_success']     = 'Данные успешно импортированы в базу данных';
+$_['text_synchron_name']    ='Название файла данных синхронизации';
 
 // Entry
 $_['entry_import']     = 'Файл импорта .csv';
 $_['entry_progress']   = 'Процесс';
 $_['entry_export']     = 'Выбор заказов для экспорта в файл .csv';
+$_['entry_synchron_name']     = 'Название файла с данными для синхронизации';
+$_['entry_synchron_flag'] = 'Введите имя файла-флага';
 $_['order_choose']     = 'Заказ № ';
 $_['data_choose']      = ' от ';
 $_['customer_choose']  = ' заказчик';
@@ -16,6 +19,7 @@ $_['customer_choose']  = ' заказчик';
 // Tab
 $_['tab_backup']       = 'Экспорт заказов ';
 $_['tab_restore']      = 'Импорт данных из 1С';
+$_['tab_synchron']     = 'Синхронизация данных сайта з 1С';
 
 
 // Error

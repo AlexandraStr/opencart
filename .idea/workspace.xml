@@ -1,7 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c470353f-c510-4130-bd1f-76dcf7b198b5" name="Default" comment="" />
+    <list default="true" id="c470353f-c510-4130-bd1f-76dcf7b198b5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/cron_bootstrap.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/cron.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/index_vmod.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/1-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/1-1140x380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/2-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/2-1140x380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/3-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/3-1140x380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/5-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/5-1140x380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/6-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/6-1140x380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/8-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/8-1140x380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/9-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/9-1140x380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/cart-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/apple_cinema_30-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/apple_cinema_30-200x200.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/apple_cinema_30-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/apple_cinema_30-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/apple_cinema_30-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/apple_logo-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/1-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/2-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/3-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/3-1140x380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/5-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/6-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/8-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/9-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/MacBookAir-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/MacBookAir-1140x380.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/etalon-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/etalon-1140x380.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/etalon1-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/etalon1-1140x380.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/iPhone6-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_1-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_1-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_1-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_2-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_2-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_2-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_eos_5d_3-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_logo-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_logo-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/canon_logo-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/Etalon-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/Etalon-70x50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/Etalon-80x80.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/dvig-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/electro-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/etalon-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/filter-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/filter1-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/filter1-70x50.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/filter1-80x80.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/hodov-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/hodov-70x50.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/hodov-80x80.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/transm-100x100.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/transm-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/transm-70x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/transm-80x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/upravl-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/upravl-70x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/category/upravl-80x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/compaq_presario-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/compaq_presario-182x182.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/compaq_presario-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/compaq_presario-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/compaq_presario-80x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/gift-voucher-birthday-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_1-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_1-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_1-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_2-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_2-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_2-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_2-80x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_3-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_3-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_3-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/hp_banner-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_1-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_1-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_2-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_2-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_2-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_3-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_3-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/htc_touch_hd_3-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/imac_1-200x200.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/imac_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/imac_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/iphone_1-200x200.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/iphone_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/iphone_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_classic_1-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_classic_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_classic_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_classic_2-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_classic_3-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_classic_4-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_nano_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_nano_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_shuffle_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_shuffle_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_touch_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_touch_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_touch_4-100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/ipod_touch_4-80x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_1-200x200.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_1-47x47.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_1-47x47.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_1-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_2-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_2-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_3-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_3-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_4-500x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_air_4-74x74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/macbook_pro_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/al-logo-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/al-logo-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/al-logo-182x182.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/burgerking-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/burgerking-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/canon-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/canon-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/cocacola-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/cocacola-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/dell-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/dell-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/disney-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/disney-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/etalon-130x100-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/etalon-130x100-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/etalon-130x100-182x182.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/harley-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/harley-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/logo-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/logo-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/logo-182x182.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/nfl-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/nfl-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/nintendo-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/nintendo-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/redbull-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/redbull-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/shell-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/sony-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/sony-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/starbucks-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/starbucks-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/tata-130x100-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/tata-130x100-130x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/manufacturer/tata-130x100-182x182.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/nikon_d300_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/nikon_d300_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/palm_treo_pro_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/palm_treo_pro_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/samsung_syncmaster_941bw-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/samsung_syncmaster_941bw-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/samsung_tab_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/samsung_tab_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/sony_vaio_1-228x228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/sony_vaio_1-40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/demo/sony_vaio_1-90x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(1)-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(1)-1140x380.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(2)-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(2)-1140x380.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(3)-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(3)-1140x380.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(4)-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(4)-1140x380.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(5)-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(5)-1140x380.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(6)-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(6)-1140x380.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(7)-100x100.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i(7)-1140x380.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i-(10)-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i-(10)-1140x380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/i-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/logo-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/logo_prat_baz-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/logo_prat_baz-268x50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/opencart-logo-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/catalog/profile-pic-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/no_image-100x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/no_image-40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/placeholder-200x200.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/placeholder-228x228.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/placeholder-50x50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/cache/profile-45x45.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/download/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/logs/error.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/logs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/logs/openbay.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/admin/controller/common/filemanager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/admin/controller/marketplace/extension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/admin/view/template/catalog/product_form.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/admin/view/template/common/filemanager.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/admin/view/template/common/header.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/admin/view/template/marketplace/marketplace_list.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/catalog/controller/information/contact.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/catalog/controller/tool/upload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/catalog/view/theme/default/template/information/contact.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/system/engine/action.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/system/engine/loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/system/library/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/system/library/language.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/system/library/template/template.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/modification/system/library/template/twig.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/session/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/session/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/session/sess_7d4e5a0d3e218fa999046129e1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/upload/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/vendor/scss.inc.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controller/tool/backup.php" afterPath="$PROJECT_DIR$/admin/controller/tool/backup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controller/tool/import.php" afterPath="$PROJECT_DIR$/admin/controller/tool/import.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controller/tool/set_cron.php" afterPath="$PROJECT_DIR$/admin/controller/tool/set_cron.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/cron.php" afterPath="$PROJECT_DIR$/admin/cron.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/cron_tasks.php" afterPath="$PROJECT_DIR$/admin/cron_tasks.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/crontab/crontab.txt" afterPath="$PROJECT_DIR$/admin/crontab/crontab.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/language/ru-ru/tool/import.php" afterPath="$PROJECT_DIR$/admin/language/ru-ru/tool/import.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/language/ua/tool/import.php" afterPath="$PROJECT_DIR$/admin/language/ua/tool/import.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/language/ua/tool/set_cron.php" afterPath="$PROJECT_DIR$/admin/language/ua/tool/set_cron.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/log.html" afterPath="$PROJECT_DIR$/admin/log.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/model/tool/import.php" afterPath="$PROJECT_DIR$/admin/model/tool/import.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/view/template/tool/import.twig" afterPath="$PROJECT_DIR$/admin/view/template/tool/import.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/engine/loader.php" afterPath="$PROJECT_DIR$/system/engine/loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/library/cron.php" afterPath="$PROJECT_DIR$/system/library/cron.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,21 +294,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="set_cron.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/controller/tool/set_cron.php">
+      <file leaf-file-name="import.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/controller/tool/import.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="158" column="61" lean-forward="false" selection-start-line="158" selection-start-column="61" selection-end-line="158" selection-end-column="72" />
-              <folding />
+            <state relative-caret-position="479">
+              <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+              <folding>
+                <marker date="1514975097754" expanded="true" signature="6115:6216" ph="INSERT INTO ${DB_PREFIX}`manufacturer`... " />
+                <marker date="1514975097754" expanded="true" signature="6329:6442" ph="INSERT INTO ${DB_PREFIX}... " />
+                <marker date="1514975097754" expanded="true" signature="6741:6843" ph="INSERT INTO `seo_url`... " />
+                <marker date="1514975097754" expanded="true" signature="7194:7333" ph="INSERT INTO `category`... " />
+                <marker date="1514975097754" expanded="true" signature="7443:7543" ph="INSERT INTO `category_path`... " />
+                <marker date="1514975097754" expanded="true" signature="7590:7674" ph="INSERT INTO `category_to_store`... " />
+                <marker date="1514975097754" expanded="true" signature="7788:7916" ph="INSERT INTO `category_description`... " />
+                <marker date="1514975097754" expanded="true" signature="8229:8330" ph="INSERT INTO `seo_url`... " />
+                <marker date="1514975097754" expanded="true" signature="8713:8982" ph="INSERT INTO `product`... " />
+                <marker date="1514975097754" expanded="true" signature="9159:9319" ph="INSERT INTO `product_description`... " />
+                <marker date="1514975097754" expanded="true" signature="9392:9488" ph="INSERT INTO `product_to_category`... " />
+                <marker date="1514975097754" expanded="true" signature="9535:9614" ph="INSERT INTO `product_to_store`... " />
+                <marker date="1514975097754" expanded="true" signature="9900:10027" ph="INSERT INTO `seo_url`... " />
+                <marker date="1514975097754" expanded="true" signature="10194:10563" ph="UPDATE `prod... " />
+                <marker date="1514975097754" expanded="true" signature="10610:10737" ph="UPDATE `prod... " />
+                <marker date="1514975097754" expanded="true" signature="10785:10891" ph="UPDATE `prod... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="set_cron_list.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/view/template/tool/set_cron_list.twig">
+      <file leaf-file-name="cron.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/library/cron.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+            <state relative-caret-position="495">
+              <caret line="106" column="25" lean-forward="false" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -62,26 +335,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>recurring_id</find>
-      <find>alert-success</find>
-      <find>cart</find>
-      <find>button-cart</find>
-      <find>form-control</find>
-      <find>form</find>
-      <find>i</find>
-      <find>button-upload</find>
-      <find>input-quantity</find>
-      <find>__cons</find>
-      <find>alert</find>
-      <find>$products = $this-&gt;cart-&gt;getProducts()</find>
-      <find>!$product_query-&gt;row['quantity'] || ($product_query-&gt;row['quantit</find>
-      <find>price</find>
-      <find>quantity</find>
-      <find>product.quantity</find>
-      <find>button</find>
-      <find>prin</find>
-      <find>ssh</find>
-      <find>error</find>
       <find>set_cron</find>
       <find>import</find>
       <find>text_cron</find>
@@ -92,6 +345,26 @@
       <find>action</find>
       <find>exec</find>
       <find>print</find>
+      <find>echo</find>
+      <find>$this-&gt;load</find>
+      <find>-&gt;load</find>
+      <find>-&gt;load\s*=</find>
+      <find>load</find>
+      <find>engine/loader.php</find>
+      <find>'load'</find>
+      <find>regis</find>
+      <find>regi</find>
+      <find>set('load</find>
+      <find>$application_config</find>
+      <find>apption</find>
+      <find>application_con</find>
+      <find>application_Config</find>
+      <find>application_config</find>
+      <find>new Load</find>
+      <find>con</find>
+      <find>controller(</find>
+      <find>file_label</find>
+      <find>$position</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -113,27 +386,18 @@
       <replace>}}</replace>
       <replace>user_token</replace>
       <replace>.</replace>
+      <replace>file_flag</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/xdebug" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/catalog/language/ua/product/search.php" />
-        <option value="$PROJECT_DIR$/catalog/language/ru-ru/product/manufacturer.php" />
-        <option value="$PROJECT_DIR$/catalog/language/ua/product/manufacturer.php" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/categoryprise.css" />
-        <option value="$PROJECT_DIR$/catalog/controller/product/product.php" />
-        <option value="$PROJECT_DIR$/import/import_arx.csv" />
-        <option value="$PROJECT_DIR$/import/import.csv" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/product.twig" />
-        <option value="$PROJECT_DIR$/catalog/controller/product/category.php" />
-        <option value="$PROJECT_DIR$/catalog/language/ru-ru/product/category.php" />
-        <option value="$PROJECT_DIR$/catalog/language/ua/product/category.php" />
-        <option value="$PROJECT_DIR$/catalog/language/ua/common/cart.php" />
         <option value="$PROJECT_DIR$/catalog/language/ru-ru/common/cart.php" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/search.twig" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/special.twig" />
@@ -144,24 +408,14 @@
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/manufacturer_info.twig" />
         <option value="/Volumes/Storage/Site/Opencart_config/config.php" />
         <option value="/Volumes/Storage/Site/Opencart_config/config_admin.php" />
-        <option value="$PROJECT_DIR$/admin/cron_tasks.php" />
         <option value="$PROJECT_DIR$/admin/controller/extension/abandoned_cart/abandoned_cart.php" />
-        <option value="$PROJECT_DIR$/admin/cron.php" />
         <option value="$PROJECT_DIR$/system/library/Ssh2_crontab_manager.php" />
-        <option value="$PROJECT_DIR$/admin/cron.txt" />
-        <option value="$PROJECT_DIR$/admin/crontab/crontab.txt" />
-        <option value="$PROJECT_DIR$/admin/view/template/tool/import.twig" />
-        <option value="$PROJECT_DIR$/admin/model/tool/import.php" />
-        <option value="$PROJECT_DIR$/admin/controller/tool/import.php" />
         <option value="$PROJECT_DIR$/admin/controller/common/header.php" />
         <option value="$PROJECT_DIR$/admin/language/ru-ru/common/column_left.php" />
         <option value="$PROJECT_DIR$/admin/language/ua/common/column_left.php" />
         <option value="$PROJECT_DIR$/admin/index.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin/view/template/common/column_left.twig" />
         <option value="$PROJECT_DIR$/admin/controller/common/column_left.php" />
-        <option value="$PROJECT_DIR$/admin/language/ru-ru/tool/import.php" />
-        <option value="$PROJECT_DIR$/admin/language/ua/tool/import.php" />
         <option value="$PROJECT_DIR$/admin/view/template/tool/set_cron.twig" />
         <option value="$PROJECT_DIR$/admin/view/template/tool/set_cron_form.twig" />
         <option value="$PROJECT_DIR$/admin/model/tool/set_cron.php" />
@@ -169,9 +423,32 @@
         <option value="$PROJECT_DIR$/admin/view/template/tool/set_cron_list.twig" />
         <option value="$PROJECT_DIR$/system/library/crontab_manager_old.php" />
         <option value="$PROJECT_DIR$/system/library/crontab_manager.php" />
-        <option value="$PROJECT_DIR$/admin/controller/tool/set_cron.php" />
         <option value="$PROJECT_DIR$/admin/language/ru-ru/tool/set_cron.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/admin/cron.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.php" />
+        <option value="$PROJECT_DIR$/system/library/PHPExcel/Reader/SYLK.php" />
+        <option value="$PROJECT_DIR$/system/framework.php" />
+        <option value="$PROJECT_DIR$/admin/cron.php" />
+        <option value="$PROJECT_DIR$/system/engine/loader.php" />
+        <option value="$PROJECT_DIR$/system/storage/modification/system/engine/loader.php" />
+        <option value="$PROJECT_DIR$/admin/controller/tool/backup.php" />
+        <option value="$PROJECT_DIR$/system/library/cron_bootstrap.php" />
+        <option value="$PROJECT_DIR$/system/library/cron.php" />
+        <option value="$PROJECT_DIR$/system/library/cron1.php" />
         <option value="$PROJECT_DIR$/admin/language/ua/tool/set_cron.php" />
+        <option value="$PROJECT_DIR$/admin/language/ua/tool/import.php" />
+        <option value="$PROJECT_DIR$/admin/language/ru-ru/tool/import.php" />
+        <option value="$PROJECT_DIR$/admin/view/template/tool/import.twig" />
+        <option value="$PROJECT_DIR$/admin/cron_tasks.php" />
+        <option value="$PROJECT_DIR$/admin/controller/tool/set_cron.php" />
+        <option value="$PROJECT_DIR$/admin/crontab/crontab.txt" />
+        <option value="$PROJECT_DIR$/admin/model/tool/import.php" />
+        <option value="$PROJECT_DIR$/admin/log.html" />
+        <option value="$PROJECT_DIR$/admin/controller/tool/import.php" />
+        <option value="$PROJECT_DIR$/download/csv/import.csv" />
+        <option value="$PROJECT_DIR$/download/csv/logfile.txt" />
       </list>
     </option>
   </component>
@@ -188,10 +465,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpDebugGeneral" xdebug_debug_port="9009" listening_started="true" />
+  <component name="PhpDebugGeneral" xdebug_force_break_when_no_path_mapping="false" />
   <component name="PhpServers">
     <servers>
-      <server host="localhost" id="74c62a60-cd5c-4262-8492-d748d2b2e007" name="localhost" />
+      <server host="localhost" id="74c62a60-cd5c-4262-8492-d748d2b2e007" name="opencart">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/admin/controller/tool/import.php" remote-root="/Applications/XAMPP/xamppfiles/htdocs/opencart/admin/controller/tool/import.php" />
+          <mapping local-root="$PROJECT_DIR$/system/engine/loader.php" remote-root="/Applications/XAMPP/xamppfiles/storage/modification/system/engine/loader.php" />
+        </path_mappings>
+      </server>
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
@@ -260,6 +542,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,89 +558,39 @@
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
               <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
               <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tool" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="download" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
               <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="crontab" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="download" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="csv" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
               <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="language" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
               <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="language" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ru-ru" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="language" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ru-ru" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tool" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="language" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ua" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="language" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ua" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tool" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tool" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="library" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settings.php.debug.xdebug.proxy" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="settings.editor.splitter.proportion" value="0.24710424" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
@@ -365,26 +598,27 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="Constants" value="true" />
+    <property name="Constants" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="/usr/local/lib/node_modules/grunt-cli" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/download/csv/upload.sng&#10;/Applications/XAMPP/xamppfiles/htdocs/opencart/download/csv/import1.csv&#10;/Applications/XAMPP/xamppfiles/htdocs/opencart/download/csv/logfile.txt&#10;/Applications/XAMPP/xamppfiles/htdocs/opencart/download/csv/import.csv" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/controller/tool" />
-      <recent name="$PROJECT_DIR$/system/library" />
-      <recent name="$PROJECT_DIR$/admin/view/template/tool" />
-      <recent name="$PROJECT_DIR$/admin/view/template/catalog" />
-      <recent name="$PROJECT_DIR$/admin/language/ua/tool" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/view/template/tool" />
       <recent name="$PROJECT_DIR$/admin/language/en-gb/extension/module" />
       <recent name="$PROJECT_DIR$/download/bakup" />
       <recent name="$PROJECT_DIR$/admin/language/ru-ru/extension/module" />
       <recent name="$PROJECT_DIR$/catalog/view/javascript" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/download/csv" />
+      <recent name="$PROJECT_DIR$/admin" />
+      <recent name="$PROJECT_DIR$/system/library" />
+      <recent name="$PROJECT_DIR$/admin/controller/tool" />
+      <recent name="$PROJECT_DIR$/admin/view/template/tool" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -399,13 +633,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Web Application.admin">
+  <component name="RunManager" selected="PHP Remote Debug.opencart3">
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
       <envs />
     </configuration>
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="opencart" />
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/opencart" />
-    <configuration name="admin" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/opencart/admin" />
+    <configuration name="opencart" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="opencart" session_id="debug" />
+    <configuration name="opencart3" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="opencart" session_id="debug" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHP Remote Debug.opencart" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Remote Debug.opencart3" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -480,11 +720,16 @@
       <workItem from="1510209818954" duration="15112000" />
       <workItem from="1510506366299" duration="3708000" />
       <workItem from="1510563164982" duration="18688000" />
+      <workItem from="1513633431644" duration="1491000" />
+      <workItem from="1513695297602" duration="17000" />
+      <workItem from="1513716407125" duration="66000" />
+      <workItem from="1514813552791" duration="39718000" />
+      <workItem from="1514976433350" duration="2474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1002842000" />
+    <option name="totallyTimeSpent" value="1046608000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -497,20 +742,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="693" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1558966" sideWeight="0.4946565" order="0" side_tool="false" content_ui="tabs" x="44" y="94" width="274" height="655" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20840065" sideWeight="0.4946565" order="0" side_tool="false" content_ui="tabs" x="44" y="94" width="274" height="655" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.49676898" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16521738" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.49676898" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35304347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40173912" sideWeight="0.48869145" order="3" side_tool="false" content_ui="tabs" x="21" y="268" width="1238" height="203" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35304347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22213247" sideWeight="0.5053435" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40173912" sideWeight="0.48869145" order="3" side_tool="false" content_ui="tabs" x="21" y="268" width="1238" height="203" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -551,6 +795,32 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -563,44 +833,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="php">
-          <url>file://$PROJECT_DIR$/system/library/cron.php</url>
-          <line>30</line>
-          <option name="timeStamp" value="318" />
-        </line-breakpoint>
-        <line-breakpoint type="php">
-          <url>file://$PROJECT_DIR$/system/library/cron.php</url>
-          <line>43</line>
-          <option name="timeStamp" value="319" />
-        </line-breakpoint>
-        <line-breakpoint type="php">
-          <url>file://$PROJECT_DIR$/admin/cron.php</url>
-          <line>158</line>
-          <option name="timeStamp" value="325" />
-        </line-breakpoint>
-        <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/admin/controller/common/login.php</url>
           <line>41</line>
           <option name="timeStamp" value="326" />
-        </line-breakpoint>
-        <line-breakpoint type="php">
-          <url>file://$PROJECT_DIR$/admin/cron.php</url>
-          <line>43</line>
-          <option name="timeStamp" value="328" />
-        </line-breakpoint>
-        <line-breakpoint type="php">
-          <url>file://$PROJECT_DIR$/admin/cron.php</url>
-          <line>112</line>
-          <option name="timeStamp" value="329" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/admin/controller/tool/set_cron.php</url>
-          <line>89</line>
-          <option name="timeStamp" value="393" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/admin/controller/tool/set_cron.php</url>
-          <line>93</line>
-          <option name="timeStamp" value="394" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/admin/controller/tool/set_cron.php</url>
@@ -609,120 +844,137 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/admin/controller/tool/set_cron.php</url>
-          <line>281</line>
-          <option name="timeStamp" value="400" />
+          <line>155</line>
+          <option name="timeStamp" value="404" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/../../storage/modification/system/engine/loader.php</url>
+          <line>46</line>
+          <option name="timeStamp" value="415" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/model/setting/setting.php</url>
+          <line>21</line>
+          <option name="timeStamp" value="420" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/model/setting/setting.php</url>
+          <line>24</line>
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/model/setting/setting.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="424" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/controller/tool/import.php</url>
+          <line>330</line>
+          <option name="timeStamp" value="426" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/controller/tool/import.php</url>
+          <line>355</line>
+          <option name="timeStamp" value="427" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/controller/tool/import.php</url>
+          <line>345</line>
+          <option name="timeStamp" value="428" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="401" />
+      <option name="time" value="429" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/model/tool/backup.php">
+    <entry file="file://$PROJECT_DIR$/system/library/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controller/common/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../storage/modification/system/engine/loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/tool/upload.php">
+    <entry file="file://$PROJECT_DIR$/system/library/cron1.php" />
+    <entry file="file://$PROJECT_DIR$/admin/log1.html" />
+    <entry file="file://$PROJECT_DIR$/admin/view/template/tool/backup.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/catalog/category.php">
+    <entry file="file://$PROJECT_DIR$/admin/controller/tool/backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1880">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controller/setting/setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2662">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controller/extension/module/customersordersexportfree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-955">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/language/ua/common/column_left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/language/ua/tool/set_cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/tool/backup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Volumes/Storage/Site/OpenCart/Add to project/versii/03.11.2017/opencart/admin/language/ru-ru/tool/import.php">
+    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/ru-ru.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controller/catalog/filter.php">
+    <entry file="file://$PROJECT_DIR$/admin/language/ua/tool/import.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1268">
-          <caret line="315" column="50" lean-forward="true" selection-start-line="315" selection-start-column="50" selection-end-line="315" selection-end-column="50" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/catalog/filter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/language/ua/catalog/filter.php">
+    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/tool/set_cron.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/catalog/customer_specials.php">
+    <entry file="file://$PROJECT_DIR$/admin/view/template/tool/set_cron_form.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controller/catalog/customer_specials.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/model/catalog/customer_specials.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="6" column="71" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="6" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/template/catalog/category_form.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="142" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="6" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/tool/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="76" lean-forward="false" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/catalog/manufacturer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="84" />
+        <state relative-caret-position="-1164">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -737,20 +989,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="120">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/startup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="226">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -758,210 +1013,139 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="170" column="0" lean-forward="false" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/engine/router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="53">
+          <caret line="54" column="43" lean-forward="true" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/controller/startup/router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
+        <state relative-caret-position="195">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/config/default.php">
+    <entry file="file://$PROJECT_DIR$/admin/controller/tool/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-523">
+        <state relative-caret-position="-4147">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/config/catalog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/config/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-531">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/template/catalog/manufacturer_form.twig">
+    <entry file="file://$PROJECT_DIR$/admin/controller/catalog/category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/template/sale/order_list.twig">
+    <entry file="file://$PROJECT_DIR$/admin/controller/extension/module/categoryKsl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1480">
+          <caret line="21" column="150" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/engine/loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controller/extension/module/live_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1185">
+          <caret line="36" column="59" lean-forward="true" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../storage/modification/system/engine/loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/model/setting/setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="36" />
+          <folding>
+            <marker date="1500321668000" expanded="true" signature="157:285" ph="SELECT * FRO... ${DB_PREFIX}" />
+            <marker date="1500321668000" expanded="true" signature="618:746" ph="DELETE FROM " />
+            <marker date="1500321668000" expanded="true" signature="891:1102" ph="INSERT INTO ${DB_PREFIX}setting... " />
+            <marker date="1500321668000" expanded="true" signature="1142:1390" ph="INSERT INTO ${DB_PREFIX}setting... " />
+            <marker date="1500321668000" expanded="true" signature="1488:1614" ph="DELETE FROM " />
+            <marker date="1500321668000" expanded="true" signature="1708:1838" ph="SELECT value... ${DB_PREFIX}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/view/template/tool/import.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" column="103" lean-forward="true" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/view/template/tool/set_cron.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/tool/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/cron_bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controller/tool/set_cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-294">
+          <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/model/catalog/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7710">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/etc/php.ini.default">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2922">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/model/catalog/categoryKsl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1493380162000" expanded="true" signature="131:598" ph="SELECT * FRO... ${DB_PREFIX}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/model/tool/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509963724000" expanded="true" signature="122:217" ph="SELECT * FRO... ${DB_PREFIX}" />
-            <marker date="1509963724000" expanded="true" signature="337:437" ph="SELECT * FRO... ${DB_PREFIX}" />
-            <marker date="1509963724000" expanded="true" signature="553:641" ph="SELECT * FRO... ${DB_PREFIX}" />
-            <marker date="1509963724000" expanded="true" signature="777:905" ph="SELECT order... ${DB_PREFIX}" />
-            <marker date="1509963724000" expanded="true" signature="1152:1274" ph="SELECT order... order_product" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/model/catalog/manufacturer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="34" column="112" lean-forward="true" selection-start-line="34" selection-start-column="112" selection-end-line="34" selection-end-column="117" />
-          <folding>
-            <marker date="1500321668000" expanded="true" signature="115:259" ph="INSERT INTO ${DB_PREFIX}manufacturer... " />
-            <marker date="1500321668000" expanded="true" signature="641:782" ph="INSERT INTO ${DB_PREFIX}manufacturer_to_store... " />
-            <marker date="1500321668000" expanded="true" signature="1037:1262" ph="INSERT INTO ${DB_PREFIX}seo_url... " />
-            <marker date="1500321668000" expanded="true" signature="1873:1979" ph="DELETE FROM " />
-            <marker date="1500321668000" expanded="true" signature="2106:2247" ph="INSERT INTO ${DB_PREFIX}manufacturer_to_store... " />
-            <marker date="1500321668000" expanded="true" signature="2281:2381" ph="DELETE FROM " />
-            <marker date="1500321668000" expanded="true" signature="2610:2837" ph="INSERT INTO `${DB_PREFIX}seo_url`... " />
-            <marker date="1500321668000" expanded="true" signature="2984:3083" ph="DELETE FROM " />
-            <marker date="1500321668000" expanded="true" signature="3107:3215" ph="DELETE FROM " />
-            <marker date="1500321668000" expanded="true" signature="3239:3339" ph="DELETE FROM " />
-            <marker date="1500321668000" expanded="true" signature="3470:3578" ph="SELECT DISTI... ${DB_PREFIX}" />
-            <marker date="1500321668000" expanded="true" signature="3672:3715" ph="SELECT * FRO... ${DB_PREFIX}" />
-            <marker date="1500321668000" expanded="true" signature="4612:4720" ph="SELECT * FRO... ${DB_PREFIX}" />
-            <marker date="1500321668000" expanded="true" signature="4993:5093" ph="SELECT * FRO... ${DB_PREFIX}" />
-            <marker date="1500321668000" expanded="true" signature="5352:5411" ph="SELECT COUNT... ${DB_PREFIX}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../etc/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="1929" column="14" lean-forward="true" selection-start-line="1929" selection-start-column="14" selection-end-line="1929" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/model/catalog/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1470">
-          <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/template/catalog/manufacturer_list.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="5" column="103" lean-forward="true" selection-start-line="5" selection-start-column="103" selection-end-line="5" selection-end-column="186" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/model/tool/import_old.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504274058000" expanded="true" signature="122:217" ph="SELECT * FRO... ${DB_PREFIX}" />
-            <marker date="1504274058000" expanded="true" signature="337:437" ph="SELECT * FRO... ${DB_PREFIX}" />
-            <marker date="1504274058000" expanded="true" signature="553:641" ph="SELECT * FRO... ${DB_PREFIX}" />
-            <marker date="1504274058000" expanded="true" signature="777:905" ph="SELECT order... ${DB_PREFIX}" />
-            <marker date="1504274058000" expanded="true" signature="1152:1274" ph="SELECT order... order_product" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/template/catalog/category_list.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="60" column="71" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="60" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/model/tool/set_cron.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="40" column="45" lean-forward="false" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
-          <folding>
-            <marker date="1510573062290" expanded="true" signature="271:648" ph="INSERT INTO `${DB_PREFIX}cron_task`... " />
-            <marker date="1510573062290" expanded="true" signature="271:672" ph="INSERT INTO `${DB_PREFIX}cron_task`... " />
-            <marker date="1510573062290" expanded="true" signature="822:864" ph="SELECT * FRO... ${DB_PREFIX}cron_task" />
-            <marker date="1510573062290" expanded="true" signature="970:1382" ph="INSERT INTO `${DB_PREFIX}cron_task`... " />
-            <marker date="1510573062290" expanded="true" signature="1492:1994" ph="UPDATE . DB_... " />
-            <marker date="1510573062290" expanded="true" signature="2106:2186" ph="DELETE FROM " />
-            <marker date="1510573062290" expanded="true" signature="2272:2279" ph="SELECT * FRO... ${DB_PREFIX}cron_task" />
-            <marker date="1510573062290" expanded="true" signature="2272:2364" ph="SELECT DISTI... ${DB_PREFIX}cron_task" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/library/crontab_manager_old.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="65" column="129" lean-forward="true" selection-start-line="65" selection-start-column="129" selection-end-line="65" selection-end-column="129" />
-          <folding>
-            <marker date="1510664931000" expanded="true" signature="3396:3409" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/library/crontab_manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-559">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <marker date="1510667008706" expanded="true" signature="2381:2394" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/template/tool/set_cron_form.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="100" column="144" lean-forward="false" selection-start-line="100" selection-start-column="144" selection-end-line="100" selection-end-column="144" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,51 +1153,94 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/template/tool/set_cron.twig">
+    <entry file="file://$PROJECT_DIR$/system/library/crontab_manager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="14" lean-forward="true" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+        <state relative-caret-position="-1035">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controller/tool/import.php">
+    <entry file="file://$PROJECT_DIR$/admin/cron_tasks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controller/catalog/category.php">
+    <entry file="file://$PROJECT_DIR$/admin/model/catalog/product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="92" column="22" lean-forward="true" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="-10410">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/template/tool/set_cron_list.twig">
+    <entry file="file://$PROJECT_DIR$/admin/model/catalog/categoryKsl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controller/catalog/manufacturer.php">
+    <entry file="file://$PROJECT_DIR$/admin/model/catalog/customer_specials.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4537">
-          <caret line="86" column="76" lean-forward="true" selection-start-line="86" selection-start-column="76" selection-end-line="86" selection-end-column="76" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/model/tool/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download/csv/import1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controller/tool/set_cron_old.php">
+    <entry file="file://$PROJECT_DIR$/admin/cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="106" column="25" lean-forward="false" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download/csv/import.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download/csv/logfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/log.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1021,27 +1248,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/language/ua/tool/set_cron.php">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="42" column="76" lean-forward="false" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="76" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/language/ru-ru/tool/set_cron.php">
+    <entry file="file://$PROJECT_DIR$/admin/controller/tool/import.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="37" column="79" lean-forward="false" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controller/tool/set_cron.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="158" column="61" lean-forward="false" selection-start-line="158" selection-start-column="61" selection-end-line="158" selection-end-column="72" />
-          <folding />
+        <state relative-caret-position="479">
+          <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+          <folding>
+            <marker date="1514975097754" expanded="true" signature="6115:6216" ph="INSERT INTO ${DB_PREFIX}`manufacturer`... " />
+            <marker date="1514975097754" expanded="true" signature="6329:6442" ph="INSERT INTO ${DB_PREFIX}... " />
+            <marker date="1514975097754" expanded="true" signature="6741:6843" ph="INSERT INTO `seo_url`... " />
+            <marker date="1514975097754" expanded="true" signature="7194:7333" ph="INSERT INTO `category`... " />
+            <marker date="1514975097754" expanded="true" signature="7443:7543" ph="INSERT INTO `category_path`... " />
+            <marker date="1514975097754" expanded="true" signature="7590:7674" ph="INSERT INTO `category_to_store`... " />
+            <marker date="1514975097754" expanded="true" signature="7788:7916" ph="INSERT INTO `category_description`... " />
+            <marker date="1514975097754" expanded="true" signature="8229:8330" ph="INSERT INTO `seo_url`... " />
+            <marker date="1514975097754" expanded="true" signature="8713:8982" ph="INSERT INTO `product`... " />
+            <marker date="1514975097754" expanded="true" signature="9159:9319" ph="INSERT INTO `product_description`... " />
+            <marker date="1514975097754" expanded="true" signature="9392:9488" ph="INSERT INTO `product_to_category`... " />
+            <marker date="1514975097754" expanded="true" signature="9535:9614" ph="INSERT INTO `product_to_store`... " />
+            <marker date="1514975097754" expanded="true" signature="9900:10027" ph="INSERT INTO `seo_url`... " />
+            <marker date="1514975097754" expanded="true" signature="10194:10563" ph="UPDATE `prod... " />
+            <marker date="1514975097754" expanded="true" signature="10610:10737" ph="UPDATE `prod... " />
+            <marker date="1514975097754" expanded="true" signature="10785:10891" ph="UPDATE `prod... " />
+          </folding>
         </state>
       </provider>
     </entry>

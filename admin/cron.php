@@ -16,12 +16,17 @@ require_once(DIR_SYSTEM . 'startup.php');
 
 // Cron Controller
 require_once(DIR_SYSTEM.'library/cron.php');
-$cron = new Cron;
+$cron = new Cron();
+
+require_once(DIR_SYSTEM . 'library/cron_bootstrap.php');
+
+
 require_once(DIR_APPLICATION.'cron_tasks.php');
 
-if (!$cron->isRun())
+if (!$cron->isRun()) {
     exit;
-$registry = new Registry();
+}
+
 $registry->set('cron', $cron);
 
 $cron->run($registry);

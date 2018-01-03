@@ -30,4 +30,8 @@ class ModelToolImport extends Model {
         }
         return $output;
     }
+    public function UpdateCsv($model,$quant){
+        $this->db->query("UPDATE ". DB_PREFIX ."`product` SET model = '$model', quantity = '$quant' WHERE model = '$model'");
+
+    }
 }
