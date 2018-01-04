@@ -83,9 +83,13 @@
               <div class="col-sm-4 ">
                 <input name="synchron_name" type="text" class="form-control" id="synchron"  value="{{ synchron_name  }}">
               </div><br><br><br>
-              <label class="col-sm-8 control-label" for="delimiter" >{{ entry_delimiter }}</label>
+              <label class="col-sm-4 control-label" for="delimiter" >{{ entry_delimiter }}</label>
               <div class="col-sm-2 ">
                   <input name="csv_delimiter" type="text" class="form-control" id="delimiter"  value="{{ csv_delimiter  }}">
+              </div>
+              <label class="col-sm-4 control-label"  >{{ entry_header }}</label>
+              <div class="col-sm-2 ">
+                      <input name="csv_header" type="checkbox" class="form-control" value="{{ csv_header  }}" {% if csv_header==1  %}  checked="checked" {% endif %}/>
               </div><br><br><br>
               <label class="col-sm-4 control-label" for="input_base_fields" >{{ entry_fields }}</label>
               <div class="col-sm-8 ">

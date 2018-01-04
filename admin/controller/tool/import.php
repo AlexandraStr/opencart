@@ -28,6 +28,11 @@ class ControllerToolImport extends Controller
         } else {
             $data['csv_delimiter'] = $this->config->get('csv_delimiter');
         }
+        if (isset($this->request->post['csv_header'])) {
+            $data['csv_header'] = $this->request->post['csv_header'];
+        } else {
+            $data['csv_header'] = $this->config->get('csv_header');
+        }
 
         if (isset($this->request->post['base_fields'])) {
             $data['base_fields'] = $this->request->post['base_fields'];
@@ -332,6 +337,8 @@ class ControllerToolImport extends Controller
             $this->model_setting_setting->editSettingValue('tool_import','synchron_name', $this->request->post['synchron_name']);
             $this->model_setting_setting->editSettingValue('tool_import','synchron_flag', $this->request->post['synchron_flag']);
             $this->model_setting_setting->editSettingValue('tool_import','csv_delimiter', $this->request->post['csv_delimiter']);
+            $on_header=(int)isset($this->request->post['csv_header']);
+            $this->model_setting_setting->editSettingValue('tool_import','csv_header',$on_header);
             $val=explode(",",$this->request->post['base_fields']);
             $this->model_setting_setting->editSettingValue('tool_import','base_fields',  $val);
 
@@ -343,10 +350,12 @@ class ControllerToolImport extends Controller
 
     public function synchron($parameters)
     {
+
         $filename=$parameters['synchron_name'];
         $file_flag=$parameters['synchron_flag'];
-        $len = 1024;
-        $delim = ";";
+        $header = $parameters['csv_header'];
+        $delim = $parameters['csv_delimiter'];
+        $fields = $parameters['base_fields'];
         $date_today = date("m.d.y");
         $time = date("H:i:s");
         $file_log = DIR_CSV . "logfile.txt";
@@ -355,40 +364,58 @@ class ControllerToolImport extends Controller
             unlink($file_log);
         }
 
-        if (file_exists($file_flag)) {
+        if (!file_exists($file_flag)) { return false; }
 
             $this->load->language('tool/import');
             $this->load->model('tool/import');
-              $handle = fopen($filename, "r");
 
-                if ($handle) {
-                    $fp = fopen($file_log, "w"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту),мы создаем файл
-                    while (($row = fgetcsv($handle, $len, $delim)) !== FALSE) {
-                        $model = addslashes(trim($row[0]));
-                        if (strtoupper($model) == "KOD") {
-                            continue;
-                        }
-                        $model = mb_convert_encoding($model, 'utf-8', 'windows-1251');
-                        $quant = trim($row[1]);
-                        fwrite($fp, "Записуємо дані " . $model . " і " . $quant);
-                        $this->model_tool_import->UpdateCsv($model,$quant);
+            if(!file_exists($filename)) { return false; }
 
-                    }
+            $cont = trim( file_get_contents( $filename ) );
+            $encoded_cont = mb_convert_encoding( $cont, 'UTF-8', 'windows-1251');
 
+            $row_delimiter = "";
 
-                    fwrite($fp, "Синхрогізація відбулася " . $date_today . " в " . $time);
-                    fclose($fp);
-                    //       unlink($file_flag);
+        // определим разделитель
+          if( !$row_delimiter ){
+            $row_delimiter = "\r\n";
+            if( false === strpos($encoded_cont, "\r\n") )
+                $row_delimiter = "\n";
+         }
 
-                } else {
-                    echo "Неможливо прочитати файл " . $filename;
-                }
+        $lines = explode( $row_delimiter, trim($encoded_cont) );
+        $lines = array_filter( $lines );
+        $lines = array_map( 'trim', $lines );
 
-
-
-        } else {
-            echo "Файл". $file_flag." не существует";
+        if($header) {
+            array_shift($lines);
         }
+
+
+        $data = [];
+        foreach( $lines as $line ){
+            $data[] = str_getcsv( $line, $delim ); // linedata
+        }
+        $fp = fopen($file_log, "w"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту),мы создаем файл
+
+
+        $str_date = count($data,COUNT_RECURSIVE)/count($data)-1;
+
+        foreach ($data as $value) {
+            for ($i = 0; $i < $str_date; $i++) {
+                $setdate[$i] = $fields[$i]."='".$value[$i]."'";
+            }
+            $setstr=implode(",",$setdate);
+            $wherestr=$value[0];
+            fwrite($fp, "Записуємо дані " . $setstr . " і " .$wherestr  );
+            $this->model_tool_import->UpdateCsv($setstr,$wherestr);
+        }
+
+        fwrite($fp, "Синхрогізація відбулася " . $date_today . " в " . $time);
+        fclose($fp);
+        //       unlink($file_flag);
+
+
     }
 
 
