@@ -16,10 +16,23 @@ class ControllerToolImport extends Controller
         } else {
             $data['synchron_name'] = $this->config->get('synchron_name');
         }
+
         if (isset($this->request->post['synchron_flag'])) {
             $data['synchron_flag'] = $this->request->post['synchron_flag'];
         } else {
             $data['synchron_flag'] = $this->config->get('synchron_flag');
+        }
+
+        if (isset($this->request->post['csv_delimiter'])) {
+            $data['csv_delimiter'] = $this->request->post['csv_delimiter'];
+        } else {
+            $data['csv_delimiter'] = $this->config->get('csv_delimiter');
+        }
+
+        if (isset($this->request->post['base_fields'])) {
+            $data['base_fields'] = $this->request->post['base_fields'];
+        } else {
+            $data['base_fields'] = implode(",",$this->config->get('base_fields'));
         }
 
         if (isset($this->error['warning'])) {
@@ -318,6 +331,9 @@ class ControllerToolImport extends Controller
         if (($this->request->server['REQUEST_METHOD'] == 'POST')) {
             $this->model_setting_setting->editSettingValue('tool_import','synchron_name', $this->request->post['synchron_name']);
             $this->model_setting_setting->editSettingValue('tool_import','synchron_flag', $this->request->post['synchron_flag']);
+            $this->model_setting_setting->editSettingValue('tool_import','csv_delimiter', $this->request->post['csv_delimiter']);
+            $val=explode(",",$this->request->post['base_fields']);
+            $this->model_setting_setting->editSettingValue('tool_import','base_fields',  $val);
 
             $this->session->data['success'] = $this->language->get('text_success');
         }
@@ -346,7 +362,7 @@ class ControllerToolImport extends Controller
               $handle = fopen($filename, "r");
 
                 if ($handle) {
-                    $fp = fopen($file_log, "a"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту),мы создаем файл
+                    $fp = fopen($file_log, "w"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту),мы создаем файл
                     while (($row = fgetcsv($handle, $len, $delim)) !== FALSE) {
                         $model = addslashes(trim($row[0]));
                         if (strtoupper($model) == "KOD") {

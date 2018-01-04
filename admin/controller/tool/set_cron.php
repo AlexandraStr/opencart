@@ -141,6 +141,9 @@ class ControllerToolSetCron extends Controller
 
         $filename= DIR_CSV.$this->config->get('synchron_name').".csv";
         $file_flag= DIR_CSV.$this->config->get('synchron_flag').".sng";
+        $csv_delimiter=$this->config->get("csv_delimiter");
+        $base_fields=$this->config->get("base_fields");
+
 
 
             $this->document->setTitle($this->language->get('heading_title'));
@@ -159,6 +162,8 @@ class ControllerToolSetCron extends Controller
                         $parameters = array(
                             'synchron_name' => $filename,
                             'synchron_flag' => $file_flag,
+                            'csv_delimiter' => $csv_delimiter,
+                            'base_fields'=> $base_fields,
                         );
                     } else {
                         $parameters = array("param" => true);

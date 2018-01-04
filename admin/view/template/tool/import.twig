@@ -75,17 +75,25 @@
         <div class="tab-pane" id="tab-synchron">
           <form action="{{ save_name_synchron }}" method="post" enctype="multipart/form-data" id="form-synchron" class="form-horizontal">
             <br class="form-group">
-              <label class="col-sm-2 control-label" for="synchron_flag" >{{ entry_synchron_flag }}</label>
-              <div class="col-sm-6 ">
+              <label class="col-sm-4 control-label" for="synchron_flag" >{{ entry_synchron_flag }}</label>
+              <div class="col-sm-4 ">
                 <input name="synchron_flag" type="text" class="form-control" id="synchron_flag"  value="{{ synchron_flag  }}">
               </div><br><br><br><br><br>
-              <label class="col-sm-2 control-label" for="synchron" >{{ entry_synchron_name }}</label>
-              <div class="col-sm-6 ">
+              <label class="col-sm-4 control-label" for="synchron" >{{ entry_synchron_name }}</label>
+              <div class="col-sm-4 ">
                 <input name="synchron_name" type="text" class="form-control" id="synchron"  value="{{ synchron_name  }}">
               </div><br><br><br>
+              <label class="col-sm-8 control-label" for="delimiter" >{{ entry_delimiter }}</label>
+              <div class="col-sm-2 ">
+                  <input name="csv_delimiter" type="text" class="form-control" id="delimiter"  value="{{ csv_delimiter  }}">
+              </div><br><br><br>
+              <label class="col-sm-4 control-label" for="input_base_fields" >{{ entry_fields }}</label>
+              <div class="col-sm-8 ">
+                  <input name="base_fields" type="text" class="form-control" id="input_base_fields"  value="{{ base_fields }}">
+              </div><br><br><br><br><br>
             <div class="form-group">
-              <div class="col-sm-10 col-sm-offset-2">
-                <button type="submit" form="form-synchron" class="btn btn-default"><i class="fa fa-download"></i> {{ button_save }}</button>
+              <div class="col-sm-12 ">
+                <button type="submit" form="form-synchron" class="btn btn-primary"><i class="fa fa-download"></i> {{ button_save }}</button>
               </div>
             </div>
           </form>
