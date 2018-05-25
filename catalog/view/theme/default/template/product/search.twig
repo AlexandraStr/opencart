@@ -66,6 +66,7 @@
           {{ entry_description }}</label>
       </p>
       <input type="button" value="{{ button_search }}" id="button-search" class="btn btn-primary" />
+      <input type="button" value="{{button_reset}}" id="button-reset" class="btn btn-primary" />
       <h2>{{ text_search }}</h2>
       {% if products %}
       <div class="row">
@@ -109,11 +110,11 @@
                   <table class="table table-bordered table-hover table-price">
                       <thead class="table-category-head">
                       <tr class="caption">
-                          <td class="text-center"><h5>{{ text_image }}</h5></td>
-                          <td class="text-center prod"><h5>{{ text_product }}</h5></td>
+                    <!--      <td class="text-center"><h5>{{ text_image }}</h5></td> -->
                           <td class="text-center"><h5>{{ text_model }}</h5></td>
+                          <td class="text-center prod"><h5>{{ text_product }}</h5></td>
                           <td class="text-center quant"><h5>{{ text_manufacturer }}</h5></td>
-                          <td class="text-center"><h5>{{ text_description }}</h5></td>
+                    <!--      <td class="text-center"><h5>{{ text_description }}</h5></td>  -->
                           <td class="text-center quant"><h5>{{ text_price }}</h5></td>
                           <td class="text-center quant"><h5>{{ text_quantity }}</h5></td>
                           <td class="text-center quant"><h5>{{ text_order_quantity }}</h5></td>
@@ -124,11 +125,12 @@
                       {% if products %}
                           {% for product in products %}
                               <tr>
-                                  <td class="text-center">{% if product.image %} <img src="{{ product.image }}" alt="{{ product.name }}" class="img-thumbnail" /> {% else %} <span class="img-thumbnail list"><i class="fa fa-bus fa-5x"></i></span> {% endif %}</td>
+                            <!--      <td class="text-center">{% if product.image %} <img src="{{ product.image }}" alt="{{ product.name }}" class="img-thumbnail" /> {% else %} <span class="img-thumbnail list"><i class="fa fa-bus fa-5x"></i></span> {% endif %}</td>  -->   
+                                  <td class="text-center">{% if product.quantity > 0 %}<a href="{{ product.href }}">{{ product.model }}</a>{% else %}{{ product.model }}{% endif %}</td>                    
                                   <td class="text-left">{% if product.quantity > 0 %}<a href="{{ product.href }}">{{ product.name }}</a>{% else %}{{ product.name }} {% endif %}</td>
-                                  <td class="text-left">{% if product.quantity > 0 %}<a href="{{ product.href }}">{{ product.model }}</a>{% else %}{{ product.model }}{% endif %}</td>
-                                  <td class="text-left">{{ product.manufacturer }}</td>
-                                  <td class="text-left">
+
+                                  <td class="text-center">{{ product.manufacturer }}</td>
+                             <!--     <td class="text-left">
                                       {% if product.description is empty %}
                                           {{ text_empty_description }}
                                       {% else %}
@@ -139,7 +141,7 @@
                                           {% endif %}
                                           {{ product.description }}
                                       {% endif %}
-                                  </td>
+                                  </td>  -->                            
                                   <td class="text-center">
 
                                       {% if not product.special %}
@@ -149,7 +151,8 @@
 
 
                                   </td>
-                                  <td class="text-right">{% if product.quantity <= 0 %} <span class="warning">{{ product.quantity }}<br>{{ text_warning }}</span> {% elseif product.quantity <= 5 %} <span class="danger">{{ product.quantity }}<br>{{ text_danger }}</span> {% else %} <span class="success">{{ product.quantity }}<br>{{ text_success }}</span> {% endif %}</td>
+                              <!--    <td class="text-right">{% if product.quantity <= 0 %} <span class="warning">{{ product.quantity }}<br>{{ text_warning }}</span> {% elseif product.quantity <= 5 %} <span class="danger">{{ product.quantity }}<br>{{ text_danger }}</span> {% else %} <span class="success">{{ product.quantity }}<br>{{ text_success }}</span> {% endif %}</td>  -->
+                               <td class="text-center">{% if product.quantity <= 0 %} <span class="warning">{{ product.quantity }}</span> {% elseif product.quantity <= 5 %} <span class="danger">{{ product.quantity }}</span> {% else %} <span class="success">{{ product.quantity }}</span> {% endif %}</td>
                                   <td class="text-center">
                                       <div class="form-group">
                                           <input type="text" name="quantity" {% if product.quantity <= 0 %} disabled {% endif %} value="{{ product.minimum }}" size="2"  class="form-control" />
@@ -217,6 +220,11 @@ $('#button-search').bind('click', function() {
 
 	location = url;
 });
+
+$('#button-reset').bind('click', function() {
+    $('#input-search').val("");
+});
+
 
 $('#content input[name=\'search\']').bind('keydown', function(e) {
 	if (e.keyCode == 13) {

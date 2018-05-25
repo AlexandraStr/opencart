@@ -486,6 +486,7 @@ class ControllerSaleOrder extends Controller {
 
 			$data['payment_firstname'] = $order_info['payment_firstname'];
 			$data['payment_lastname'] = $order_info['payment_lastname'];
+			$data['payment_code_company'] = $order_info['payment_code_company'];
 			$data['payment_company'] = $order_info['payment_company'];
 			$data['payment_address_1'] = $order_info['payment_address_1'];
 			$data['payment_address_2'] = $order_info['payment_address_2'];
@@ -499,6 +500,7 @@ class ControllerSaleOrder extends Controller {
 
 			$data['shipping_firstname'] = $order_info['shipping_firstname'];
 			$data['shipping_lastname'] = $order_info['shipping_lastname'];
+			$data['shipping_code_company'] = $order_info['shipping_code_company'];
 			$data['shipping_company'] = $order_info['shipping_company'];
 			$data['shipping_address_1'] = $order_info['shipping_address_1'];
 			$data['shipping_address_2'] = $order_info['shipping_address_2'];
@@ -572,6 +574,7 @@ class ControllerSaleOrder extends Controller {
 
 			$data['payment_firstname'] = '';
 			$data['payment_lastname'] = '';
+			$data['payment_code_company'] = '';
 			$data['payment_company'] = '';
 			$data['payment_address_1'] = '';
 			$data['payment_address_2'] = '';
@@ -585,6 +588,7 @@ class ControllerSaleOrder extends Controller {
 
 			$data['shipping_firstname'] = '';
 			$data['shipping_lastname'] = '';
+			$data['shipping_code_company'] = '';
 			$data['shipping_company'] = '';
 			$data['shipping_address_1'] = '';
 			$data['shipping_address_2'] = '';
@@ -799,16 +803,19 @@ class ControllerSaleOrder extends Controller {
 				$data['store_url'] = $order_info['store_url'];
 			}
 
-			if ($order_info['invoice_no']) {
-				$data['invoice_no'] = $order_info['invoice_prefix'] . $order_info['invoice_no'];
+			if ($order_info['invoice_prefix']) {
+				$data['invoice_no'] = $order_info['invoice_prefix'] . $order_info['order_id'];
 			} else {
 				$data['invoice_no'] = '';
 			}
 
 			$data['date_added'] = date($this->language->get('date_format_short'), strtotime($order_info['date_added']));
 
+			
 			$data['firstname'] = $order_info['firstname'];
 			$data['lastname'] = $order_info['lastname'];
+			$data['code_company'] = $order_info['payment_code_company'];
+			$data['company'] = $order_info['payment_company'];
 
 			if ($order_info['customer_id']) {
 				$data['customer'] = $this->url->link('customer/customer/edit', 'user_token=' . $this->session->data['user_token'] . '&customer_id=' . $order_info['customer_id'], true);
@@ -836,12 +843,13 @@ class ControllerSaleOrder extends Controller {
 			if ($order_info['payment_address_format']) {
 				$format = $order_info['payment_address_format'];
 			} else {
-				$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+				$format = '{firstname} {lastname}' . "\n" . '{code_company} {company}' . "\n" . '{address_1}' .  "\n" . '{city} {zone}' . "\n" . '{country}';
 			}
 
 			$find = array(
 				'{firstname}',
 				'{lastname}',
+				'{code_company}',
 				'{company}',
 				'{address_1}',
 				'{address_2}',
@@ -855,6 +863,7 @@ class ControllerSaleOrder extends Controller {
 			$replace = array(
 				'firstname' => $order_info['payment_firstname'],
 				'lastname'  => $order_info['payment_lastname'],
+				'code_company'   => $order_info['payment_code_company'],
 				'company'   => $order_info['payment_company'],
 				'address_1' => $order_info['payment_address_1'],
 				'address_2' => $order_info['payment_address_2'],
@@ -871,12 +880,13 @@ class ControllerSaleOrder extends Controller {
 			if ($order_info['shipping_address_format']) {
 				$format = $order_info['shipping_address_format'];
 			} else {
-				$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+				$format = '{firstname} {lastname}' . "\n" . '{code_company} {company}' . "\n" . '{address_1}' .  "\n" . '{city} {zone}' . "\n" . '{country}';
 			}
 
 			$find = array(
 				'{firstname}',
 				'{lastname}',
+				'{code_company}',
 				'{company}',
 				'{address_1}',
 				'{address_2}',
@@ -890,6 +900,7 @@ class ControllerSaleOrder extends Controller {
 			$replace = array(
 				'firstname' => $order_info['shipping_firstname'],
 				'lastname'  => $order_info['shipping_lastname'],
+				'code_company'  => $order_info['shipping_code_company'],
 				'company'   => $order_info['shipping_company'],
 				'address_1' => $order_info['shipping_address_1'],
 				'address_2' => $order_info['shipping_address_2'],
@@ -1517,12 +1528,13 @@ class ControllerSaleOrder extends Controller {
 				if ($order_info['payment_address_format']) {
 					$format = $order_info['payment_address_format'];
 				} else {
-					$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+					$format = '{firstname} {lastname}' . "\n" . '{code_company} {company}' . "\n" . '{address_1}' . "\n" . '{city} {zone}' . "\n" . '{country}';
 				}
 
 				$find = array(
 					'{firstname}',
 					'{lastname}',
+					'{code_company}',
 					'{company}',
 					'{address_1}',
 					'{address_2}',
@@ -1536,6 +1548,7 @@ class ControllerSaleOrder extends Controller {
 				$replace = array(
 					'firstname' => $order_info['payment_firstname'],
 					'lastname'  => $order_info['payment_lastname'],
+					'code_company'   => $order_info['payment_code_company'],
 					'company'   => $order_info['payment_company'],
 					'address_1' => $order_info['payment_address_1'],
 					'address_2' => $order_info['payment_address_2'],
@@ -1551,12 +1564,13 @@ class ControllerSaleOrder extends Controller {
 				if ($order_info['shipping_address_format']) {
 					$format = $order_info['shipping_address_format'];
 				} else {
-					$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+					$format = '{firstname} {lastname}' . "\n" . '{code_company} {company}' . "\n" . '{address_1}' . "\n" . '{city} {zone}' . "\n" . '{country}';
 				}
 
 				$find = array(
 					'{firstname}',
 					'{lastname}',
+					'{code_company}',
 					'{company}',
 					'{address_1}',
 					'{address_2}',
@@ -1570,6 +1584,7 @@ class ControllerSaleOrder extends Controller {
 				$replace = array(
 					'firstname' => $order_info['shipping_firstname'],
 					'lastname'  => $order_info['shipping_lastname'],
+					'code_company'   => $order_info['shipping_code_company'],
 					'company'   => $order_info['shipping_company'],
 					'address_1' => $order_info['shipping_address_1'],
 					'address_2' => $order_info['shipping_address_2'],
@@ -1727,12 +1742,13 @@ class ControllerSaleOrder extends Controller {
 				if ($order_info['shipping_address_format']) {
 					$format = $order_info['shipping_address_format'];
 				} else {
-					$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+					$format = '{firstname} {lastname}' . "\n" . '{code_company} {company}' . "\n" . '{address_1}' . "\n" . '{city} {zone}' . "\n" . '{country}';
 				}
 
 				$find = array(
 					'{firstname}',
 					'{lastname}',
+					'{code_company}',
 					'{company}',
 					'{address_1}',
 					'{address_2}',
@@ -1746,6 +1762,7 @@ class ControllerSaleOrder extends Controller {
 				$replace = array(
 					'firstname' => $order_info['shipping_firstname'],
 					'lastname'  => $order_info['shipping_lastname'],
+					'code_company'   => $order_info['shipping_company'],
 					'company'   => $order_info['shipping_company'],
 					'address_1' => $order_info['shipping_address_1'],
 					'address_2' => $order_info['shipping_address_2'],

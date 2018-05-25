@@ -30,6 +30,28 @@ class ModelToolImport extends Model {
         }
         return $output;
     }
+
+    public function exportOrdersForDate(){
+        $output = '';
+        $query = $this->db->query("SELECT order_id FROM `order` where date(date_added) = CURDATE()");
+        $tables = array();
+        foreach ($query->rows as $row){
+            $tables[]=$row['order_id'];
+        }
+       if ($tables) {
+            $in_str = implode(",", $tables);
+
+            $sql = "SELECT order_id,product_id,model,name,quantity,price FROM `order_product` where order_id IN (  $in_str ) ORDER BY order_id";
+            $query = $this->db->query($sql);
+            foreach ($query->rows as $result) {
+                $output .= $result['order_id'] . ';' . $result['product_id'] . ';' . $result['model'] . ';' . $result['name'] . ';' . $result['price'] . ';' . $result['quantity'] . "\n";
+            }
+            return $output;
+        }
+    }
+
+    
+    
     public function UpdateCsv($setstr,$wherestr){
         $this->db->query("UPDATE ". DB_PREFIX ."`product` SET ".$setstr." WHERE model='".$wherestr."'");
 

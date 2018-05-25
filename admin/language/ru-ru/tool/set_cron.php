@@ -24,6 +24,7 @@ $_['text_sunday']      = 'Воскресенье';
 
 // Entry
 $_['entry_import']     = 'Файл импорта .csv';
+$_['entry_task_title'] = 'Введите название модуля';
 
 
 // Tab

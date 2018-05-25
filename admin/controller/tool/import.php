@@ -201,7 +201,7 @@ class ControllerToolImport extends Controller
 
                     $result = $this->model_tool_import->getCategory($categ);
 
-                    if (empty($result)) {
+                    if (empty($result) AND !empty($categ)) {
                         $this->db->query("INSERT INTO `category` (image,top,parent_id,status,date_added,date_modified) VALUES ('$image_category','1','0','1','$big_date','$big_date')");
                         $category_id = $this->db->getLastId();
 
@@ -218,8 +218,10 @@ class ControllerToolImport extends Controller
                             $seo_query = "category_id =" . $category_id;
                             $this->db->query("INSERT INTO `seo_url` (store_id,language_id,query,keyword) VALUES ('0','$lg','$seo_query','$seo_url')");
                         }
-                    } else {
+                    } elseif (!empty($categ)) {
                         $category_id = $result[0]['category_id'];
+                    } else {
+                        $category_id=0;
                     }
 
 
@@ -328,6 +330,40 @@ class ControllerToolImport extends Controller
         }
     }
 
+    public function export_cron()
+    {
+        $datenow = date("Y-m-d");
+
+        $this->load->model('tool/import');
+
+        $this->load->model('io/file/writter');
+        /** @var ModelIoFileWritter $exportWritter */
+        $exportWritter = $this->registry->get('model_io_file_writter');
+
+        $this->load->model('io/file/logger');
+        /** @var ModelIoFileLogger $logWritter */
+        $logWritter = $this->registry->get('model_io_file_logger')->getInstance();
+
+        $logWritter->setLogFileName(DIR_EXPORT. "logfile.txt");
+
+
+        $logWritter->write('Export has been started...');
+
+        $output = $this->model_tool_import->exportOrdersForDate();
+
+        if (!empty($output)) {
+
+            $exportWritter->open(DIR_EXPORT . 'order_' . $datenow . '.csv')
+                ->write($output)
+                ->close();
+
+            $logWritter->write('Export completed ');
+        } else {
+            $logWritter->write('No data to export ');
+        }
+
+    }
+
     public function save_name_synchron()
     {
         $this->load->language('tool/import');
@@ -351,6 +387,7 @@ class ControllerToolImport extends Controller
     public function synchron($parameters)
     {
 
+
         $filename=$parameters['synchron_name'];
         $file_flag=$parameters['synchron_flag'];
         $header = $parameters['csv_header'];
@@ -360,16 +397,15 @@ class ControllerToolImport extends Controller
         $time = date("H:i:s");
         $file_log = DIR_CSV . "logfile.txt";
 
+        if (!file_exists($file_flag)) { return false; }
+        if (!file_exists($filename)) { return false; }
+
         if (file_exists($file_log)) {
             unlink($file_log);
         }
 
-        if (!file_exists($file_flag)) { return false; }
-
             $this->load->language('tool/import');
             $this->load->model('tool/import');
-
-            if(!file_exists($filename)) { return false; }
 
             $cont = trim( file_get_contents( $filename ) );
             $encoded_cont = mb_convert_encoding( $cont, 'UTF-8', 'windows-1251');
@@ -407,13 +443,14 @@ class ControllerToolImport extends Controller
             }
             $setstr=implode(",",$setdate);
             $wherestr=$value[0];
-            fwrite($fp, "Записуємо дані " . $setstr . " і " .$wherestr  );
+            fwrite($fp, "Записуємо дані " . $setstr  );
             $this->model_tool_import->UpdateCsv($setstr,$wherestr);
         }
 
         fwrite($fp, "Синхрогізація відбулася " . $date_today . " в " . $time);
         fclose($fp);
-        //       unlink($file_flag);
+        unlink($file_flag);
+        unlink($filename);
 
 
     }

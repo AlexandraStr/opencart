@@ -9,7 +9,9 @@ class ControllerProductManufacturer extends Controller {
 
 		$this->load->model('tool/image');
 
-		$this->document->setTitle($this->language->get('heading_title'));
+		//$this->document->setTitle($this->language->get('heading_title'));
+
+        $data['heading_title'] = $this->language->get('heading_title');
 
 		$data['breadcrumbs'] = array();
 
@@ -38,10 +40,12 @@ class ControllerProductManufacturer extends Controller {
 				$data['categories'][$key]['name'] = $key;
 			}
 
-			$data['categories'][$key]['manufacturer'][] = array(
-				'name' => $result['name'],
-				'href' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id'])
-			);
+            $data['categories'][$key]['manufacturer'][] = array(
+                'name' => $result['name'],
+                'image' => $this->model_tool_image->resize($result['image'], $this->config->get('theme_default_image_manufacturer_width'), $this->config->get('theme_default_image_manufacturer_height')),
+                'description' => html_entity_decode( $result['description'],ENT_QUOTES, 'UTF-8'),
+                'href' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id'])
+            );
 		}
 
 		$data['continue'] = $this->url->link('common/home');
@@ -111,6 +115,18 @@ class ControllerProductManufacturer extends Controller {
 		);
 
 		$manufacturer_info = $this->model_catalog_manufacturer->getManufacturer($manufacturer_id);
+
+        if ($manufacturer_info['image']) {
+            $data['image'] = $this->model_tool_image->resize($manufacturer_info['image'], $this->config->get('theme_default_image_manufacturer_width'), $this->config->get('theme_default_image_manufacturer_height'));
+        } else {
+            $data['image'] = false;
+        }
+
+        if ($manufacturer_info['description']){
+            $data['description'] =html_entity_decode( $manufacturer_info['description'],ENT_QUOTES, 'UTF-8');
+        } else {
+            $data['description'] = " ";
+        }
 
 		if ($manufacturer_info) {
 			$this->document->setTitle($manufacturer_info['name']);

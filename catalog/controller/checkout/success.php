@@ -106,7 +106,8 @@ class ControllerCheckoutSuccess extends Controller {
                             }
                         }
                     }
-
+                
+                    
                     $data['products'][] = array(
                         'order_id' => $order_id,
                         'product_id' => $product['product_id'],
@@ -115,6 +116,7 @@ class ControllerCheckoutSuccess extends Controller {
                         'category' => implode(',', $categories),
                         'quantity' => $product['quantity'],
                         'price' => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value'], false)
+                      
                     );
                 }
             }

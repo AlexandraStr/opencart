@@ -34,7 +34,6 @@ class ControllerMailOrder extends Controller {
 		if ($order_info) {
 			// If order status is 0 then becomes greater than 0 send main html email
 			if (!$order_info['order_status_id'] && $order_status_id) {
-                $this->load->model('setting/setting');
 				$this->add($order_info, $order_status_id, $comment, $notify);
 			} 
 			
@@ -85,6 +84,7 @@ class ControllerMailOrder extends Controller {
 		$data['text_shipping_address'] = $language->get('text_shipping_address');
 		$data['text_product'] = $language->get('text_product');
 		$data['text_model'] = $language->get('text_model');
+        $data['text_model1c'] = $language->get('text_model1c');
 		$data['text_quantity'] = $language->get('text_quantity');
 		$data['text_price'] = $language->get('text_price');
 		$data['text_total'] = $language->get('text_total');
@@ -106,6 +106,10 @@ class ControllerMailOrder extends Controller {
 		$data['date_added'] = date($language->get('date_format_short'), strtotime($order_info['date_added']));
 		$data['payment_method'] = $order_info['payment_method'];
 		$data['shipping_method'] = $order_info['shipping_method'];
+		$data['code_company'] = $order_info['payment_code_company'];
+		$data['company'] = $order_info['payment_company'];
+		$data['firstname'] = $order_info['firstname'];
+		$data['lastname'] = $order_info['lastname'];
 		$data['email'] = $order_info['email'];
 		$data['telephone'] = $order_info['telephone'];
 		$data['ip'] = $order_info['ip'];
@@ -127,12 +131,13 @@ class ControllerMailOrder extends Controller {
 		if ($order_info['payment_address_format']) {
 			$format = $order_info['payment_address_format'];
 		} else {
-			$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+			$format = '{firstname} {lastname}' . "\n" . '{code_company} {company}' . "\n" . '{address_1}' .  "\n" . '{city} {postcode}' .  "\n" . '{country}';
 		}
 
 		$find = array(
 			'{firstname}',
 			'{lastname}',
+            '{code_company}',
 			'{company}',
 			'{address_1}',
 			'{address_2}',
@@ -146,6 +151,7 @@ class ControllerMailOrder extends Controller {
 		$replace = array(
 			'firstname' => $order_info['payment_firstname'],
 			'lastname'  => $order_info['payment_lastname'],
+            'code_company'   => $order_info['payment_code_company'],
 			'company'   => $order_info['payment_company'],
 			'address_1' => $order_info['payment_address_1'],
 			'address_2' => $order_info['payment_address_2'],
@@ -161,12 +167,13 @@ class ControllerMailOrder extends Controller {
 		if ($order_info['shipping_address_format']) {
 			$format = $order_info['shipping_address_format'];
 		} else {
-			$format = '{firstname} {lastname}' . "\n" . '{company}' . "\n" . '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+			$format = '{firstname} {lastname}' . "\n" . '{code_company} {company}' . "\n" . '{address_1}' . "\n" . '{city} {postcode}' . "\n" . '{country}';
 		}
 
 		$find = array(
 			'{firstname}',
 			'{lastname}',
+            '{code_company}',
 			'{company}',
 			'{address_1}',
 			'{address_2}',
@@ -180,6 +187,7 @@ class ControllerMailOrder extends Controller {
 		$replace = array(
 			'firstname' => $order_info['shipping_firstname'],
 			'lastname'  => $order_info['shipping_lastname'],
+            'code_company'=> $order_info['shipping_code_company'],
 			'company'   => $order_info['shipping_company'],
 			'address_1' => $order_info['shipping_address_1'],
 			'address_2' => $order_info['shipping_address_2'],
@@ -224,6 +232,7 @@ class ControllerMailOrder extends Controller {
 			$data['products'][] = array(
 				'name'     => $order_product['name'],
 				'model'    => $order_product['model'],
+                'model1c'    => $order_product['model1c'],
 				'option'   => $option_data,
 				'quantity' => $order_product['quantity'],
 				'tax'      => $order_product['tax'],
@@ -256,17 +265,21 @@ class ControllerMailOrder extends Controller {
 		}
 
 		// Add the output to pdf file 30.08.2017
-        $code = "config";
+
+
         $printing = new Printing();
         $owner = array();
-        $owner = $this->model_setting_setting->getSetting($code, $store_id = 0);
+        $owner['name'] = "ТОВ \"БОРИСПІЛЬСЬКИЙ АВТОМОБІЛЬНИЙ ЗАВОД\", ЄДРПОУ 40504523";
+        $owner['adress'] = "08322 Київська обл.,Бориспільский р-н,с.Проліски, вул.Броварська 4 ";
         $owner['pdv'] = "Є платником податку на прибуток на загальних підставах";
+        $owner['count'] = "Рах.№ 26006924428021 АБ \"УКРГАЗБАНК\", М.КИЇВ МФО 320478";
+        $owner['phone'] = "495 888-88-88";
         $filename = DIR_PDF."order".$data['order_id'].".pdf";
         $customer = array();
-        $customer['name'] = $order_info['payment_company'];
+        $customer['company'] = $order_info['payment_code_company']." ".$order_info['payment_company'];
         $customer['fio'] = $order_info['payment_firstname']." ".$order_info['payment_lastname'];
-        $customer['email'] = "Email ".$order_info['email'];
-        $customer['telephone'] = "Телефон ".$order_info['telephone'];
+        $customer['email'] = "Email : ".$order_info['email'];
+        $customer['telephone'] = "Телефон : ".$order_info['telephone'];
         $count_order = "Рахунок № ".$order_info['invoice_prefix'].$order_info['order_id'];
 
 
@@ -278,7 +291,7 @@ class ControllerMailOrder extends Controller {
         $printing->AddPage(); //Добавляем страничку в документ
         $printing->Title($count_order,$data['logo'],$owner,$customer,'сайт: www.baz.ua'); // Выводим заголовок воспользовавшись новым методом
 
-        $header = array( "№", "Артикул", "Найменування ТМЦ, послуг","Од.","Ціна без ПДВ", "Кількість","Сума"); // Все заголовки столбцов загоняем в массив
+        $header = array( "№", "Код по каталогу", "Найменування ТМЦ, послуг","Од.","Ціна в грн(з ПДВ)", "Кількість","Сума"); // Все заголовки столбцов загоняем в массив
         $printing->OutputTable($header,$data['products']);
         $printing->Output( $filename,"F");// Выводим документ в файл
 
@@ -308,9 +321,8 @@ class ControllerMailOrder extends Controller {
 		$mail->setHtml($this->load->view('mail/order_add', $data));
         $mail->addAttachment($filename);
 		$mail->send();
-        unlink($filename);
+     //   unlink($filename);
 	}
-
 	
 	public function edit($order_info, $order_status_id, $comment) {
 		$language = new Language($order_info['language_code']);
@@ -410,18 +422,24 @@ class ControllerMailOrder extends Controller {
 			$data['text_total'] = $this->language->get('text_total');
 			$data['text_comment'] = $this->language->get('text_comment');
 			$data['text_customer'] = $this->language->get('text_customer');
+			$data['text_person'] = $this->language->get('text_person');
+			$data['text_company'] = $this->language->get('text_company');
+        
 			$data['text_invoice'] = $this->language->get('text_invoice');
+			$data['logo'] = $order_info['store_url'] . 'image/' . $this->config->get('config_logo');
 			
 			$data['order_id'] = $order_info['order_id'];
 			$data['date_added'] = date($this->language->get('date_format_short'), strtotime($order_info['date_added']));
 // Add output to csv file for admin and maneger
 
-			$data['firstname']= $order_info['firstname'];
-            $data['lastname']= $order_info['lastname'];
-            $data[ 'company ']= $order_info['payment_company'];
+            $data['code_company'] = $order_info['payment_code_company'];
+            $data['company'] = $order_info['payment_company'];
+            $data['firstname'] = $order_info['firstname'];
+            $data['lastname'] = $order_info['lastname'];
             $data[ 'invoice']= trim($order_info['invoice_prefix']).trim($order_info['order_id']);
             $data['telephone']= $order_info['telephone'];
-            $data['email'] = $order_id['email'];
+            $data['email'] = $order_info['email'];
+            $data['ip'] = $order_info['ip'];
 
 			$order_status_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "order_status WHERE order_status_id = '" . (int)$order_status_id . "' AND language_id = '" . (int)$this->config->get('config_language_id') . "'");
 
@@ -460,13 +478,15 @@ class ControllerMailOrder extends Controller {
 						'value' => (utf8_strlen($value) > 20 ? utf8_substr($value, 0, 20) . '..' : $value)
 					);					
 				}
+
 //             output csv
 
-                $csv_data .= $order_product['product_id']. ';' . $order_product['model']. ';' .$order_product['name']. ';' .$order_product['price']. ';' .$order_product['quantity']."\n";
+                $csv_data .= $order_product['product_id']. ';' . $order_product['model1c']. ';' .$order_product['name']. ';' .$order_product['price']. ';' .$order_product['quantity']."\n";
 
 				$data['products'][] = array(
 					'name'     => $order_product['name'],
 					'model'    => $order_product['model'],
+                    'model1c'  => $order_product['model1c'],
 					'quantity' => $order_product['quantity'],
 					'option'   => $option_data,
                     'price'    => $this->currency->format($order_product['price'] + ($this->config->get('config_tax') ? $order_product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
@@ -492,7 +512,7 @@ class ControllerMailOrder extends Controller {
 			foreach ($order_totals as $order_total) {
 				$data['totals'][] = array(
 					'title' => $order_total['title'],
-					'value' => html_entity_decode($this->currency->format($order_total['value'], $order_info['currency_code'], $order_info['currency_value']), ENT_NOQUOTES, 'UTF-8')
+					'text' => html_entity_decode($this->currency->format($order_total['value'], $order_info['currency_code'], $order_info['currency_value']), ENT_NOQUOTES, 'UTF-8')
 				);
 			}
 
@@ -514,9 +534,9 @@ class ControllerMailOrder extends Controller {
 			$mail->setFrom($this->config->get('config_email'));
 			$mail->setSender(html_entity_decode($order_info['store_name'], ENT_QUOTES, 'UTF-8'));
 			$mail->setSubject(html_entity_decode(sprintf($this->language->get('text_subject'), $this->config->get('config_name'), $order_info['order_id']), ENT_QUOTES, 'UTF-8'));
-		//	$mail->setText($this->load->view('mail/order_alert', $data));
-      //    sent to mail
+
             $mail->setHtml($this->load->view('mail/order_alert', $data));
+            $mail->addAttachment(DIR_PDF.'order'.$order_id.'.pdf');
             $mail->addAttachment(DIR_CSV.'order_'.$order_id.'.csv');
 			$mail->send();
 
@@ -529,8 +549,8 @@ class ControllerMailOrder extends Controller {
 					$mail->send();
 				}
 			}
+			unlink(DIR_PDF.'order'.$order_id.'.pdf');
             unlink(DIR_CSV.'order_'.$order_id.'.csv');
 		}
 	}
-
     }

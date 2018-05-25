@@ -322,6 +322,12 @@
                           {% endif %}</div>
                       </div>
                       <div class="form-group">
+                        <label class="col-sm-2 control-label" for="input-code_company{{ address_row }}">{{ entry_code_company }}</label>
+                        <div class="col-sm-10">
+                          <input type="text" name="address[{{ address_row }}][code_company]" value="{{ address.code_company }}" placeholder="{{ entry_code_company }}" id="input-code_company{{ address_row }}" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="form-group">
                         <label class="col-sm-2 control-label" for="input-company{{ address_row }}">{{ entry_company }}</label>
                         <div class="col-sm-10">
                           <input type="text" name="address[{{ address_row }}][company]" value="{{ address.company }}" placeholder="{{ entry_company }}" id="input-company{{ address_row }}" class="form-control" />
@@ -947,7 +953,13 @@
     html += '    <div class="col-sm-10"><input type="text" name="address[' + address_row + '][lastname]" value="" placeholder="{{ entry_lastname }}" id="input-lastname' + address_row + '" class="form-control" /></div>';
     html += '  </div>';
 
-    html += '  <div class="form-group">';
+      html += '  <div class="form-group">';
+      html += '    <label class="col-sm-2 control-label" for="input-code_company' + address_row + '">{{ entry_code_company }}</label>';
+      html += '    <div class="col-sm-10"><input type="text" name="address[' + address_row + '][code_company]" value="" placeholder="{{ entry_code_company }}" id="input-code_company' + address_row + '" class="form-control" /></div>';
+      html += '  </div>';
+
+
+      html += '  <div class="form-group">';
     html += '    <label class="col-sm-2 control-label" for="input-company' + address_row + '">{{ entry_company }}</label>';
     html += '    <div class="col-sm-10"><input type="text" name="address[' + address_row + '][company]" value="" placeholder="{{ entry_company }}" id="input-company' + address_row + '" class="form-control" /></div>';
     html += '  </div>';

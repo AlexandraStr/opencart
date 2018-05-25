@@ -130,6 +130,8 @@ class ControllerProductSearch extends Controller {
 		} else {
 			$data['heading_title'] = $this->language->get('heading_title');
 		}
+		
+		$data['text_empty'] = $this->language->get('text_empty');
 
 		$data['text_compare'] = sprintf($this->language->get('text_compare'), (isset($this->session->data['compare']) ? count($this->session->data['compare']) : 0));
 

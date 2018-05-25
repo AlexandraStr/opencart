@@ -51,7 +51,10 @@ class ModelUserUser extends Model {
 	}
 
 	public function getUsers($data = array()) {
-		$sql = "SELECT * FROM `" . DB_PREFIX . "user`";
+
+	    $user_chief_admin_id = 1;
+
+		$sql = "SELECT * FROM `" . DB_PREFIX . "user` WHERE user_id <> '". (int)$user_chief_admin_id . "'";
 
 		$sort_data = array(
 			'username',

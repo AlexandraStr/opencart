@@ -67,6 +67,10 @@ class ControllerAccountAccount extends Controller {
 		$data['newsletter'] = $this->url->link('account/newsletter', '', true);
 		$data['recurring'] = $this->url->link('account/recurring', '', true);
 		
+		$this->load->model('account/wishlist');
+
+		$data['text_wishlist'] = sprintf($this->language->get('text_wishlist'), $this->model_account_wishlist->getTotalWishlist());
+		
 		$this->load->model('account/customer');
 		
 		$affiliate_info = $this->model_account_customer->getAffiliate($this->customer->getId());

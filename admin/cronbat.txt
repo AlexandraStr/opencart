@@ -1,3 +1,0 @@
-
-*/5 *  * * * /usr/bin/php /Applications/XAMPP/xamppfiles/htdocs/opencart/admin/cron.php > /Applications/XAMPP/xamppfiles/htdocs/opencart/admin/log.html
-

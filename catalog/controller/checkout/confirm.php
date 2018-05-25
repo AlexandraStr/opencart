@@ -25,7 +25,7 @@ class ControllerCheckoutConfirm extends Controller {
 		}
 
 		// Validate if payment method has been set.
-    		if (!isset($this->session->data['payment_method'])) {
+		if (!isset($this->session->data['payment_method'])) {
 			$redirect = $this->url->link('checkout/checkout', '', true);
 		}
 

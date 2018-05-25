@@ -34,6 +34,7 @@ class ControllerCommonHeader extends Controller {
 		$data['scripts'] = $this->document->getScripts('header');
 		$data['lang'] = $this->language->get('code');
 		$data['direction'] = $this->language->get('direction');
+		
 
 		$data['name'] = $this->config->get('config_name');
 
@@ -44,6 +45,8 @@ class ControllerCommonHeader extends Controller {
 		}
 
 		$this->load->language('common/header');
+		
+		$data['text_site'] = $this->language->get('text_site');
 
 		// Wishlist
 		if ($this->customer->isLogged()) {

@@ -2,8 +2,8 @@
 // Version
 define('VERSION', '3.0.2.0');
 
-$path_parts = pathinfo($_SERVER['SCRIPT_FILENAME']); // определяем директорию скрипта
-chdir($path_parts['dirname']);
+ $path_parts = pathinfo($_SERVER['SCRIPT_FILENAME']); // определяем директорию скрипта
+ chdir($path_parts['dirname']);
 
 // Configuration
 if (is_file('config.php')) {

@@ -148,9 +148,6 @@ $(document).ready(function() {
 // Cart add remove functions
 var cart = {
 	'add': function(product_id, quantity) {
-
-		console.log('Quantity: ' + quantity);
-
 		$.ajax({
 			url: 'index.php?route=checkout/cart/add',
 			type: 'post',
@@ -164,6 +161,7 @@ var cart = {
 			},
 			success: function(json) {
 				$('.alert-dismissible, .text-danger').remove();
+
 				if (json['redirect']) {
 					location = json['redirect'];
 				}

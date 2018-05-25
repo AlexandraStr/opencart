@@ -3,7 +3,8 @@ class ControllerCheckoutCart extends Controller {
 	public function index() {
 		$this->load->language('checkout/cart');
 
-		$this->document->setTitle($this->language->get('heading_title'));
+	//	$this->document->setTitle($this->language->get('heading_title'));
+	    $data['heading_title'] = $this->language->get('heading_title');
 
 		$data['breadcrumbs'] = array();
 
@@ -44,19 +45,18 @@ class ControllerCheckoutCart extends Controller {
 
 			$data['action'] = $this->url->link('checkout/cart/edit', '', true);
 
-			if ($this->config->get('config_cart_weight')) {
-				$data['weight'] = $this->weight->format($this->cart->getWeight(), $this->config->get('config_weight_class_id'), $this->language->get('decimal_point'), $this->language->get('thousand_point'));
-			} else {
+		//	if ($this->config->get('config_cart_weight')) {
+		//		$data['weight'] = $this->weight->format($this->cart->getWeight(), $this->config->get('config_weight_class_id'), $this->language->get('decimal_point'), $this->language->get('thousand_point'));
+	//		} else {
 				$data['weight'] = '';
-			}
+		//	}
 
 			$this->load->model('tool/image');
 			$this->load->model('tool/upload');
 
 			$data['products'] = array();
-//--------------------19.10---------------------------------
-			$products = $this->cart->getProducts('manual');
-//--------------------19.10---------------------------------
+
+			$products = $this->cart->getProducts();
 
 			foreach ($products as $product) {
 				$product_total = 0;

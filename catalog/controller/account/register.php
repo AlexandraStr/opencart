@@ -9,7 +9,8 @@ class ControllerAccountRegister extends Controller {
 
 		$this->load->language('account/register');
 
-		$this->document->setTitle($this->language->get('heading_title'));
+	//	$this->document->setTitle($this->language->get('heading_title'));
+	    $data['heading_title'] = $this->language->get('heading_title'); 
 
 		$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment/moment.min.js');
 		$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment/moment-with-locales.min.js');

@@ -97,7 +97,7 @@ class Twig_Environment
         }
 
         $options = array_merge(array(
-            'debug' => true,
+            'debug' => false,
             'charset' => 'UTF-8',
             'base_template_class' => 'Twig_Template',
             'strict_variables' => false,

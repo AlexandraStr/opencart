@@ -22,15 +22,3 @@ $_['text_rating_desc']  = 'Rating (Highest)';
 $_['text_model_asc']    = 'Model (A - Z)';
 $_['text_model_desc']   = 'Model (Z - A)';
 $_['text_limit']        = 'Show:';
-$_['text_minimum']      = 'This product has a minimum quantity of %s';
-
-//Table Columns
-$_['column_number']     	= 'No.';
-$_['column_image']      	= 'Image';
-$_['column_name']       	= 'Name';
-$_['column_model']      	= 'Model';
-$_['column_rating']      	= 'Rating';
-$_['column_price']      	= 'Price';
-$_['column_stock']      	= 'Stock';
-$_['column_qty']        	= 'Qty';
-$_['column_action']     	= 'Action';

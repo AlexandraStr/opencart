@@ -1,9 +1,9 @@
 <?php
 // Text
 $_['text_search']              = 'Поиск';
-$_['text_brand']               = 'Производитель';
+$_['text_brand']               = 'Бренд';
 $_['text_manufacturer']        = 'Производитель:';
-$_['text_model']               = 'Модель:';
+$_['text_model']               = 'Код товара по каталогу:';
 $_['text_reward']              = 'Бонусные баллы:';
 $_['text_points']              = 'Цена в бонусных баллах:';
 $_['text_stock']               = 'Наличие:';

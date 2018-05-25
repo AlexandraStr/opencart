@@ -12,7 +12,7 @@
     {% set code = quote.code %}
     <input type="radio" name="shipping_method" value="{{ quote.code }}" checked="checked" />
     {% else %}
-      <input type="radio" name="shipping_method" value="{{ quote.code }}" checked="checked" />
+    <input type="radio" name="shipping_method" value="{{ quote.code }}" />
     {% endif %}
     {{ quote.title }} - {{ quote.text }}</label>
 </div>

@@ -6,6 +6,8 @@ class ControllerInformationContact extends Controller {
 		$this->load->language('information/contact');
 
 		$this->document->setTitle($this->language->get('heading_title'));
+		$data['heading_title'] = $this->language->get('heading_title');
+		$data['text_agree'] = $this->language->get('text_agree');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			$mail = new Mail($this->config->get('config_mail_engine'));
@@ -77,6 +79,11 @@ class ControllerInformationContact extends Controller {
 		$data['fax'] = $this->config->get('config_fax');
 		$data['open'] = nl2br($this->config->get('config_open'));
 		$data['comment'] = $this->config->get('config_comment');
+
+			$this->load->model('catalog/information');
+			$information_info = $this->model_catalog_information->getInformation($this->config->get('config_account_id'));
+			$data['text_agree'] = sprintf($this->language->get('text_agree'), $this->url->link('information/information/agree', 'information_id=' . $this->config->get('config_account_id'), true), $information_info['title'], $information_info['title']);
+		
 
 		$data['locations'] = array();
 

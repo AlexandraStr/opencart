@@ -136,11 +136,67 @@ class ControllerLocalisationCurrency extends Controller {
 				$url .= '&page=' . $this->request->get['page'];
 			}
 
-			//$this->response->redirect($this->url->link('localisation/currency', 'user_token=' . $this->session->data['user_token'] . $url, true));
+			$this->response->redirect($this->url->link('localisation/currency', 'user_token=' . $this->session->data['user_token'] . $url, true));
 		}
 
 		$this->getList();
 	}
+	
+	
+     public function updateCron()
+    {
+        $currencies = array();
+
+        $file_log = DIR_EXPORT . "logcurr.txt";
+
+        if (file_exists($file_log)) {
+            unlink($file_log);
+        }
+
+        $default = 'USD';
+
+        $this->load->model('localisation/currency');
+
+        $datenow = date("F j, Y, g:i a");
+
+
+            $curl = curl_init();
+
+            curl_setopt($curl, CURLOPT_URL, 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json');
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($curl, CURLOPT_HEADER, false);
+            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 30);
+            curl_setopt($curl, CURLOPT_TIMEOUT, 30);
+
+            $response = curl_exec($curl);
+
+            curl_close($curl);
+
+            $response_info = json_decode($response, true);
+
+            $fp = fopen($file_log, "w"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту),мы создаем файл
+
+            fwrite($fp, 'Update currency has been started...');
+
+
+            foreach ($response_info as $value) {
+                if (!empty($value['rate']) AND $value['cc'] == $default) {
+                    $valcurrency = $value['rate'];
+
+                    $this->model_localisation_currency->editValueByCode('UAH', $value['rate']);
+                }
+            }
+
+            fwrite($fp, 'Update completed ' . $datenow);
+
+            $this->cache->delete('currency');
+
+        fclose($fp);
+
+        $this->model_localisation_currency->editValueByCode($default, '1.00000');
+    }
+
 
 	protected function getList() {
 		if (isset($this->request->get['sort'])) {

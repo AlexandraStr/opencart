@@ -2,6 +2,8 @@
 class ControllerCommonFooter extends Controller {
 	public function index() {
 		$this->load->language('common/footer');
+		
+		$data['text_site'] = $this->language->get('text_site');
 
 		$this->load->model('catalog/information');
 
@@ -30,6 +32,12 @@ class ControllerCommonFooter extends Controller {
 		$data['newsletter'] = $this->url->link('account/newsletter', '', true);
 
 		$data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+
+		$data['telephone'] = $this->config->get('config_telephone');
+        $data['fax'] = $this->config->get('config_fax');
+        $data['email'] = $this->config->get('config_email');
+        $data['address'] = $this->config->get('config_address');
+        $data['owner'] = $this->config->get('config_owner');
 
 		// Whos Online
 		if ($this->config->get('config_customer_online')) {

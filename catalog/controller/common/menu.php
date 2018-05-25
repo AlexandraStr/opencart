@@ -9,6 +9,8 @@ class ControllerCommonMenu extends Controller {
 		$this->load->model('catalog/product');
 
 		$data['categories'] = array();
+		$data['text_price'] = $this->language->get('text_price');
+		$data['text_price_list'] = $this->language->get('text_price_list');
 
 		$categories = $this->model_catalog_category->getCategories(0);
 
@@ -26,7 +28,8 @@ class ControllerCommonMenu extends Controller {
 					);
 
 					$children_data[] = array(
-						'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+			//			'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts ($filter_data) . ')' : ''),
+			            'name'  => $child['name'],
 						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
 					);
 				}

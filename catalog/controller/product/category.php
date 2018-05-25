@@ -333,6 +333,8 @@ class ControllerProductCategory extends Controller {
 			$pagination->page = $page;
 			$pagination->limit = $limit;
 			$pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
+			
+
 
 			$data['pagination'] = $pagination->render();
 
@@ -365,7 +367,7 @@ class ControllerProductCategory extends Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
-
+          
 
 			$this->response->setOutput($this->load->view('product/category', $data));
 		} else {

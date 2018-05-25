@@ -13,7 +13,7 @@ $_['text_i_am_returning_customer'] = 'Войти в Личный Кабинет'
 $_['text_forgotten']               = 'Забыли пароль?';
 
 // Entry
-$_['entry_email']                  = 'E-Mail';
+$_['entry_email']                  = 'E-Mail (логин)';
 $_['entry_password']               = 'Пароль';
 
 // Error

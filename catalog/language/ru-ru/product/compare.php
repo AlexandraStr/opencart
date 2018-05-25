@@ -4,10 +4,10 @@ $_['heading_title']     = 'Сравнение товаров';
 
 // Text
 $_['text_product']      = 'Описание';
-$_['text_name']         = 'Товар';
+$_['text_name']         = 'Наименование товара';
 $_['text_image']        = 'Изображение';
-$_['text_price']        = 'Цена';
-$_['text_model']        = 'Модель';
+$_['text_price']        = 'Цена в грн (с НДС)';
+$_['text_model']        = 'Код товара по каталогу';
 $_['text_manufacturer'] = 'Производитель';
 $_['text_availability'] = 'Наличие';
 $_['text_instock']      = 'Есть на складе';

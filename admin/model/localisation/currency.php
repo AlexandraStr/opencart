@@ -19,6 +19,13 @@ class ModelLocalisationCurrency extends Model {
 
 		$this->cache->delete('currency');
 	}
+	
+	public function editValueByCode($code, $value) {
+        $this->db->query("UPDATE " . DB_PREFIX . "currency SET value = '" . (float)$value . "', date_modified = NOW() WHERE code = '" . $this->db->escape((string)$code) . "'");
+
+        $this->cache->delete('currency');
+    }
+
 
 	public function deleteCurrency($currency_id) {
 		$this->db->query("DELETE FROM " . DB_PREFIX . "currency WHERE currency_id = '" . (int)$currency_id . "'");
@@ -105,8 +112,9 @@ class ModelLocalisationCurrency extends Model {
 		}
 	}
 
-	public function refresh($force = false) {
+   public function refresh($force = false) {
 		$currency_data = array();
+		$default_currency = $this->config->get('config_currency');
 
 		if ($force) {
 			$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "currency WHERE code != '" . $this->db->escape($this->config->get('config_currency')) . "'");
@@ -121,7 +129,7 @@ class ModelLocalisationCurrency extends Model {
 
 		$curl = curl_init();
 
-		curl_setopt($curl, CURLOPT_URL, 'http://download.finance.yahoo.com/d/quotes.csv?s=' . implode(',', $currency_data) . '&f=sl1&e=.json');
+		curl_setopt($curl, CURLOPT_URL, 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json');
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($curl, CURLOPT_HEADER, false);
 		curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 30);
@@ -131,25 +139,23 @@ class ModelLocalisationCurrency extends Model {
 		
 		curl_close($curl);
 
-		$line = explode("\n", trim($content));
+        $currency_info = json_decode($content, true);
 
-		for ($i = 0; $i < count($line); $i = $i + 2) {
-			$currency = utf8_substr($line[$i], 4, 3);
-			$value = utf8_substr($line[$i], 11, 6);
-			
-			if ((float)$value < 1 && isset($line[$i + 1])) {
-				$value = (1 / utf8_substr($line[$i + 1], 11, 6));
-			}	
+        foreach ($currency_info as $value) {
+            if ( !empty($value['rate']) AND $value['cc'] == $default_currency) {
+                $this->db->query("UPDATE " . DB_PREFIX . "currency SET value = '" . (float)$value['rate'] . "', date_modified = '" . $this->db->escape(date('Y-m-d H:i:s')) . "' WHERE code = 'UAH'");
+
+
+            }
+        }
 						
-			if ((float)$value) {
-				$this->db->query("UPDATE " . DB_PREFIX . "currency SET value = '" . (float)$value . "', date_modified = '" .  $this->db->escape(date('Y-m-d H:i:s')) . "' WHERE code = '" . $this->db->escape($currency) . "'");
-			}
-		}
+
 
 		$this->db->query("UPDATE " . DB_PREFIX . "currency SET value = '1.00000', date_modified = '" .  $this->db->escape(date('Y-m-d H:i:s')) . "' WHERE code = '" . $this->db->escape($this->config->get('config_currency')) . "'");
 
 		$this->cache->delete('currency');
 	}
+
 
 	public function getTotalCurrencies() {
 		$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "currency");

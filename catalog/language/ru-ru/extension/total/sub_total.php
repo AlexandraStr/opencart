@@ -1,3 +1,3 @@
 <?php
 // Text
-$_['text_sub_total'] = 'Сумма';
+$_['text_sub_total'] = 'Сумма грн (с НДС)';

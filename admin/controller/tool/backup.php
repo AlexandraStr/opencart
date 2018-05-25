@@ -157,5 +157,37 @@ class ControllerToolBackup extends Controller {
 
 			$this->response->setOutput($this->model_tool_backup->backup($this->request->post['backup']));		
 		}
-	}	
+	}
+	
+	 public function backup_cron() {
+
+        $datenow = date("Y-m-d");
+
+        $this->load->model('tool/backup');
+
+        $tables = $this->model_tool_backup->getTables();
+
+        $this->load->model('io/file/writter');
+        /** @var ModelIoFileWritter $exportWritter */
+        $exportWritter = $this->registry->get('model_io_file_writter');
+
+        $this->load->model('io/file/logger');
+        /** @var ModelIoFileLogger $logWritter */
+        $logWritter = $this->registry->get('model_io_file_logger')->getInstance();
+
+        $logWritter->setLogFileName(DIR_BACKUP. "logfile.txt");
+
+
+        $logWritter->write('Backup has been started...');
+
+
+
+        $exportWritter->open(DIR_BACKUP.DB_DATABASE."_".$datenow.'.sql')
+            ->write($this->model_tool_backup->backup($tables))
+            ->close();
+
+        $logWritter->write('Backup  completed');
+
+        }
+
 }

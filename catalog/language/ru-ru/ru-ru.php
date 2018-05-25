@@ -46,6 +46,7 @@ $_['button_reorder']        = 'Дополнительный заказ';
 $_['button_return']         = 'Вернуть';
 $_['button_shopping']       = 'Продолжить покупки';
 $_['button_search']         = 'Поиск';
+$_['button_reset']          = 'Очистить';
 $_['button_shipping']       = 'Применить Доставку';
 $_['button_submit']         = 'Применить';
 $_['button_guest']          = 'Оформление заказа без регистрации';
@@ -56,7 +57,6 @@ $_['button_reward']         = 'Применить бонусные баллы';
 $_['button_quote']          = 'Узнать цены';
 $_['button_list']           = 'Список';
 $_['button_grid']           = 'Сетка';
-$_['button_price']          = 'Прайс лист';
 $_['button_map']            = 'Посмотреть карту';
 
 // Error

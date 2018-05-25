@@ -69,6 +69,7 @@
               <td class="text-center"><h5>{{ text_image }}</h5></td>
               <td class="text-center prod"><h5>{{ text_product }}</h5></td>
               <td class="text-center"><h5>{{ text_model }}</h5></td>
+              <td class="text-center quant"><h5>{{ text_manufacturer }}</h5></td>
               <td class="text-center"><h5>{{ text_description }}</h5></td>
               <td class="text-center quant"><h5>{{ text_price }}</h5></td>
               <td class="text-center quant"><h5>{{ text_quantity }}</h5></td>
@@ -83,6 +84,7 @@
                     <td class="text-center">{% if product.image %} <img src="{{ product.image }}" alt="{{ product.name }}" class="img-thumbnail" /> {% else %} <span class="img-thumbnail list"><i class="fa fa-bus fa-5x"></i></span> {% endif %}</td>
                     <td class="text-left">{% if product.quantity > 0 %}<a href="{{ product.href }}">{{ product.name }}</a>{% else %}{{ product.name }} {% endif %}</td>
                     <td class="text-left">{% if product.quantity > 0 %}<a href="{{ product.href }}">{{ product.model }}</a>{% else %}{{ product.model }}{% endif %}</td>
+                    <td class="text-left">{{ product.manufacturer }}</td>
                     <td class="text-left">
                         {% if product.description is empty %}
                             {{ text_empty_description }}

@@ -22,6 +22,7 @@ $_['entry_name']        = 'Производитель';
 $_['entry_store']       = 'Магазины';
 $_['entry_keyword']     = 'SEO URL';
 $_['entry_image']       = 'Изображение';
+$_['entry_description']  = 'Описание';
 $_['entry_sort_order']  = 'Порядок сортировки';
 $_['entry_type']        = 'Тип';
 

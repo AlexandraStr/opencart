@@ -8,6 +8,13 @@ class ModelCatalogManufacturer extends Model {
 		if (isset($data['image'])) {
 			$this->db->query("UPDATE " . DB_PREFIX . "manufacturer SET image = '" . $this->db->escape($data['image']) . "' WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
 		}
+        if (isset($data['description'])) {
+            foreach ($data['description'] as $language_id => $value) {
+                if (!empty($value)) {
+                    $this->db->query("INSERT INTO " . DB_PREFIX . "manufacturer_description SET description = '" . $this->db->escape($value) . "',manufacturer_id = '" . (int)$manufacturer_id . "',  language_id = '" . (int)$language_id . "'");
+                }
+            }
+        }
 
 		if (isset($data['manufacturer_store'])) {
 			foreach ($data['manufacturer_store'] as $store_id) {
@@ -46,6 +53,16 @@ class ModelCatalogManufacturer extends Model {
 			}
 		}
 
+        $this->db->query("DELETE FROM `" . DB_PREFIX . "manufacturer_description` WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+
+        if (isset($data['description'])) {
+            foreach ($data['description'] as $language_id => $value) {
+                if (!empty($value)) {
+                    $this->db->query("INSERT INTO " . DB_PREFIX . "manufacturer_description SET description = '" . $this->db->escape($value) . "',manufacturer_id = '" . (int)$manufacturer_id . "',  language_id = '" . (int)$language_id . "'");
+                }
+            }
+        }
+
 		$this->db->query("DELETE FROM `" . DB_PREFIX . "seo_url` WHERE query = 'manufacturer_id=" . (int)$manufacturer_id . "'");
 
 		if (isset($data['manufacturer_seo_url'])) {
@@ -70,7 +87,7 @@ class ModelCatalogManufacturer extends Model {
 	}
 
 	public function getManufacturer($manufacturer_id) {
-		$query = $this->db->query("SELECT DISTINCT * FROM " . DB_PREFIX . "manufacturer WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+		$query = $this->db->query("SELECT DISTINCT *,md.description as description FROM " . DB_PREFIX . "manufacturer m LEFT JOIN " . DB_PREFIX . "manufacturer_description md ON (m.manufacturer_id = md.manufacturer_id) WHERE m.manufacturer_id = '" . (int)$manufacturer_id . "' AND md.language_id = '" . (int)$this->config->get('config_language_id') . "'");
 
 		return $query->row;
 	}
@@ -127,6 +144,18 @@ class ModelCatalogManufacturer extends Model {
 
 		return $manufacturer_store_data;
 	}
+
+    public function getManufacturerDescription($manufacturer_id) {
+        $manufacturer_description = array();
+
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "manufacturer_description WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+
+        foreach ($query->rows as $result) {
+            $manufacturer_description[$result['language_id']] = $result['description'];
+        }
+
+        return $manufacturer_description;
+    }
 	
 	public function getManufacturerSeoUrls($manufacturer_id) {
 		$manufacturer_seo_url_data = array();

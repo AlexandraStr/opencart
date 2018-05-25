@@ -44,6 +44,10 @@ class ControllerProductCompare extends Controller {
 		} else {
 			$data['success'] = '';
 		}
+		
+		$data['heading_title'] = $this->language->get('heading_title');
+		
+		$data['text_empty'] = $this->language->get('text_empty');
 
 		$data['review_status'] = $this->config->get('config_review_status');
 

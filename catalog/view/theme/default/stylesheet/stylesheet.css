@@ -565,6 +565,14 @@ footer h5 {
 .product-list .product-thumb .caption {
 	margin-left: 230px;
 }
+
+.manufacturer{
+	margin-bottom: 2px;
+	border: 2px solid #618721;
+
+}
+
+
 @media (max-width: 1200px) {
 .product-grid .product-thumb .caption {
 	min-height: 210px;

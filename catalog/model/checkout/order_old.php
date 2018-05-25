@@ -180,6 +180,7 @@ class ModelCheckoutOrder extends Model {
 				'custom_field'            => json_decode($order_query->row['custom_field'], true),
 				'payment_firstname'       => $order_query->row['payment_firstname'],
 				'payment_lastname'        => $order_query->row['payment_lastname'],
+				'payment_code_company'    => $order_query->row['payment_code_company'],
 				'payment_company'         => $order_query->row['payment_company'],
 				'payment_address_1'       => $order_query->row['payment_address_1'],
 				'payment_address_2'       => $order_query->row['payment_address_2'],

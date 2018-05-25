@@ -54,6 +54,7 @@ $_['entry_approved']            = 'Одобрен';
 $_['entry_safe']                = 'Безопасный';
 $_['entry_password']            = 'Пароль';
 $_['entry_confirm']             = 'Подтвердите пароль';
+$_['entry_code_company']        = 'ЕДРПО ';
 $_['entry_company']             = 'Компания';
 $_['entry_address_1']           = 'Адрес 1';
 $_['entry_address_2']           = 'Адрес 2';

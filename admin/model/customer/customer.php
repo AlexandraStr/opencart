@@ -195,6 +195,7 @@ class ModelCustomerCustomer extends Model {
 				'customer_id'    => $address_query->row['customer_id'],
 				'firstname'      => $address_query->row['firstname'],
 				'lastname'       => $address_query->row['lastname'],
+                'code_company'   => $address_query->row['code_company'],
 				'company'        => $address_query->row['company'],
 				'address_1'      => $address_query->row['address_1'],
 				'address_2'      => $address_query->row['address_2'],

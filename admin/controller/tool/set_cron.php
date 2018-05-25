@@ -79,6 +79,7 @@ class ControllerToolSetCron extends Controller
             $data['cron_values'][] = array(
                 'task_id' => $result['task_id'],
                 'task_name' => $result['task_name'],
+                'task_title' => $result['task_title'],
                 'day_begin' => $result['day_begin'],
                 'day_end' => $result['day_end'],
                 'time_begin' => $result['time_begin'],
@@ -294,6 +295,7 @@ class ControllerToolSetCron extends Controller
             $data['cron_values'] = array(
                 'task_id' => $task_info['task_id'],
                 'task_name' => $task_info['task_name'],
+                'task_title' => $task_info['task_title'],
                 'day_begin' => $task_info['day_begin'],
                 'day_end' => $task_info['day_end'],
                 'time_begin' => $task_info['time_begin'],
@@ -324,6 +326,7 @@ class ControllerToolSetCron extends Controller
               $data['cron_values'] = array(
                   'task_id' => $output['task_id'],
                   'task_name' => $output['task_name'],
+                  'task_title' => $output['task_title'],
                   'day_begin' => $output['day_begin'],
                   'day_end' => $output['day_end'],
                   'time_begin' => $output['time_begin'],

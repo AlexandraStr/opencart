@@ -92,18 +92,19 @@
             <h5>{{ text_return }}</h5>
           </a>
         </div>
-        <div class="col-md-3 text-center" >
+     <!--   <div class="col-md-3 text-center" >
           <a class="hvr" href="{{ transaction }}">
             <img src="catalog/view/theme/default/image/account-images/trans.png" alt="Transactions" >
             <h5>{{ text_transaction }}</h5>
           </a>
-        </div>
-        <div class="col-md-3 text-center" >
-          <a class="hvr" href="{{ recurring }}">
+        </div>  -->
+     <div class="col-md-3 text-center" >
+     <!--    <a class="hvr" href="{{ recurring }}">
             <img src="catalog/view/theme/default/image/account-images/payments.png" alt="Recurring Payments" >
             <h5>{{ text_recurring }}</h5>
-          </a>
-        </div><div class="clearfix"></div>
+          </a> -->
+        </div> 
+        <div class="clearfix"></div>
       </ul>
       <h3>{{ text_my_affiliate }}</h3>
       <ul class="list-unstyled">
@@ -113,7 +114,7 @@
             <img src="catalog/view/theme/default/image/account-images/contact1.png" alt="Recurring Payments" >
             <h5>{{ text_affiliate_add }}</h5>
           </a>
-        </div>
+     </div>
         {% else %}
           <div class="col-md-3 text-center" >
             <a class="hvr" href="{{ affiliate }}">
@@ -128,9 +129,9 @@
             </a>
           </div>
         {% endif %}
-      </ul>
+     </ul>
 
-      <ul class="list-unstyled">
+  <!--    <ul class="list-unstyled"> 
         <div class="col-md-3 text-right" >
           <h3>{{ text_my_newsletter }}</h3>
           <a class="hvr" href="{{ newsletter }}">
@@ -138,7 +139,7 @@
             <h5>{{ text_newsletter }}</h5>
           </a>
         </div>
-      </ul>
+      </ul>  -->
       {{ content_bottom }}</div>
     {{ column_right }}</div>
 </div>

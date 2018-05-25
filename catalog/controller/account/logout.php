@@ -22,7 +22,7 @@ class ControllerAccountLogout extends Controller {
 
 		$this->load->language('account/logout');
 
-		$this->document->setTitle($this->language->get('heading_title'));
+	//	$this->document->setTitle($this->language->get('heading_title'));
 
 		$data['breadcrumbs'] = array();
 
@@ -41,6 +41,7 @@ class ControllerAccountLogout extends Controller {
 			'href' => $this->url->link('account/logout', '', true)
 		);
 
+        $data['heading_title'] = $this->language->get('heading_title');
 		$data['continue'] = $this->url->link('common/home');
 
 		$data['column_left'] = $this->load->controller('common/column_left');

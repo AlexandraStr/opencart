@@ -7,18 +7,18 @@ class Printing extends FPDF
         $this->Cell(30);
         $this->SetFont('Tahoma-Bold', '', 10); // задаем шрифт, и размер шрифта
         $this->Cell(30,10,mb_convert_encoding("Постачальник :","cp1251","utf-8"));
-        $this->Cell(30, 10, mb_convert_encoding($owner['config_owner'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим название компании
+        $this->Cell(30, 10, mb_convert_encoding($owner['name'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим название компании
         $this->SetFont('Tahoma', '', 10);
-        $this->Cell(70, 4, mb_convert_encoding($owner['config_address'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим адрес компании
+        $this->Cell(70, 4, mb_convert_encoding($owner['adress'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим адрес компании
         $this->SetFont('Tahoma', '', 8);
         $this->Cell(70, 4, mb_convert_encoding($owner['pdv'], "cp1251", "utf-8"), 0, 10, 'L', 0);
         $this->SetFont('Tahoma', '', 10);
-        $this->Cell(40, 4, mb_convert_encoding($owner['config_comment'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим адрес компании
-        $this->Cell(40, 4, mb_convert_encoding($owner['config_telephone'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим телeфон компании
+        $this->Cell(40, 4, mb_convert_encoding($owner['count'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим адрес компании
+        $this->Cell(40, 4, mb_convert_encoding($owner['phone'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим телeфон компании
         $this->Cell(40, 4, mb_convert_encoding($company_site, "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим адрес сайта компании
         $this->ln(5);
         $this->Cell(30,10,mb_convert_encoding("Одержувач :","cp1251","utf-8"));
-        $this->Cell(70, 4, mb_convert_encoding($customer['name'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим название компании
+        $this->Cell(40, 4, mb_convert_encoding($customer['company'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим ЕДРПО компании
         $this->Cell(40, 4, mb_convert_encoding($customer['fio'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим ФИО
         $this->Cell(40, 4, mb_convert_encoding($customer['telephone'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим телeфон компании
         $this->Cell(40, 4, mb_convert_encoding($customer['email'], "cp1251", "utf-8"), 0, 10, 'L', 0); // выводим email компании
@@ -33,7 +33,7 @@ class Printing extends FPDF
 
     function OutputTable($header,$data)
     {
-        $w = array(10, 30, 70, 10, 30, 20, 20); // Массив с шириной столбцов
+        $w = array(10, 35, 60, 10, 35, 20, 20); // Массив с шириной столбцов
         $this->SetFont('Tahoma', '', 10);
         for ($i = 0; $i < count($header); $i++) {
             $this->Cell($w[$i], 7, mb_convert_encoding($header[$i], "cp1251", "utf-8"), 1, 0, 'C', true);
@@ -63,19 +63,23 @@ class Printing extends FPDF
             $this->Cell($w[3], $height, mb_convert_encoding("шт.", "cp1251", "utf-8"), 1, 0, 'L', $fill);
             $current_X = $current_X + $w[3];
             $this->SetXY($current_X, $start_y);
-            $this->Cell($w[4], $height, (float)$row['price'], 1, 0, 'R', $fill);
+            $this->Cell($w[4], $height,number_format($row['price'], 2, '.', ' '), 1, 0, 'R', $fill);
             $current_X = $current_X + $w[4];
             $this->SetXY($current_X, $start_y);
             $this->Cell($w[5], $height, (int)$row['quantity'], 1, 0, 'R', $fill);
             $current_X = $current_X + $w[5];
             $this->SetXY($current_X, $start_y);
-            $this->Cell($w[6], $height, (float)$row['total'], 1, 0, 'R', $fill);
+            $this->Cell($w[6], $height, number_format($row['total'], 2, '.', ' '), 1, 0, 'R', $fill);
             $this->ln();
             $nom = $nom + 1;
-            $tax_sum = (float)$tax_sum + $row['tax']/100*(float)$row['price'];
-            $total_sum = (float)$total_sum + (float)$row['price'];
+            $tax_sum = $tax_sum + $row['price']/6;
+           // $tax_sum = (float)$tax_sum + $row['tax']/100*(float)$row['price'];
+            $total_sum = $total_sum + ($row['price']-$tax_sum);
         }
-        $all_sum = $total_sum + $tax_sum;
+        $tax_sum = number_format($tax_sum, 2, '.', ' ');
+        $total_sum = number_format($total_sum,2, '.', ' ');
+        $all_sum = number_format($total_sum+$tax_sum,2, '.', ' ');
+        
 
         $this->ln(10);
         $this->Cell(100);
@@ -84,7 +88,7 @@ class Printing extends FPDF
         $this->Cell(100);
         $this->Cell(70, 5, mb_convert_encoding("ПДВ :              ".$tax_sum." грн.", "cp1251", "utf-8"), 'B', 0, 'L', 0);
         $this->ln();
-        $this->Cell(70, 5, mb_convert_encoding("Всього до сплати :   ".$all_sum." грн.", "cp1251", "utf-8"), 'B', 0, 'L', 0);
+        $this->Cell(70, 5, mb_convert_encoding("Всього до сплати(з ПДВ) :   ".$all_sum." грн.", "cp1251", "utf-8"), 'B', 0, 'L', 0);
         $this->ln();
     }
 

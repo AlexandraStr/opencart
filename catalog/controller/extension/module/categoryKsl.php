@@ -26,7 +26,7 @@ class ControllerExtensionModuleCategoryKsl extends Controller {
 		$data['categories'] = array();
 		$categories = $this->model_catalog_category->getCategories(0);
 
-		//Загружаем модель которая работает с таблицей настроек модулей (setting)
+		//Загружаем модель которая работает с таблицей настроек модулей (oc_setting)
 		$this->load->model('setting/setting');
 
 		//Получаем значение - показывать ли изображения

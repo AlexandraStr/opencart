@@ -18,6 +18,9 @@
       <h2>{{ ext_success }}</h2>
 
       <div class="table-responsive">
+          
+        {% if products %}
+        
         <table class="table table-bordered table-hover">
           <thead>
           <tr>
@@ -26,7 +29,7 @@
             <td class="text-left">{{ column_category }}</td>
             <td class="text-right">{{ column_quantity }}</td>
             <td class="text-right">{{ column_price }}</td>
-            <td class="text-right">{{ column_total }}</td>
+        <!--    <td class="text-right">{{ column_total }}</td> . -->
           </tr>
           </thead>
           <tbody>
@@ -41,7 +44,7 @@
               <td class="text-left">{{ product.category }}</td>
               <td class="text-right">{{ product.quantity }}</td>
               <td class="text-right">{{ product.price }}</td>
-              <td class="text-right">{{ product.total }}</td>
+          <!--    <td class="text-right">{{ product.total }}</td> -->
             </tr>
           {% endfor %}
 
@@ -49,15 +52,21 @@
 
           <tfoot>
 
-          {% for total in totals %}
+     <!--    {% for total in totals %}
             <tr>
               <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
               <td class="text-right">{{ total.text }}</td>
             </tr>
-          {% endfor %}
+          {% endfor %}  -->
+         <tr>
+              <td colspan="4" class="text-right"><strong>{{ column_total }}:</strong></td>
+              <td class="text-right">{{ order.order_total }}</td>
+          </tr> 
+          
           </tfoot>
 
         </table>
+        {% endif %}
       </div>
       {{ text_message }}
       <div class="buttons">

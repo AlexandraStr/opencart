@@ -22,8 +22,7 @@ class ControllerCheckoutShippingMethod extends Controller {
 							'title'      => $quote['title'],
 							'quote'      => $quote['quote'],
 							'sort_order' => $quote['sort_order'],
-						//	'error'      => $quote['error']
-                            'error'      => '0'
+							'error'      => $quote['error']
 						);
 					}
 				}

@@ -29,10 +29,10 @@
     {% set class = 'col-sm-12' %}
     {% endif %}
     <div id="content" class="{{ class }}">{{ content_top }}
-      <h1>{{ heading_title }}
+      <h2>{{ heading_title }}
         {% if weight %}
         &nbsp;({{ weight }})
-        {% endif %} </h1>
+        {% endif %} </h2>
       <form action="{{ action }}" method="post" enctype="multipart/form-data">
         <div class="table-responsive">
           <table class="table table-bordered">

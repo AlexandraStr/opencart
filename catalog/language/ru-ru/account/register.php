@@ -15,7 +15,7 @@ $_['text_agree']           = 'Я прочитал <a href="%s" class="agree"><b>
 $_['entry_customer_group'] = 'Направление бизнеса';
 $_['entry_firstname']      = 'Имя';
 $_['entry_lastname']       = 'Фамилия';
-$_['entry_email']          = 'E-Mail';
+$_['entry_email']          = 'E-Mail (логин)';
 $_['entry_telephone']      = 'Телефон';
 $_['entry_newsletter']     = 'Подписка на новости';
 $_['entry_password']       = 'Пароль';

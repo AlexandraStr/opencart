@@ -56,7 +56,6 @@ $_['button_reward']         = 'Apply Points';
 $_['button_quote']          = 'Get Quotes';
 $_['button_list']           = 'List';
 $_['button_grid']           = 'Grid';
-$_['button_price']          = 'Price';
 $_['button_map']            = 'View Google Map';
 
 // Error

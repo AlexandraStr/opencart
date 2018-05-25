@@ -32,6 +32,10 @@
       <div class="panel-body">
         <form action="{{ action}}" method="post" enctype="multipart/form-data" id="form-category">
           <div class="table-responsive">
+            <label class="col-sm-4 control-label" for="task_title" >{{ entry_task_title }}</label>
+            <div class="col-sm-4 ">
+              <input name="task_title" type="text" class="form-control" id="task_title"  value="{{ cron_values.task_title }}">
+            </div><br><br><br><br><br>
             <table class="table table-bordered table-hover">
               <thead>
                 <tr>
@@ -57,10 +61,10 @@
                 } %}
               <tbody>
                     <tr>
-                      <td class="text-center">
+                      <td class="text-center cell-l">
                         <input name="task_name" type="text" class="form-control"  {% if cron_values.task_name is defined %}  value="{{ cron_values.task_name  }}" {% else %} value = "" {% endif %} />
                       </td>
-                      <td class="center">
+                      <td class="center cell-m">
                         <select name="day_begin"  class="form-control">
                           <option value=""></option>
                             {% for i in 0..7 %}
@@ -74,7 +78,7 @@
                             {% endfor %}
                         </select>
                       </td>
-                      <td class="center">
+                      <td class="center cell-s">
                         <select name="time_begin" class="form-control">
                           <option value=""></option>
                             {% for i in 0..23 %}
@@ -82,7 +86,7 @@
                             {% endfor %}
                         </select>
                       </td>
-                      <td class="center">
+                      <td class="center cell-s">
                         <select name="time_end"  class="form-control">
                           <option value=""></option>
                             {% for i in 0..23 %}
@@ -90,14 +94,14 @@
                             {% endfor %}
                         </select>
                       </td>
-                      <td class="center">
+                      <td class="center cell-s">
                         <input name="dayofmonth" type="text" class="form-control"  {% if cron_values.dayofmonth is defined %}  value="{{ cron_values.dayofmonth  }}" {% else %} value = "*" {% endif %} />
                       </td>
-                      <td class="center">
+                      <td class="center cell-s">
                         <input name="month" type="text" class="form-control" {% if cron_values.month is defined  %} value="{{ cron_values.month  }}" {% else %} value = "*" {% endif %} />
                       </td>
 
-                      <td class="center">
+                      <td class="center cell-s">
                         <input name="interval" type="number" class="form-control"  {% if cron_values.interval is defined %} value="{{ cron_values.interval  }}" {% else %} value = " " {% endif %}  />
                       </td>
                     </tr>

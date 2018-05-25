@@ -12,7 +12,7 @@ $_['text_fax']       = 'Факс';
 $_['text_open']      = 'Режим работы';
 $_['text_comment']   = 'Дополнительная информация';
 $_['text_success']   = '<p>Ваше сообщение успешно отправлено владельцу магазина!</p>';
-$_['text_agree']     = 'Я прочитал <a href="%s" class="agree"><b>%s</b></a> и согласен с <br /> условиями безопасности и обработки персональных данных <input name="personal" checked required type="checkbox">  ';
+$_['text_agree']     = 'Я прочитал <a href="%s" class="agree"><b>%s</b></a> и согласен с <br /> условиями безопасности и обработки  персональных данных <input name="personal" checked required type="checkbox">  ';
 $_['button_submit']  = 'Отправить сообщение';
 
 // Entry

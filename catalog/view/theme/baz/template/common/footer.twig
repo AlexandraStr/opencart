@@ -1,0 +1,86 @@
+<footer>
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-3">
+          <ul class="list-unstyled">
+            <li><strong>{{ owner }}</strong></li>
+            <li>{{ address }}</li>
+            <li>{{ telephone }}</li>
+            <li>{{ fax }}</li>
+            <li><a href="http://baz.ua/uk/">{{ text_site }}</a></li>
+            <li>{{ email }}</li>
+          </ul>
+        </div>
+
+        {% if informations %}
+        <div class="col-sm-3">
+          <h5>{{ text_information }}</h5>
+          <ul class="list-unstyled">
+           {% for information in informations %}
+            <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+            {% endfor %}
+            <li><a href="http://baz.ua/">{{ text_homepage }}</a></li>
+            <li><a href="http://baz.ua/uk/verkhnee-menyu-kontakti-kontakti-1/">{{ text_contact }}</a></li>
+            
+          </ul>
+        </div>
+        {% endif %}
+        
+        <div class="col-sm-3">
+          <h5>{{ text_extra }}</h5>
+          <ul class="list-unstyled">
+            <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
+            <li><a href="http://baz.ua/uk/verkhnee-menyu-oficialnye-dilery/">{{ text_dealers }}</a></li>
+            <li><a href="{{ special }}">{{ text_special }}</a></li>
+            <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5>{{ text_account }}</h5>
+          <ul class="list-unstyled">
+            <li><a href="{{ account }}">{{ text_account }}</a></li>
+            <li><a href="{{ order }}">{{ text_order }}</a></li>
+            <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+            <li><a href="http://baz.ua/uk/verkhnee-menyu-novosti-podij/">{{ text_news }}</a></li>
+          </ul>
+        </div>
+      </div>
+  	<hr>
+    </div>
+  </div>
+   <div class="copyright"><p>© 2011 Всі права захищені <br/> ПрАТ «Бориспільский автозавод»</p></div>
+</footer>
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+<!---  Add FastOrder Button   ------>
+<script>
+  function showForm(data){
+    $.ajax({
+      url: 'index.php?route=product/fastorder/getForm',
+      type: 'post',
+      data: {product_name: data['product_name'], price: data['price'] ,product_id: data['product_id'], product_link: data['product_link']},
+
+      beforeSend: function() {
+      },
+      complete: function() {
+      },
+      success: function(result) {
+        $('#fastorder-form-container'+data['product_id']).html(result);
+      },
+      error: function(xhr, ajaxOptions, thrownError) {
+        alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+      }
+    });
+  };
+</script>
+<!-----------   End FastOrder Code   -------->
+
+</div><!--Clode Wrap-body-->
+</body></html>

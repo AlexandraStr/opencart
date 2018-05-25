@@ -1,0 +1,49 @@
+<div class="swiper-viewport carousel">
+  <div id="carousel{{ module }}" class="swiper-container">
+    <div class="swiper-wrapper">{% for banner in banners %}
+      <div class="swiper-slide text-center">
+          {% if banner.link %}
+            <div class="col-sm-3">
+           <a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>
+            </div>
+          <div class="col-sm-9 banner-description">
+            <span>
+          {% if banner.description %}
+              {{ banner.description }}
+              {% endif %}
+              </span>
+         </div>
+          {% else %}
+          <div class="col-sm-3">
+            <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />
+          </div>
+          <div class="col-sm-9 banner-description">
+            <span>
+              {% if banner.description %}
+                  {{ banner.description }}
+              {% endif %}
+              </span>
+          </div>
+          {% endif %}
+      </div>
+      {% endfor %}</div>
+  </div>
+  <div class="swiper-pagination carousel{{ module }}"></div>
+  <div class="swiper-pager">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+<script type="text/javascript"><!--
+$('#carousel{{ module }}').swiper({
+	mode: 'horizontal',
+	slidesPerView: 5,
+	pagination: '.carousel{{ module }}',
+	paginationClickable: false,
+/*	nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev', */
+	autoplay: 7000,
+	loop: true,
+    effect: 'flip'
+});
+--></script>

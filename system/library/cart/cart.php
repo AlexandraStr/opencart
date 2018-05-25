@@ -402,11 +402,11 @@ class Cart {
 	}
 
 	public function hasShipping() {
-	//	foreach ($this->getProducts() as $product) {
-	//		if ($product['shipping']) {
-	//			return true;
-	//		}
-	//	}
+		foreach ($this->getProducts() as $product) {
+			if ($product['shipping']) {
+				return true;
+			}
+		}
 
 		return false;
 	}

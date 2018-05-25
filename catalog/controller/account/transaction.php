@@ -30,7 +30,8 @@ class ControllerAccountTransaction extends Controller {
 
 		$this->load->model('account/transaction');
 		
-		$data['column_amount'] = sprintf($this->language->get('column_amount'), $this->config->get('config_currency'));
+	//	$data['column_amount'] = sprintf($this->language->get('column_amount'), $this->config->get('config_currency'));
+        $data['column_amount'] = sprintf($this->language->get('column_amount'), 'UAH');
 
 		if (isset($this->request->get['page'])) {
 			$page = $this->request->get['page'];
@@ -53,7 +54,8 @@ class ControllerAccountTransaction extends Controller {
 
 		foreach ($results as $result) {
 			$data['transactions'][] = array(
-				'amount'      => $this->currency->format($result['amount'], $this->config->get('config_currency')),
+			//	'amount'      => $this->currency->format($result['amount'], $this->config->get('config_currency')),
+                'amount'      => $this->currency->format($result['amount'], 'UAH'),
 				'description' => $result['description'],
 				'date_added'  => date($this->language->get('date_format_short'), strtotime($result['date_added']))
 			);
