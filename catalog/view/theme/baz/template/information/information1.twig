@@ -1,0 +1,160 @@
+{{ header }}
+<div id="information-information" class="container">
+    <!-- <ul class="breadcrumb">
+      {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+      {% endfor %}
+  </ul>  -->
+    {% if parallax %}
+
+        <div class="row parallax">
+            <div id="group1" class="parallax__group">
+                <div class="parallax__layer--fore ">
+                    <img src="{{ parallax_info.1.image }}">
+                </div>
+
+                <div class="parallax__layer parallax__layer--base">
+                    <div>
+                        {{ parallax_info.1.description }}
+                    </div>
+                </div>
+
+                <div class="parallax__layer parallax__layer--back">
+                    <img src="{{ parallax_info.1.image_background }}">
+                </div>
+            </div>
+
+            <div id="group2" class="parallax__group">
+
+                <div class="parallax__layer--fore ">
+                    <img src="{{ parallax_info.2.image }}">
+                </div>
+                <div class="parallax__layer parallax__layer--base">
+                    <div>
+                        {{ parallax_info.2.description }}
+                    </div>
+                </div>
+
+                <div class="parallax__layer parallax__layer--deep">
+                    <img src="{{ parallax_info.2.image_background }}">
+                </div>
+
+            </div>
+
+          <div id="group3" class="parallax__group">
+
+                <div class="parallax__layer parallax__layer--fore">
+                    <img src="{{ parallax_info.3.image }}" >
+                </div>
+
+                <div class="parallax__layer parallax__layer--base">
+                    <div>
+                        {{ parallax_info.3.description }}
+                    </div>
+                </div>
+
+                <div class="parallax__layer .parallax__layer--back">
+                    <img src="{{ parallax_info.3.image_background }}">
+                </div>
+
+            </div>
+
+         <div id="group4" class="parallax__group">
+
+                <div class="parallax__layer--fore ">
+                    <img src="{{ parallax_info.4.image }}" >
+                </div>
+
+                <div class="parallax__layer parallax__layer--base">
+                    <div>
+                        {{ parallax_info.4.description }}
+                    </div>
+                </div>
+
+
+                <div class="parallax__layer parallax__layer--deep">
+                    <img src="{{ parallax_info.4.image_background }}">
+                </div>
+
+            </div>
+
+      <!--      <div id="group5" class="parallax__group">
+
+                <div class="parallax__layer--fore ">
+                    <img src="{{ parallax_info.5.image }}" >
+                </div>
+
+                <div class="parallax__layer parallax__layer--base">
+                    <div>
+                        {{ parallax_info.5.description }}
+                    </div>
+                </div>
+
+                <div class="parallax__layer .parallax__layer--back">
+                    <img src="{{ parallax_info.5.image_background }}">
+                </div>
+
+            </div>
+
+            <div id="group6" class="parallax__group">
+
+                <div class="parallax__layer--fore ">
+                    <img src="{{ parallax_info.6.image }}" >
+                </div>
+
+                <div class="parallax__layer parallax__layer--base">
+                    <div>
+                        {{ parallax_info.6.description }}
+                    </div>
+                </div>
+
+
+                <div class="parallax__layer .parallax__layer--deep">
+                    <img src="{{ parallax_info.6.image_background }}">
+                </div>
+
+            </div>
+
+            <div id="group7" class="parallax__group">
+
+                <div class="parallax__layer--fore ">
+                    <img src="{{ parallax_info.7.image }}" >
+                </div>
+
+                <div class="parallax__layer parallax__layer--base">
+                    <div>
+                        {{ parallax_info.7.description }}
+                    </div>
+                </div>
+
+
+                <div class="parallax__layer .parallax__layer--back">
+                    <img src="{{ parallax_info.7.image_background }}">
+                </div>
+
+            </div>
+
+
+        </div> -->
+
+
+    {% else %}
+        <ul class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+                <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+            {% endfor %}
+        </ul>
+        <div class="row">{{ column_left }}
+            {% if column_left and column_right %}
+                {% set class = 'col-sm-6' %}
+            {% elseif column_left or column_right %}
+                {% set class = 'col-sm-9' %}
+            {% else %}
+                {% set class = 'col-sm-12' %}
+            {% endif %}
+            <div id="content" class="{{ class }}" style="background-image: url('{{ image }}')">{{ content_top }}
+                {{ description }}{{ content_bottom }}</div>
+            {{ column_right }}</div>
+    {% endif %}
+</div>
+{{ footer }}

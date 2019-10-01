@@ -1,0 +1,67 @@
+/*
+* @subsection   RD Parallax
+*
+* @description  Describes style declarations for RD Parallax extension
+*
+* @author       Evgeniy Gusarov
+* @link         https://ua.linkedin.com/pub/evgeniy-gusarov/8a/a40/54a
+* @version      3.0.0
+*/
+.rd-parallax-inner {
+  position: relative;
+  min-height: 100%;
+  margin-top:-130px;
+  padding-bottom:170px;
+}
+.rd-parallax-layer[data-type="media"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  -webkit-backface-visibility: hidden;
+}
+.rd-parallax-layer[data-type="media"] iframe {
+  width: 100%;
+  height: 100%;
+}
+.rd-parallax-layer[data-url] {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.rd-parallax-layer[data-type="html"] {
+  position: relative;
+}
+
+.parallax-module {
+  /* Set a specific height */
+  /*min-height: 500px; */
+  /* Create the parallax-module scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax-module-catch-phrase{
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 46px;
+  padding: 31px;
+  text-align: right;
+}
+
+.parallax-module-text{
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 26px;
+  padding: 51px;
+  padding-bottom: 100px;
+  line-height: 40px;
+}
+

@@ -1,0 +1,8 @@
+<div class="panel panel-default news_tape_block">
+  <div class="panel-heading titleNews"><a href="{{ menu_news_name.href }}">{{ menu_news_name.type_name  }}</a></div>
+  <div class="panel-body">
+      {% for menu_item in menu_news %}
+          <li class="news_tape_menu"><a href="{{ menu_item.href }}">{{ menu_item.type_name  }}</a></li>
+      {% endfor %}
+  </div>
+</div>

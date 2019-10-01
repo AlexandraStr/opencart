@@ -1,0 +1,45 @@
+<div class="panel panel-default">
+  <div class="panel-heading">{{ heading_title }}</div>
+  <div class="panel-body news_tape">
+<!--  {% for news in all_news %}
+	<div class="news_tape">
+	  <a href="{{ news.view }}">{{ news.title }}</a>
+        <span style="float:right;">{{ news.date_added }}</span><br />
+	  {{ news.description }}
+	</div>
+  {% endfor %}
+  </div>
+</div> -->
+
+
+<div class="swiper-viewport carousel">
+    <div id="carouselnews{{ module }}" class="swiper-container">
+        <div class="swiper-wrapper">
+            {% for news in all_news %}
+            <div class="swiper-slide text-center">
+               <div class="col-sm-3">
+                 <a href="{{ news.view }}"><img src="{{ news.image }}" alt="{{ news.title }}" class="img-responsive" /></a>
+               </div>
+            <div class="col-sm-9">
+                <span>
+                   {{ news.description }}
+                </span>
+            </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript"><!--
+    $('#carouselnews{{ module }}').swiper({
+        direction: 'vertical',
+        slidesPerView: 5,
+        nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        autoplay: 7000,
+        autoHeight:true,
+        loop: true
+    });
+    --></script>

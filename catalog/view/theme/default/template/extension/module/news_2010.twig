@@ -1,0 +1,17 @@
+<div class="panel panel-default news_tape_block">
+  <div class="panel-heading titleNews ">{{ heading_title }}</div>
+  <div class="panel-body ">
+  {% for news in all_news %}
+      <div class="news_tape">
+      <a href="{{ news.view }}">
+         <div>{{ news.date_added }}</div>
+          <br />
+    	<p>{{ news.title }}</p>
+        <span >
+              {{ news.description }}
+        </span>
+      </a>
+	</div>
+  {% endfor %}
+  </div>
+</div>

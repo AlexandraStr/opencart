@@ -1,0 +1,65 @@
+{% if categories %}
+<div class="container">
+  <nav id="menu" class="navbar">
+    <div class="navbar-header"><span id="category" class="visible-xs">{{ text_category }}</span>
+      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+    {% for category in categories %}
+
+          <li class="dropdown"><a href="{{ category.href }}" class="dropdown-toggle" >{{ category.name }}</a>
+            {% if category.children %}
+                  <div class="dropdown-menu">
+                    <div class="dropdown-inner">
+                    {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+                         <ul class="list-unstyled">
+                           {% for child in children %}
+                              <li><a href="{{ child.href }}"><i class="fa fa-caret-left" aria-hidden="true"></i>{{ child.name }}</a>
+                              {% if child.children_l3 is defined and child.children_l3 is not empty %}
+                                   <div class="menu3rdlevel">
+                                      <div class="menu3rdlevel-inner">
+                                  {%  for children_l3 in child.children_l3|batch(child.children_l3|length / child.column|round(1, 'ceil'))  %}
+                                         <ul class="list-unstyled">
+                                            {% for child_l3 in children_l3 %}
+                                                <li><a href="{{ child_l3.href }}"><i class="fa fa-caret-left" aria-hidden="true"></i>{{ child_l3.name }}</a></li>
+                                            {% endfor %}
+                                         </ul>
+                                  {% endfor %}
+                                     </div>
+                                   </div>
+                              {% endif %}
+                               </li>
+                            {% endfor %}
+                          </ul>
+                     {% endfor %}
+           {% else %}
+                         <li><a href="{{ category.href }}">{{ category.name }}</a></li>
+          {% endif %}
+     {% endfor %}
+
+      </li>
+     <li class="dropdown"><a href="{{ menu_news_name.href }}">{{ menu_news_name.type_name }}</a>
+              <div class="dropdown-menu">
+                  <div class="dropdown-inner">
+                      <ul class="list-unstyled">
+                          {% for menu_item in menu_news %}
+                              <li><a href="{{ menu_item.href }}">{{ menu_item.type_name  }}</a></li>
+                          {% endfor %}
+                      </ul>
+                  </div>
+              </div>
+     </li>
+
+      <li class="custom-link">
+              <a href="{{ search }}">{{ text_search }}</a>
+     </li>
+     <li class="custom-link">
+              <a href="http://baz.ua/uk/verkhnee-menyu-zapasnye-chasti-prajs/">{{ text_price_list }}</a>
+    </li>
+
+  </ul>
+ </div>
+</nav>
+</div>
+{% endif %}
