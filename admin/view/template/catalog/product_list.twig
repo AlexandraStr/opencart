@@ -34,6 +34,25 @@
           </div>
           <div class="panel-body">
             <div class="form-group">
+              <label class=" control-label">{{ entry_spp }}</label>
+              <div>
+                <label class="radio-inline"> {% if filter_spp %}
+                    <input type="radio" name="filter_spp" value="1" checked="checked" />
+                        {{ text_spp }}
+                    {% else %}
+                      <input type="radio" name="filter_spp" value="1" />
+                        {{ text_spp }}
+                    {% endif %} </label>
+                <label class="radio-inline"> {% if not filter_spp %}
+                    <input type="radio" name="filter_spp" value="0" checked="checked" />
+                        {{ text_bus }}
+                    {% else %}
+                      <input type="radio" name="filter_spp" value="0" />
+                        {{ text_bus }}
+                    {% endif %} </label>
+              </div>
+            </div>
+            <div class="form-group">
               <label class="control-label" for="input-name">{{ entry_name }}</label>
               <input type="text" name="filter_name" value="{{ filter_name }}" placeholder="{{ entry_name }}" id="input-name" class="form-control" />
             </div>
@@ -53,76 +72,25 @@
               <label class="control-label" for="input-status">{{ entry_status }}</label>
               <select name="filter_status" id="input-status" class="form-control">
                 <option value=""></option>
-                
-                
-                
-                  
-                
 
                   {% if filter_status == '1' %}
-
-                
-                
-                  
-                
                 
                 <option value="1" selected="selected">{{ text_enabled }}</option>
-                
-                
-                
-                  
-                
 
                   {% else %}
 
-                
-                
-                  
-                
-                
                 <option value="1">{{ text_enabled }}</option>
-                
-                
-                
-                  
-                
 
                   {% endif %}
                   {% if filter_status == '0' %}
-
-                
-                
-                  
-                
                 
                 <option value="0" selected="selected">{{ text_disabled }}</option>
-                
-                
-                
-                  
-                
 
                   {% else %}
-
-                
-                
-                  
-                
                 
                 <option value="0">{{ text_disabled }}</option>
-                
-                
-                
-                  
-                
 
                   {% endif %}
-
-
-              
-              
-                
-              
               
               </select>
             </div>
@@ -205,6 +173,13 @@ $('#button-filter').on('click', function() {
 		url += '&filter_name=' + encodeURIComponent(filter_name);
 	}
 
+    var filter_spp = $('input[name=\'filter_spp\']:checked').val();
+
+
+    if (filter_spp !== '') {
+        url += '&filter_spp=' + encodeURIComponent(filter_spp);
+    }
+
 	var filter_model = $('input[name=\'filter_model\']').val();
 
 	if (filter_model) {
@@ -228,7 +203,6 @@ $('#button-filter').on('click', function() {
 	if (filter_status !== '') {
 		url += '&filter_status=' + encodeURIComponent(filter_status);
 	}
-
 	location = 'index.php?route=catalog/product&user_token={{ user_token }}' + url;
 });
 //--></script> 
@@ -277,5 +251,6 @@ $('input[name=\'filter_model\']').autocomplete({
 		$('input[name=\'filter_model\']').val(item['label']);
 	}
 });
+
 //--></script></div>
 {{ footer }} 

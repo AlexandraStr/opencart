@@ -72,13 +72,13 @@ class Printing extends FPDF
             $this->Cell($w[6], $height, number_format($row['total'], 2, '.', ' '), 1, 0, 'R', $fill);
             $this->ln();
             $nom = $nom + 1;
-            $tax_sum = $tax_sum + $row['price']/6;
-           // $tax_sum = (float)$tax_sum + $row['tax']/100*(float)$row['price'];
-            $total_sum = $total_sum + ($row['price']-$tax_sum);
+            $tax_sum = (float)$tax_sum + (float)$row['price']*0.2;
+            $total_sum = $total_sum + ($row['price'] - $tax_sum);
+            $all_sum =  $all_sum + $row['price'];
         }
         $tax_sum = number_format($tax_sum, 2, '.', ' ');
         $total_sum = number_format($total_sum,2, '.', ' ');
-        $all_sum = number_format($total_sum+$tax_sum,2, '.', ' ');
+        $all_sum = number_format($all_sum,2, '.', ' ');
         
 
         $this->ln(10);

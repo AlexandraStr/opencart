@@ -1,4 +1,8 @@
-<div>{% if heading_title %}
-  <h2>{{ heading_title }}</h2>
-  {% endif %}
-  {{ html }}</div>
+<div class="box_html {{ heading_title }} ">
+  {{ html }}
+</div>
+<script type="text/javascript"><!--
+    $(document).ready(function () {
+        $('.rd-parallax').RDParallax({}); // Additional options
+    });
+    --></script>

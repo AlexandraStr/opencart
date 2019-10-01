@@ -90,9 +90,22 @@ class ControllerCheckoutCheckout extends Controller {
 		$data['content_top'] = $this->load->controller('common/content_top');
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
+
+        if($this->config->get('d_quickcheckout_status')){
+            $data['d_quickcheckout'] = $this->load->controller('extension/module/d_quickcheckout');
+        }
+        
 		$data['header'] = $this->load->controller('common/header');
 
-		$this->response->setOutput($this->load->view('checkout/checkout', $data));
+		
+            // a_vqmod_d_quickcheckout.xml
+            if($this->config->get('d_quickcheckout_status')){
+                $template = 'd_quickcheckout';
+            }else{
+                $template = 'checkout';
+            }
+            
+            $this->response->setOutput($this->load->view('checkout/'.$template, $data));
 	}
 
 	public function country() {

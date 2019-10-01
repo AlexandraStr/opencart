@@ -1,0 +1,43 @@
+{{ header }}
+<div id="information-information" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="row">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-sm-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-sm-9' %}
+    {% else %}
+    {% set class = 'col-sm-12' %}
+    {% endif %}
+
+ <div id="content" class="{{ class }}">{{ content_top }}
+    <div class="titleList">
+	{{ heading_title }}
+    </div>
+     {% for news in all_news %}
+    <div class="row ">
+		<div class="news_title">
+			<h2><a href="{{ news.view}} ">{{ news.title }}</a></h2>
+			<h8>{{ text_date_public }}{{ news.date_added }}</h8>
+		</div>
+		<div class="row news_list">
+		<div class="news_img"><a href="{{ news.view }}"><img src="{{ news['image'] }}" alt="{{ news.type_name }}" title="{{ news.title }}" class="img-fluid"/></a></div>
+        <div class="info">
+		 <p>{{  news.short_description }}</p>
+  	   </div>
+		 </div>
+	</div>
+          {% endfor %}
+	  <div class="row">
+        <div class="col-sm-6 text-left">{{ pagination }}</div>
+        <div class="col-sm-6 text-right">{{ results }}</div>
+	  </div>
+	  {{ content_bottom }}
+	</div>
+	  {{ column_right }}</div>
+ </div>
+{{ footer }}

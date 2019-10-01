@@ -26,7 +26,8 @@ class ModelUserUserGroup extends Model {
 	}
 
 	public function getUserGroups($data = array()) {
-		$sql = "SELECT * FROM " . DB_PREFIX . "user_group WHERE user_group_id <>13 ";
+	//	$sql = "SELECT * FROM " . DB_PREFIX . "user_group WHERE user_group_id <>13 ";
+        $sql = "SELECT * FROM " . DB_PREFIX . "user_group ";
 
 		$sql .= " ORDER BY name";
 

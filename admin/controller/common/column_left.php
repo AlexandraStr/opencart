@@ -116,8 +116,8 @@ class ControllerCommonColumnLeft extends Controller {
 					'children' => array()		
 				);		
 			}
-			
-			if ($this->user->hasPermission('access', 'catalog/information')) {		
+
+            if ($this->user->hasPermission('access', 'catalog/information')) {
 				$catalog[] = array(
 					'name'	   => $this->language->get('text_information'),
 					'href'     => $this->url->link('catalog/information', 'user_token=' . $this->session->data['user_token'], true),
@@ -177,8 +177,23 @@ class ControllerCommonColumnLeft extends Controller {
 					'children' => array()		
 				);
 			}
-					
-			if ($marketplace) {					
+
+            /*
+    News
+  */
+
+            if ($this->user->hasPermission('access', 'extension/news')) {
+                $marketplace[] = array(
+                    'name'	   => $this->language->get('text_news'),
+                    'href'     => $this->url->link('extension/news', 'user_token=' . $this->session->data['user_token'], true),
+                    'children' => array()
+                );
+            }
+
+
+
+
+            if ($marketplace) {
 				$data['menus'][] = array(
 					'id'       => 'menu-extension',
 					'icon'	   => 'fa-puzzle-piece', 

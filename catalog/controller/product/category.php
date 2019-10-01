@@ -42,6 +42,8 @@ class ControllerProductCategory extends Controller {
 			$limit = $this->config->get('theme_' . $this->config->get('config_theme') . '_product_limit');
 		}
 
+        $data['text_description'] = $this->language->get('text_description');
+
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(
@@ -92,6 +94,8 @@ class ControllerProductCategory extends Controller {
 
 		$category_info = $this->model_catalog_category->getCategory($category_id);
 
+        $spp =  $category_info['spp'];
+
 		if ($category_info) {
 			$this->document->setTitle($category_info['meta_title']);
 			$this->document->setDescription($category_info['meta_description']);
@@ -137,17 +141,40 @@ class ControllerProductCategory extends Controller {
 
 			$results = $this->model_catalog_category->getCategories($category_id);
 
+
 			foreach ($results as $result) {
 				$filter_data = array(
 					'filter_category_id'  => $result['category_id'],
 					'filter_sub_category' => true
 				);
+                if ($result['image']) {
+                    $image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+                } else {
+                    $image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+                }
+                $subcategories = array();
 
-				$data['categories'][] = array(
-					'name' => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-					'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+                $results_ctg = $this->model_catalog_category->getCategories($result['category_id']);
+
+                foreach ($results_ctg as $result_ctg) {
+
+                    $subcategories[] = array(
+
+                        'name' => $result_ctg['name'],
+                        'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' .$result['category_id'] .'_' . $result_ctg['category_id'] . $url)
+                    );
+                }
+
+                    $data['categories'][] = array(
+				    'image'=> $image,
+					'description' => utf8_substr(trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8'))), 0, $this->config->get('theme_' . $this->config->get('config_theme') . '_product_description_length')) . '',
+					'name' => $result['name'],
+					'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url),
+                    'subcategories'=>  ($subcategories)?$subcategories:"",
 				);
+                unset($subcategories);
 			}
+
 
 			$data['products'] = array();
 
@@ -197,6 +224,7 @@ class ControllerProductCategory extends Controller {
             //    $data['quantity'] = $result['minimum'];
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
+                    'attribute_groups'=>$this->model_catalog_product->getProductAttributes($result['product_id']),
 					'thumb'       => $image,
 					'name'        => $result['name'],
 					'manufacturer'=> $result['manufacturer'],
@@ -213,8 +241,6 @@ class ControllerProductCategory extends Controller {
 				);
 			}
 
-
-			$url = '';
 
 			if (isset($this->request->get['filter'])) {
 				$url .= '&filter=' . $this->request->get['filter'];
@@ -368,8 +394,13 @@ class ControllerProductCategory extends Controller {
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
           
+           if ($spp) {
+               $this->response->setOutput($this->load->view('product/category', $data));
+           } else {
+               $this->response->setOutput($this->load->view('product/categorybus', $data));
+           }
 
-			$this->response->setOutput($this->load->view('product/category', $data));
+
 		} else {
 			$url = '';
 

@@ -351,6 +351,7 @@ class ControllerExtensionDQuickcheckoutConfirm extends Controller {
                 'product_id' => $product['product_id'],
                 'name'       => $product['name'],
                 'model'      => $product['model'],
+                'model1c'    => $product['model1c'],
                 'option'     => $option_data,
                 'download'   => $product['download'],
                 'quantity'   => $product['quantity'],

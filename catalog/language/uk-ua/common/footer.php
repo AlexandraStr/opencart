@@ -13,6 +13,7 @@ $_['text_affiliate'] = 'Партнерська програма';
 $_['text_special'] = 'Акції';
 $_['text_account'] = 'Особистий Кабінет';
 $_['text_order'] = 'Історія замовлень';
+$_['text_news'] = 'Наші новини';
 $_['text_wishlist'] = 'Закладки';
 $_['text_newsletter'] = 'Розсилка';
 $_['text_powered']      = '<a rel="nofollow" href="https://alius.com.ua/ua/" target="_blank">Розробка інтернет магазинів</a> %s &copy; %s';

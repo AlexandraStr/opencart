@@ -39,15 +39,15 @@
 
 				<tbody>
 					<% _.each(model.products, function(product) { %>
-					<tr <%= product.stock ? '' : 'class="stock"' %>>
+					<tr <%= product.stock ? '' : 'class="stock"' %> >
 						<td class="qc-image <%= parseInt(model.config.columns.image) ? '' : 'hidden' %>">
 							<a  href="<%= product.href %>" data-container="body" data-toggle="popover" data-placement="top" data-content='<img src="<%= product.image %>" />' data-trigger="hover">
 								<img src="<%= product.thumb %>" class="img-responsive"/>
 							</a>
 						</td>
 
-						<td class="qc-name <%= parseInt(model.config.columns.name) ? '' : 'hidden' %>">
-							<a href="<%= product.href %>" <%=  model.config.columns.image ? '' : 'rel="popup" data-help=\'<img src="' + product.image + '"/>\'' %>> 
+						<td class="qc-name <%= parseInt(model.config.columns.name) ? '' : 'hidden' %>" >
+							<a href="<%= product.href %>" <%=  model.config.columns.image ? '' : 'rel="popup" data-help=\'<img src="' + product.image + '"/>\'' %>>
 								<%= product.name %> <%= product.stock ? '' : '<span class="out-of-stock">***</span>' %>
 							</a>
 							<% _.each(product.option, function(option) { %>
@@ -68,16 +68,16 @@
 						</td>
 
 						<td class="qc-model hidden-xs <%= parseInt(model.config.columns.model) ? '' : 'hidden' %>"><%= product.model %></td>
-						
+
 						<td class="qc-quantity <%= parseInt(model.config.columns.quantity) ? '' : 'hidden' %>">
 							<div class="input-group input-group-sm">
 								<span class="input-group-btn">
 									<button class="btn btn-primary decrease hidden-xs" data-product="<%= product.key %>"><i class="fa fa-chevron-down"></i></button>
-								</span>            
+								</span>
 								<input type="text" data-mask="9?999999999999999" value="<%= product.quantity %>" class="qc-product-qantity form-control text-center" name="cart.<%= product.key %>"  data-refresh="2"/>
 								<span class="input-group-btn">
 									<button class="btn btn-primary increase hidden-xs" data-product="<%= product.key %>"><i class="fa fa-chevron-up"></i></button>
-								
+
 									<button class="btn btn-danger delete hidden-xs" data-product="<%= product.key %>"><i class="fa fa-times"></i></button>
 								</span>
 							</div>
@@ -97,7 +97,7 @@
 			          <td class="qc-total <%= parseInt(model.config.columns.total) && model.show_price ? '' : 'hidden' %> "><%= voucher.amount %></td>
 			        </tr>
 			        <% }) %>
-					
+
 				</tbody>
 			</table>
 
@@ -118,7 +118,7 @@
 						</div>
 					<% } %>
 					<label class="col-sm-4 control-label" >
-						{{ text_use_coupon }} 
+						{{ text_use_coupon }}
 					</label>
 					<div class="col-sm-8">
 						<div class="input-group">
@@ -129,7 +129,7 @@
 						</div>
 					</div>
 					<% _.each(model.coupon, function(voucher) { %>
-			        
+
 			        <% }) %>
 				</div>
 				<div class=" form-group qc-voucher <%= parseInt(model.config.option.voucher.display) ? '' : 'hidden' %>">
@@ -149,7 +149,7 @@
 					<% } %>
 
 					<label class="col-sm-4 control-label" >
-						{{ text_use_voucher }} 
+						{{ text_use_voucher }}
 					</label>
 					<div class="col-sm-8">
 						<div class="input-group">

@@ -710,7 +710,7 @@
                     newHeight = height > newHeight ? height : newHeight;
                 }
             }
-        
+            alert(height+'   '+newHeight);
             // Update Height
             if (newHeight) s.wrapper.css('height', newHeight + 'px');
         };

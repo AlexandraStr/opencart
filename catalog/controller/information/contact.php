@@ -85,6 +85,11 @@ class ControllerInformationContact extends Controller {
 			$data['text_agree'] = sprintf($this->language->get('text_agree'), $this->url->link('information/information/agree', 'information_id=' . $this->config->get('config_account_id'), true), $information_info['title'], $information_info['title']);
 		
 
+			$this->load->model('catalog/information');
+			$information_info = $this->model_catalog_information->getInformation($this->config->get('config_account_id'));
+			$data['text_agree'] = sprintf($this->language->get('text_agree'), $this->url->link('information/information/agree', 'information_id=' . $this->config->get('config_account_id'), true), $information_info['title'], $information_info['title']);
+		
+
 		$data['locations'] = array();
 
 		$this->load->model('localisation/location');

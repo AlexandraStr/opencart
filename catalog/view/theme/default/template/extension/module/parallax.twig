@@ -1,0 +1,16 @@
+<div class="parallax-module" style="background-image: url(<?php echo $image; ?>)">
+  {% if not html %}
+{% if catch_phrase %}
+    <div class="parallax-module-catch-phrase">{{ catch_phrase }}</div>
+   {% endif %}
+    {% if text  %}
+    <div class="parallax-module-text">{{ text }}</div>
+    {% endif %}
+    {% else %}
+    <div>
+          {{ html_content }}
+    </div>
+    {% endif %}
+</div>
+
+

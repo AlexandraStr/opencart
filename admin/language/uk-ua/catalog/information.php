@@ -16,20 +16,28 @@ $_['column_action'] = 'Дія';
 
 // Entry
 $_['entry_title'] = 'Назва';
+$_['entry_link']  = 'Посилання';
+$_['entry_image'] = 'Малюнок';
+$_['entry_image_background'] = 'Малюнок фону';
 $_['entry_description'] = 'Опис';
 $_['entry_store'] = 'Магазини';
 $_['entry_meta_title'] = 'Мета-тег Title';
 $_['entry_meta_keyword'] = 'Мета-тег Keywords';
 $_['entry_meta_description'] = 'Мета-тег Description';
+$_['entry_parent'] = 'Батьківська стаття (для пунктів меню)';
 $_['entry_keyword'] = 'SEO URL';
-$_['entry_bottom'] = 'Отображить знизу';
+$_['entry_bottom'] = 'Відобразити знизу';
+$_['entry_parallax'] = 'Використовувати parallax';
 $_['entry_status'] = 'Статус';
 $_['entry_sort_order'] = 'Порядок сортування';
 $_['entry_layout'] = 'Виберіть схему';
+$_['entry_menu']           = 'Відображати в меню';
 
 // Help
 $_['help_keyword'] = 'Повинно бути унікальним на всю систему без прогалин';
 $_['help_bottom'] = 'Показувати в нижній частині сайту (футер, підвал)';
+$_['help_menu']            = 'Показувати в головному меню';
+$_['help_parallax']            = 'Використовувати parallax ефект';
 
 // Error
 $_['error_warning'] = 'Уважно перевірте форму на помилки!';

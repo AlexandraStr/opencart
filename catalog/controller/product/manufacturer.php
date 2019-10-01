@@ -209,6 +209,7 @@ class ControllerProductManufacturer extends Controller {
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
 					'name'        => $result['name'],
+					'manufacturer' => $manufacturer_info['name'],
                     'quantity'    => $result['quantity'],
 				//	'description' => utf8_substr(trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8'))), 0, $this->config->get('theme_' . $this->config->get('config_theme') . '_product_description_length')) . '..',
                     'description' => utf8_substr(trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8'))), 0, $this->config->get('theme_' . $this->config->get('config_theme') . '_product_description_length')) . '',
@@ -228,6 +229,9 @@ class ControllerProductManufacturer extends Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 
+                        $data['text_description'] = $this->language->get('text_description'); 
+                        $data['text_no_results']  = $this->language->get('text_no_results');
+                        
 			$data['sorts'] = array();
 
 			$data['sorts'][] = array(

@@ -26,6 +26,7 @@ $_['text_pagination']               = 'Відображено з %d по %d з %
 $_['text_loading']                  = 'Завантаження...';
 $_['text_no_results']               = 'Немає результатів!';
 $_['text_confirm']                  = 'Ви впевнені?';
+$_['text_confirm_import']           = 'Будуть видалені усі дані про продукт.Ви впевнені?';
 $_['text_home']                     = 'Головна';
 
 // Button
@@ -111,6 +112,7 @@ $_['tab_data']                      = 'Дані';
 $_['tab_design']                    = 'Дизайн';
 $_['tab_discount']                  = 'Знижка';
 $_['tab_general']                   = 'Основні';
+$_['tab_parallax']                  = 'Настройка parallax ефекту';
 $_['tab_history']                   = 'Історія';
 $_['tab_ftp']                       = 'FTP';
 $_['tab_ip']                        = 'IP-адреси';

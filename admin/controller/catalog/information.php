@@ -278,7 +278,13 @@ class ControllerCatalogInformation extends Controller {
 			$data['error_keyword'] = '';
 		}
 
-		$url = '';
+        if (isset($this->error['parent'])) {
+            $data['error_parent'] = $this->error['parent'];
+        } else {
+            $data['error_parent'] = '';
+        }
+
+        $url = '';
 
 		if (isset($this->request->get['sort'])) {
 			$url .= '&sort=' . $this->request->get['sort'];
@@ -322,6 +328,7 @@ class ControllerCatalogInformation extends Controller {
 
 		$data['languages'] = $this->model_localisation_language->getLanguages();
 
+
 		if (isset($this->request->post['information_description'])) {
 			$data['information_description'] = $this->request->post['information_description'];
 		} elseif (isset($this->request->get['information_id'])) {
@@ -330,7 +337,61 @@ class ControllerCatalogInformation extends Controller {
 			$data['information_description'] = array();
 		}
 
-		$this->load->model('setting/store');
+
+
+        $this->load->model('tool/image');
+
+        foreach ($data['information_description'] as $language_id => $value) {
+            $data['thumb'][$language_id] = (is_file(DIR_IMAGE . $value['image']) ? $this->model_tool_image->resize($value['image'], 100, 100) : $this->model_tool_image->resize('no_image.png', 100, 100));
+        }
+
+
+        $data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+
+
+        if (isset($this->request->post['parent_id'])) {
+            $data['parent_id'] = $this->request->post['parent_id'];
+        } elseif (!empty($information_info)) {
+            $data['parent_id'] = $information_info['parent_id'];
+        } else {
+            $data['parent_id'] = 0;
+        }
+
+        if (isset($this->request->post['parallax'])) {
+            $data['parallax'] = $this->request->post['parallax'];
+        } elseif (!empty($information_info)) {
+            $data['parallax'] = $information_info['parallax'];
+        } else {
+            $data['parallax'] = 0;
+        }
+
+        //***************
+
+
+            if (isset($this->request->post['parallax'])) {
+                $data['parallax_info'] = $this->request->post['parallax_date'];
+            } elseif (isset($this->request->get['information_id'])) {
+                $data['parallax_info'] = $this->model_catalog_information->getInformationParallax($this->request->get['information_id']);
+            } else {
+                $data['parallax_info'] = array();
+            }
+
+           foreach ($data['parallax_info'] as $language_id => $row) {
+               foreach ($row as $key => $value) {
+
+                       $data['parallax_info'][$language_id][$key]['thumb'] = (is_file(DIR_IMAGE . $value['image']) ? $this->model_tool_image->resize($value['image'], 100, 100) : $this->model_tool_image->resize('no_image.png', 100, 100));
+                       $data['parallax_info'][$language_id][$key]['thumb_background'] = (is_file(DIR_IMAGE . $value['image_background']) ? $this->model_tool_image->resize($value['image_background'], 100, 100) : $this->model_tool_image->resize('no_image.png', 100, 100));
+                   }
+
+               }
+
+
+            $data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+
+        
+     //**************
+
+        $this->load->model('setting/store');
 
 		$data['stores'] = array();
 		
@@ -387,7 +448,17 @@ class ControllerCatalogInformation extends Controller {
 		} else {
 			$data['information_seo_url'] = array();
 		}
-		
+
+        $data['entry_menu'] = $this->language->get('entry_menu');
+        $data['help_menu'] = $this->language->get('help_menu');
+        if (isset($this->request->post['menu'])) {
+            $data['menu'] = $this->request->post['menu'];
+        } elseif (!empty($information_info)) {
+            $data['menu'] = $information_info['menu'];
+        } else {
+            $data['menu'] = 0;
+        }
+
 		if (isset($this->request->post['information_layout'])) {
 			$data['information_layout'] = $this->request->post['information_layout'];
 		} elseif (isset($this->request->get['information_id'])) {
@@ -412,7 +483,19 @@ class ControllerCatalogInformation extends Controller {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
 
-		foreach ($this->request->post['information_description'] as $language_id => $value) {
+        if (isset($this->request->get['information_id']) && $this->request->post['parent_id']) {
+            $results = $this->model_catalog_information->getInformationPath($this->request->post['parent_id']);
+
+            foreach ($results as $result) {
+                if ($result['path_id'] == $this->request->get['information_id']) {
+                    $this->error['parent'] = $this->language->get('error_parent');
+
+                    break;
+                }
+            }
+        }
+
+        foreach ($this->request->post['information_description'] as $language_id => $value) {
 			if ((utf8_strlen($value['title']) < 1) || (utf8_strlen($value['title']) > 64)) {
 				$this->error['title'][$language_id] = $this->language->get('error_title');
 			}
@@ -421,17 +504,15 @@ class ControllerCatalogInformation extends Controller {
 				$this->error['description'][$language_id] = $this->language->get('error_description');
 			}
 
-			if ((utf8_strlen($value['meta_title']) < 1) || (utf8_strlen($value['meta_title']) > 255)) {
-				$this->error['meta_title'][$language_id] = $this->language->get('error_meta_title');
-			}
 		}
 
 		if ($this->request->post['information_seo_url']) {
 			$this->load->model('design/seo_url');
 			
 			foreach ($this->request->post['information_seo_url'] as $store_id => $language) {
-				foreach ($language as $language_id => $keyword) {
+			    foreach ($language as $language_id => $keyword) {
 					if (!empty($keyword)) {
+                        $keyword = $keyword.$language_id;
 						if (count(array_keys($language, $keyword)) > 1) {
 							$this->error['keyword'][$store_id][$language_id] = $this->language->get('error_unique');
 						}						
@@ -488,4 +569,40 @@ class ControllerCatalogInformation extends Controller {
 
 		return !$this->error;
 	}
+    public function autocomplete() {
+        $json = array();
+
+        if (isset($this->request->get['filter_name'])) {
+            $this->load->model('catalog/information');
+
+            $filter_data = array(
+                'filter_name' => $this->request->get['filter_name'],
+                'sort'        => 'name',
+                'order'       => 'ASC',
+                'start'       => 0,
+                'limit'       => 70
+            );
+
+            $results = $this->model_catalog_information->getInformationsList($filter_data);
+
+            foreach ($results as $result) {
+                $json[] = array(
+                    'information_id' => $result['information_id'],
+                    'name'        => strip_tags(html_entity_decode($result['name'], ENT_QUOTES, 'UTF-8'))
+                );
+            }
+        }
+
+        $sort_order = array();
+
+        foreach ($json as $key => $value) {
+            $sort_order[$key] = $value['name'];
+        }
+
+        array_multisort($sort_order, SORT_ASC, $json);
+
+        $this->response->addHeader('Content-Type: application/json');
+        $this->response->setOutput(json_encode($json));
+    }
+
 }

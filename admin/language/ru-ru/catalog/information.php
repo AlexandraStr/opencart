@@ -16,20 +16,28 @@ $_['column_sort_order']      = 'Порядок сортировки';
 $_['column_action']          = 'Действие';
 
 // Entry
-$_['entry_title']            = 'Название статьи';
+$_['entry_title']            = 'Название';
+$_['entry_link']             = 'Ссылка';
+$_['entry_image']            = 'Рисунок';
+$_['entry_image_background'] = 'Рисунок фона';
 $_['entry_description']      = 'Описание';
 $_['entry_meta_title']       = 'Мета-тег Title';
 $_['entry_meta_keyword']     = 'Мета-тег Keywords';
 $_['entry_meta_description'] = 'Мета-тег Description';
+$_['entry_parent']           = 'Родительская статья(для пунктов меню)';
 $_['entry_store']            = 'Магазины';
 $_['entry_keyword']          = 'SEO URL';
 $_['entry_bottom']           = 'Отображать снизу';
+$_['entry_parallax']          = 'Использовать parallax';
 $_['entry_status']           = 'Статус';
 $_['entry_sort_order']       = 'Порядок сортировки';
 $_['entry_layout']           = 'Макет';
+$_['entry_menu']           = 'Отображить в меню';
 
 // Help
-$_['help_bottom']            = 'Показывать в нижней части сайта (футер, подвал)';
+$_['help_bottom']              = 'Показывать в нижней части сайта (футер, подвал)';
+$_['help_menu']                = 'Показывать в главном меню';
+$_['help_parallax']            = 'Использовать parallax эффект';
 
 // Error
 $_['error_warning']          = 'Внимательно проверьте форму на ошибки!';

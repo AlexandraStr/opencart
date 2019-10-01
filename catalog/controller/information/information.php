@@ -30,9 +30,43 @@ class ControllerInformationInformation extends Controller {
 				'href' => $this->url->link('information/information', 'information_id=' .  $information_id)
 			);
 
-			$data['heading_title'] = $information_info['title'];
 
-			$data['description'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
+                $data['heading_title'] = $information_info['title'];
+
+                $data['parallax'] = $information_info['parallax'];
+
+                $data['information_id'] = $information_id;
+
+                $data['description'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
+
+
+                if ($information_info['image']) {
+                    $data['image'] ="image/".$information_info['image'];
+                } else {
+                    $data['image'] = "";
+                }
+
+               if ($data['parallax'] ) {
+
+                   $image_info = $this->model_catalog_information->getInformationParallax($information_id);
+
+                   $this->load->model('tool/image');
+
+                   $data['parallax_info'] = array();
+
+                   foreach ($image_info as $value) {
+
+                       $data['parallax_info'][] = array(
+                           'title' => $value['title'],
+                           'link' => $value['link'],
+                           'description' => trim($value['description']),
+                           'image' => (is_file(DIR_IMAGE . $value['image']) ? $this->model_tool_image->resize($value['image'], 500, 500) : ""),
+                           'image_background' => (is_file(DIR_IMAGE . $value['image_background']) ? $this->model_tool_image->resize($value['image_background'], 500, 500) : ""),
+                       );
+                   }
+
+
+               }
 
 			$data['continue'] = $this->url->link('common/home');
 
@@ -40,8 +74,8 @@ class ControllerInformationInformation extends Controller {
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
-			$data['footer'] = $this->load->controller('common/footer');
-			$data['header'] = $this->load->controller('common/header');	
+			$data['footer'] = $this->load->controller('common/footer',['is_information' => true]);
+			$data['header'] = $this->load->controller('common/header',['is_information' => true]);
 
 			$this->response->setOutput($this->load->view('information/information', $data));
 		} else {

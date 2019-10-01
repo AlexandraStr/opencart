@@ -8,6 +8,10 @@ class ModelToolImport extends Model {
         $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "`category_description` WHERE name = '" . $this->db->escape($categ)."'" );
         return $query->rows;
     }
+    public function getCategories() {
+        $query = $this->db->query("SELECT category_id,import_id FROM " . DB_PREFIX . "`category` WHERE import_id <> 0 ORDER BY import_id " );
+        return $query->rows;
+    }
     public function getProduct($model) {
         $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "`product` WHERE model = '" . $this->db->escape($model)."'");
         return $query->rows;
@@ -19,6 +23,14 @@ class ModelToolImport extends Model {
             $table_dates[]= $result;
         }
         return $table_dates;
+    }
+    public function trancateProduct(){
+       $this->db->query("TRUNCATE TABLE ". DB_PREFIX . "`product_to_layout`");
+        $this->db->query("TRUNCATE TABLE ". DB_PREFIX . "`product_to_store`");
+        $this->db->query("TRUNCATE TABLE ". DB_PREFIX . "`product`");
+        $this->db->query("TRUNCATE TABLE ". DB_PREFIX . "`product_to_category`");
+        $this->db->query("TRUNCATE TABLE ". DB_PREFIX . "`product_description`");
+        $this->db->query("TRUNCATE TABLE ". DB_PREFIX . "`product_special`");
     }
 	public function exportOrders($tables){
         $output = '';

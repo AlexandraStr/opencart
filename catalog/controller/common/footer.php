@@ -1,11 +1,13 @@
 <?php
 class ControllerCommonFooter extends Controller {
-	public function index() {
+	public function index(array $args=[]) {
 		$this->load->language('common/footer');
 		
 		$data['text_site'] = $this->language->get('text_site');
 
 		$this->load->model('catalog/information');
+
+        $is_information = isset($args['is_information']) ? (bool) $args['is_information'] : false;
 
 		$data['informations'] = array();
 
@@ -19,6 +21,8 @@ class ControllerCommonFooter extends Controller {
 		}
 
 		$data['contact'] = $this->url->link('information/contact');
+        $data['news'] = $this->url->link('extension/news');
+        $data['text_news'] = $this->language->get('text_news');
 		$data['return'] = $this->url->link('account/return/add', '', true);
 		$data['sitemap'] = $this->url->link('information/sitemap');
 		$data['tracking'] = $this->url->link('information/tracking');
@@ -66,6 +70,6 @@ class ControllerCommonFooter extends Controller {
 
 		$data['scripts'] = $this->document->getScripts('footer');
 		
-		return $this->load->view('common/footer', $data);
+		return $is_information ? $this->load->view('common/footer_information', $data) : $this->load->view('common/footer', $data);
 	}
 }

@@ -10,6 +10,9 @@ class ControllerToolImport extends Controller
 
         $data['entry_synchron_name ']=$this->language->get('entry_synchron_name ');
         $data['entry_synchron_flag ']=$this->language->get('entry_synchron_flag ');
+        $data['entry_incremental'] = $this->language->get( 'entry_incremental' );
+        $data['help_incremental_yes'] = $this->language->get( 'help_incremental_yes' );
+        $data['help_incremental_no'] = $this->language->get( 'help_incremental_no' );
 
         if (isset($this->request->post['synchron_name'])) {
             $data['synchron_name'] = $this->request->post['synchron_name'];
@@ -67,6 +70,7 @@ class ControllerToolImport extends Controller
         );
 
         $data['user_token'] = $this->session->data['user_token'];
+        $data['import'] = $this->url->link('tool/import/import', 'user_token=' . $this->session->data['user_token'], true);
         $data['export'] = $this->url->link('tool/import/export', 'user_token=' . $this->session->data['user_token'], true);
         $data['save_name_synchron'] = $this->url->link('tool/import/save_name_synchron', 'user_token=' . $this->session->data['user_token'], true);
 
@@ -91,6 +95,12 @@ class ControllerToolImport extends Controller
         $this->load->model('catalog/customer_specials');
 
         $json = array();
+
+        if (isset($this->request->post['incremental'])) {
+            $data['incremental'] = $this->request->post['incremental'];
+        } else {
+            $data['incremental'] = '1';
+        }
 
         if (isset($this->request->files['import']['tmp_name']) && is_uploaded_file($this->request->files['import']['tmp_name'])) {
             $filename = tempnam(DIR_UPLOAD, 'csv');
@@ -165,20 +175,27 @@ class ControllerToolImport extends Controller
 
             if ($handle) {
 
+                 if ($this->request->post['incremental'] == '0') {
+                     $this->model_tool_import->trancateProduct();
+                 }
+
                 while (($row = fgetcsv($handle, 1024, ";")) !== FALSE) {
-                    $model = addslashes(trim($row[0]));
-                    if (strtoupper($model) == "KOD") {
+                    $model1C = addslashes(trim($row[0]));
+                    if (strtoupper($model1C) == "KOD") {
                         continue;
                     }
+                    $model1c = mb_convert_encoding($model1C, 'utf-8', 'windows-1251');
+                    $model = addslashes(trim($row[1]));
                     $model = mb_convert_encoding($model, 'utf-8', 'windows-1251');
-                    $name = addslashes(trim($row[1]));
+                    $name = addslashes(trim($row[2]));
                     $name = mb_convert_encoding($name, 'utf-8', 'windows-1251');
-                    $sbrend = addslashes(trim($row[2]));
+                    $sbrend = addslashes(trim($row[3]));
                     $sbrend = mb_convert_encoding($sbrend, 'utf-8', 'windows-1251');
-                    $categ = addslashes(trim($row[3]));;
-                    $categ = mb_convert_encoding($categ, 'utf-8', 'windows-1251');
+
                     $quant = trim($row[4]);
                     $price = trim($row[5]);
+
+
 
                     $result = $this->model_tool_import->getManufacturer($sbrend);
 
@@ -199,29 +216,20 @@ class ControllerToolImport extends Controller
 
                     //Category
 
-                    $result = $this->model_tool_import->getCategory($categ);
+                    $categories = $this->model_tool_import->getCategories();
 
-                    if (empty($result) AND !empty($categ)) {
-                        $this->db->query("INSERT INTO `category` (image,top,parent_id,status,date_added,date_modified) VALUES ('$image_category','1','0','1','$big_date','$big_date')");
-                        $category_id = $this->db->getLastId();
+                    foreach ($categories as $value){
+                        $category[$value['import_id']]= $value['category_id'];
+                    }
+                    $categ = array();
 
-                        $this->db->query("INSERT INTO `category_path` (category_id, path_id, level) VALUES ('$category_id','$category_id','0')");
-
-                        $this->db->query("INSERT INTO `category_to_store` (category_id, store_id)  VALUES ('$category_id','0')");
-
-                        for ($lang = 1; $lang <= 2; $lang++) {
-                            $this->db->query("INSERT INTO `category_description` (category_id, language_id, name, meta_title) VALUES('$category_id','$lang','$categ','$categ') ");
-                        }
-
-                        for ($lg = 1; $lg <= 2; $lg++) {
-                            $seo_url = strtr(mb_strtolower($categ), $escape_table) . $category_id . $lg;
-                            $seo_query = "category_id =" . $category_id;
-                            $this->db->query("INSERT INTO `seo_url` (store_id,language_id,query,keyword) VALUES ('0','$lg','$seo_query','$seo_url')");
-                        }
-                    } elseif (!empty($categ)) {
-                        $category_id = $result[0]['category_id'];
-                    } else {
-                        $category_id=0;
+                    for ($ind=6;$ind<18;$ind++) {
+                        $flag = (int)$row[$ind];
+                     if ($flag){
+                         if (isset($category[$ind])) {
+                             $categ[] = $category[$ind];
+                         }
+                     }
                     }
 
 
@@ -232,17 +240,14 @@ class ControllerToolImport extends Controller
 
                     if (empty($result)) {
 
-                        $this->db->query("INSERT INTO `product` (model, quantity, stock_status_id, manufacturer_id, shipping, price, status,date_available,date_added,date_modified)
-            VALUES('$model','$quant','$stock_status_id','$manufacturer_id','1','$price','1','$small_date','$big_date','$big_date') ");
+                        $this->db->query("INSERT INTO `product` (model,model1c, quantity, stock_status_id, manufacturer_id, shipping, price, status,date_available,date_added,date_modified)
+            VALUES('$model','$model1c','$quant','$stock_status_id','$manufacturer_id','1','$price','1','$small_date','$big_date','$big_date') ");
                         $product_id = $this->db->getLastId();
 
                         for ($lang = 1; $lang <= 2; $lang++) {
                             $this->db->query("INSERT INTO `product_description` (product_id, language_id, name,meta_title)"
                                 . " VALUES ('$product_id','$lang','$name','$name') ");
                         }
-                        $this->db->query("INSERT INTO `product_to_category`( product_id,category_id) VALUES ('$product_id','$category_id')");
-
-                        $this->db->query("INSERT INTO `product_to_store`(product_id, store_id) VALUES ('$product_id','0')");
 
                         for ($lg = 1; $lg <= 2; $lg++) {
                             $seo_url = strtr(mb_strtolower($name), $escape_table) . $product_id . $lg;
@@ -251,22 +256,37 @@ class ControllerToolImport extends Controller
                           VALUES ('0','$lg','$seo_query','$seo_url')");
                         }
 
+                        $this->db->query("INSERT INTO `product_to_store`(product_id, store_id) VALUES ('$product_id','0')");
+
+                        $this->db->query("INSERT INTO `product_to_layout`(product_id, store_id, layout_id) VALUES ('$product_id','0','0')");
+
 
                     } else {
                         $product_id = $result[0]['product_id'];
                         $this->db->query("UPDATE `product` 
-                SET model = '$model', quantity = '$quant', stock_status_id = '$stock_status_id',
+                SET model = '$model',model1c = '$model1c', quantity = '$quant', stock_status_id = '$stock_status_id',
                 manufacturer_id = '$manufacturer_id' , shipping = '1', price = '$price', status = '1' ,
                 date_available = '$small_date' ,date_added = '$big_date' ,date_modified = '$big_date'
                 WHERE product_id = '$product_id'");
 
-                        $this->db->query("UPDATE `product_to_category` SET category_id = '$category_id' 
-                                WHERE product_id = '$product_id' ");
+                        $this->db->query("DELETE FROM  `product_to_store` WHERE product_id = '$product_id' ");
 
-                        $this->db->query("UPDATE `product_to_store` SET store_id = '0'
-                             WHERE product_id = '$product_id' ");
+                        $this->db->query("INSERT INTO `product_to_store`(product_id, store_id) VALUES ('$product_id','0')");
+
+                        $this->db->query("DELETE FROM  `product_to_layout` WHERE product_id = '$product_id' ");
+
+                        $this->db->query("INSERT INTO `product_to_layout`(product_id, store_id, layout_id) VALUES ('$product_id','0','0')");
+
 
                     }
+
+                    $this->db->query("DELETE FROM `product_to_category` WHERE product_id = '$product_id' ");
+                    foreach ($categ as $category_id) {
+
+                        $this->db->query("INSERT INTO `product_to_category`( product_id,category_id) VALUES ('$product_id','$category_id')");
+
+                    }
+
                 }
                 $this->model_catalog_customer_specials->repairCustomerSpecials();
 

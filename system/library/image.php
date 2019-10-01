@@ -143,30 +143,36 @@ class Image {
 
 		$xpos = 0;
 		$ypos = 0;
-		$scale = 1;
+		$scale_w = 1;
 
 		$scale_w = $width / $this->width;
-		$scale_h = $height / $this->height;
+        $scale_hw = $this->height/$this->width;
 
-		if ($default == 'w') {
-			$scale = $scale_w;
-		} elseif ($default == 'h') {
-			$scale = $scale_h;
-		} else {
-			$scale = min($scale_w, $scale_h);
-		}
+        $scale_h = $height / $this->height;
+        $scale_wh = $this->width/$this->height;
 
-		if ($scale == 1 && $scale_h == $scale_w && $this->mime != 'image/png') {
-			return;
-		}
+        if ($scale_w ==1 && $scale_h == 1 && $this->mime != 'image/png') {
+            return;
+        }
 
-		$new_width = (int)($this->width * $scale);
-		$new_height = (int)($this->height * $scale);
-		$xpos = (int)(($width - $new_width) / 2);
-		$ypos = (int)(($height - $new_height) / 2);
+
+        if ($scale_w >  $scale_h ) {
+
+            $new_width = (int)($this->width * $scale_w);
+            $new_height = (int)($new_width * $scale_hw);
+
+        } else {
+            $new_height = (int)($this->height * $scale_h);
+            $new_width = (int)($new_height * $scale_wh);
+        }
+
 
 		$image_old = $this->image;
-		$this->image = imagecreatetruecolor($width, $height);
+        $width = $new_width;
+        $height = $new_height;
+		$this->image = imagecreatetruecolor($width,$height);
+
+
 
 		if ($this->mime == 'image/png') {
 			imagealphablending($this->image, false);
@@ -185,7 +191,7 @@ class Image {
 		$this->width = $width;
 		$this->height = $height;
 	}
-	
+
 	/**
      * 
      *

@@ -50,4 +50,60 @@
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com
 //-->
+
+						 <style>
+							#topd2shover {
+							cursor: pointer;
+							background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAABmCAYAAABm4qluAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAAOKSURBVHja7NpPSBRRHMDx7y5q/yMKoqCgkOzWxcT+aJcwso5ZpocgOgb2Ryqp5rQRYRZRB4PqIlFkGVhYlGQUGaaHOpiHQiIqIhCjwqgst8O8hVH2zeybndld5fe7CPNmZD7zfr+ZeTu/SDweZ6pElCkUghGMYAQjGMEIRjCTPPL8HhiLxUx2nw98BVJ6q7Usy9c5Rfy8NRtClgHVwCvggcmBpqhoBiA7gRnAWqBistZMIVADTHdsWw9sDunChYYpBHYA05KMrQkLFAZmuQvECdqY62m2CKjygCSiXKVd9m/NmhnZBswyOKZC1dSjXJqZRLHP1owPuTxjyk1qKGzMClUjBZrxQeAScN+jhiqznWZFwHYgXzP+FrgJ/AF61bYtmn1L1cXtyAbGC/JGQUYd23pVum3VHFOi/nZkMs38QBLR53GyJS5Y85mJxWIRl4L1ggy6QJygfGBTkDMU1UB0xbzSA/IJaPOAJOI58DSFGcpLJ83ygXlJts9VzxE3yDXgp8HF7EoBtCodzF/NCf8A7mnS76OCjPhI9S7giWbsNTDgG2NZ1hjwJcm+cbUmaVO3WmeN+IUk4jHQOeFCvQRuA7/SuptZljUKRDTH9AM3VF28Aa4bppYuuoG7wJi6hbcD/0JdaTpeyRcDw8DvgF9Wl6q0jZuuONN5aH4OaS30QX6dmWqYiHzTFIxgBCMYwQhGMIIRjGAEIxjBCEYwghGMYAQjGMGkGb4+aZj2gQFLsL95Gv+wbdINmImZKQZagANhX7iw2xqLgSbsL9W1QN1krZlS4Cwwx7FtF3AwJzAGs1IKnCZ571ktUD9ZZma1gsx02acG2Js1TIqzUgSc9IAkYrdKu5ycmRLgAnZ3eapRF+QMRQMs9jPAAs34e+xmBd0M1ecKZp1HjbxQ6dTkUUOHso0pAxpdIN3qJEeAVrWvLqqBhmxhyoBTjG+Pd8Yz4Ajj+2pa1TG6qEoHFA0R0kDyjqRbYYGiIUB6XCBO0LmgQaaYDR6QAeAYqfWIXQWupAAqCAOzEDjhAdkPfDP4n80pgCrDwAypW3Cy50W/ggz7SNtm4LJmrBO77TFwzBh2p97xCXeoHmCfT0giLgLnJyze7gAWdm9oaCvNh8B39cTvAw4zvmfTb7SoFD2K3QfamJFls5qNPdhde0FAEtEOvFNpaxzSbyYYwQhGMIIRjGAEIxjBCEYwggk2/g8A0zvTbui8G3MAAAAASUVORK5CYII=) no-repeat left -51px;width: 51px;height: 51px;display: block;overflow: hidden;float: left;opacity: 0;-moz-opacity: 0;filter: alpha(opacity=0);}
+							#topd2s {display: none;text-decoration: none;    z-index: 1;position: fixed;bottom: 20px;right: 20px;overflow: hidden;width: 51px;height: 51px;border: none;text-indent: -999px;background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAABmCAYAAABm4qluAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAAOKSURBVHja7NpPSBRRHMDx7y5q/yMKoqCgkOzWxcT+aJcwso5ZpocgOgb2Ryqp5rQRYRZRB4PqIlFkGVhYlGQUGaaHOpiHQiIqIhCjwqgst8O8hVH2zeybndld5fe7CPNmZD7zfr+ZeTu/SDweZ6pElCkUghGMYAQjGMEIRjCTPPL8HhiLxUx2nw98BVJ6q7Usy9c5Rfy8NRtClgHVwCvggcmBpqhoBiA7gRnAWqBistZMIVADTHdsWw9sDunChYYpBHYA05KMrQkLFAZmuQvECdqY62m2CKjygCSiXKVd9m/NmhnZBswyOKZC1dSjXJqZRLHP1owPuTxjyk1qKGzMClUjBZrxQeAScN+jhiqznWZFwHYgXzP+FrgJ/AF61bYtmn1L1cXtyAbGC/JGQUYd23pVum3VHFOi/nZkMs38QBLR53GyJS5Y85mJxWIRl4L1ggy6QJygfGBTkDMU1UB0xbzSA/IJaPOAJOI58DSFGcpLJ83ygXlJts9VzxE3yDXgp8HF7EoBtCodzF/NCf8A7mnS76OCjPhI9S7giWbsNTDgG2NZ1hjwJcm+cbUmaVO3WmeN+IUk4jHQOeFCvQRuA7/SuptZljUKRDTH9AM3VF28Aa4bppYuuoG7wJi6hbcD/0JdaTpeyRcDw8DvgF9Wl6q0jZuuONN5aH4OaS30QX6dmWqYiHzTFIxgBCMYwQhGMIIRjGAEIxjBCEYwghGMYAQjGMGkGb4+aZj2gQFLsL95Gv+wbdINmImZKQZagANhX7iw2xqLgSbsL9W1QN1krZlS4Cwwx7FtF3AwJzAGs1IKnCZ571ktUD9ZZma1gsx02acG2Js1TIqzUgSc9IAkYrdKu5ycmRLgAnZ3eapRF+QMRQMs9jPAAs34e+xmBd0M1ecKZp1HjbxQ6dTkUUOHso0pAxpdIN3qJEeAVrWvLqqBhmxhyoBTjG+Pd8Yz4Ajj+2pa1TG6qEoHFA0R0kDyjqRbYYGiIUB6XCBO0LmgQaaYDR6QAeAYqfWIXQWupAAqCAOzEDjhAdkPfDP4n80pgCrDwAypW3Cy50W/ggz7SNtm4LJmrBO77TFwzBh2p97xCXeoHmCfT0giLgLnJyze7gAWdm9oaCvNh8B39cTvAw4zvmfTb7SoFD2K3QfamJFls5qNPdhde0FAEtEOvFNpaxzSbyYYwQhGMIIRjGAEIxjBCEYwggk2/g8A0zvTbui8G3MAAAAASUVORK5CYII=) no-repeat left top;}
+						</style>
+						<script>
+ 						jQuery(document).ready(function(){$().UItoTop({easingType:'easeOutQuint'});});
+						(function($){
+							$.fn.UItoTop = function(options) {
+								var defaults = {
+									text: 'To Top',
+									min: 200,
+									inDelay:600,
+									outDelay:400,
+									containerID: 'topd2s',
+									containerHoverID: 'topd2shover',
+									scrollSpeed: 1600,
+									easingType: 'linear'
+								};
+								var settings = $.extend(defaults, options);
+								var containerIDhash = '#' + settings.containerID;
+								var containerHoverIDHash = '#'+settings.containerHoverID;
+								$('body').append('<span id="'+settings.containerID+'">'+settings.text+'</span>');
+								$(containerIDhash).hide().click(function(event){
+									$('html, body').animate({scrollTop: 0}, settings.scrollSpeed);
+									event.preventDefault();
+								})
+								.prepend('<span id="'+settings.containerHoverID+'"></span>')
+								.hover(function() {
+										$(containerHoverIDHash, this).stop().animate({
+											'opacity': 1
+										}, 600, 'linear');
+									}, function() { 
+										$(containerHoverIDHash, this).stop().animate({
+											'opacity': 0
+										}, 700, 'linear');
+									});			
+								$(window).scroll(function() {
+									var sd = $(window).scrollTop();
+									if(typeof document.body.style.maxHeight === "undefined") {
+										$(containerIDhash).css({
+											'position': 'absolute',
+											'top': $(window).scrollTop() + $(window).height() - 50
+										});
+									}
+									if ( sd > settings.min ) 
+										$(containerIDhash).fadeIn(settings.inDelay);
+									else 
+										$(containerIDhash).fadeOut(settings.Outdelay);
+								});
+						};
+						})(jQuery);
+						</script>
+                        
 </body></html>

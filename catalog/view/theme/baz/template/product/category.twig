@@ -27,29 +27,73 @@
       <hr>
       {% endif %}
       {% if categories %}
-      <h3>{{ text_refine }}</h3>
-      {% if categories|length <= 5 %}
-      <div class="row">
-        <div class="col-sm-3">
-          <ul>
-            {% for category in categories %}
-            <li><a href="{{ category.href }}">{{ category.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-      {% else %}
-      <div class="row">{% for category in categories|batch((categories|length / 4)|round(1, 'ceil')) %}
-        <div class="col-sm-3">
-          <ul>
-            {% for child in category %}
-            <li><a href="{{ child.href }}">{{ child.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endfor %}</div>
-      <br />
-      {% endif %}
+
+          <div class="row">
+              {% if column_left and column_right %}
+                  {% set class = 'col-sm-6' %}
+              {% elseif column_left or column_right %}
+                  {% set class = 'col-sm-9' %}
+              {% else %}
+                  {% set class = 'col-sm-12' %}
+              {% endif %}
+
+
+
+              {% if categories|length <= 2 %}
+
+                  <div class="{{ class }}">
+                      <ul >
+                          {% for category in categories %}
+                              <div class="view view-tenth" >
+
+                                  <img src="{{ category.image }}" alt="{{ category.name }}" class="img-responsive" />
+                                  <h3><a href="{{ category.href }}">{{ category.name }}</a></h3>
+
+                                  <li class="mask">
+                                      <ul class="subdir">
+                                          {% for subcategory in category.subcategories %}
+
+
+                                              <li> <a href="{{subcategory.href }}" class="info" >{{ subcategory.name }}</a></li>
+
+                                          {% endfor %}
+                                      </ul>
+
+                                  </li>
+
+                              </div>
+                          {% endfor %}
+                      </ul>
+                  </div>
+
+
+              {% else %}
+
+                  <div class="{{ class }} ">
+                      <ul class="grid">
+                          {% for category in categories %}
+
+                              <li class="effect-milo">
+                                  <img src="{{ category.image }}" alt="{{ category.name }}" class="img-responsive"/>
+                                  <div>
+                                      {% if heading_title in category.name %}
+                                          <h3><strong>{{ category.name }}</strong></h3>
+                                      {% else %}
+                                          <h3>{{ heading_title }} &#8195 <strong>{{ category.name }}</strong></h3>
+                                      {% endif %}
+                                      <p>{{ category.description }}</p>
+                                      <a href="{{ category.href }}">View more</a>
+                                  </div>
+                              </li>
+
+                          {% endfor %}
+                      </ul>
+                  </div>
+
+              {% endif %}
+
+          </div>
+
       {% endif %}
       {% if products %}
       <div class="row">
@@ -121,81 +165,79 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="product-layout product-list col-xs-12">
-          <div class="product-thumb">
-          <table class="table table-bordered table-hover table-price">
-            <thead class="table-category-head">
-            <tr class="caption">
-            <!--  <td class="text-center"><h5>{{ text_image }}</h5></td> -->
-              <td class="text-center"><h5>{{ text_model }}</h5></td>
-              <td class="text-center prod"><h5>{{ text_product }}</h5></td>  
-              <td class="text-center quant"><h5>{{ text_manufacturer }}</h5></td>
-          <!--    <td class="text-center"><h5>{{ text_description }}</h5></td>  -->
-              <td class="text-center quant"><h5>{{ text_price }}</h5></td>
-              <td class="text-center quant"><h5>{{ text_quantity }}</h5></td>
-              <td class="text-center quant"><h5>{{ text_order_quantity }}</h5></td>
-              <td class="text-center"><h5>{{ text_action }}</h5></td>
-            </tr>
-            </thead>
-            <tbody class="table-category-body">
-            {% if products %}
-                {% for product in products %}
-                  <tr>
-               <!--     <td class="text-center">{% if product.image %} <img src="{{ product.image }}" alt="{{ product.name }}" class="img-thumbnail" /> {% else %} <span class="img-thumbnail list"><i class="fa fa-bus fa-5x"></i></span> {% endif %}</td> -->
-                    <td class="text-center">{% if product.quantity > 0 %}<a href="{{ product.href }}">{{ product.model }}</a>{% else %}{{ product.model }}{% endif %}</td>
-                    <td class="text-left">{% if product.quantity > 0 %}<a href="{{ product.href }}">{{ product.name }}</a>{% else %}{{ product.name }} {% endif %}</td>  
-                    <td class="text-left">{{ product.manufacturer }}</td>
-               <!--     <td class="text-left">
-                        {% if product.description is empty %}
-                            {{ text_empty_description }}
-                        {% else %}
-                            {% if product.quantity > 0 %}
-                              <a href="{{ product.href }}">{{ text_moreinfo }}{{ product.description }}</a>
-                            {% else %}
-                                {{ text_moreinfo }}
-                            {% endif %}
-                            {{ product.description }}
-                        {% endif %}
-                    </td>  -->
-                    <td class="text-center">
+          <div class="row">
+              <div class="product-layout product-list col-xs-12">
+                  <table class="table table-bordered table-hover table-price">
+                      <thead class="table-category-head">
+                      <tr class="caption">
+                          <!--    <td class="text-center"><h5>{{ text_image }}</h5></td> -->
+                          <td class="text-center prod"><h5>{{ text_product }}</h5></td>
+                          <td class="text-center"><h5>{{ text_model }}</h5></td>
+                          <td class="text-center quant"><h5>{{ text_manufacturer }}</h5></td>
+                          <td class="text-center"><h5>{{ text_description }}</h5></td>
+                          <td class="text-center quant"><h5>{{ text_price }}</h5></td>
+                          <td class="text-center quant"><h5>{{ text_quantity }}</h5></td>
+                          <td class="text-center quant"><h5>{{ text_order_quantity }}</h5></td>
+                          <td class="text-center"><h5>{{ text_action }}</h5></td>
+                      </tr>
+                      </thead>
+                      <tbody class="table-category-body">
+                      {% if products %}
+                          {% for product in products %}
+                              <tr>
+                                  <!--      <td class="text-center">{% if product.image %} <img src="{{ product.image }}" alt="{{ product.name }}" class="img-thumbnail" /> {% else %} <span class="img-thumbnail list"><i class="fa fa-bus fa-5x"></i></span> {% endif %}</td> . -->
+                                  <td class="text-center">{% if product.quantity > 0 %}<a href="{{ product.href }}">{{ product.name }}</a>{% else %}{{ product.name }} {% endif %}</td>
+                                  <td class="text-center">{% if product.quantity > 0 %}<a href="{{ product.href }}">{{ product.model }}</a>{% else %}{{ product.model }}{% endif %}</td>
+                                  <td class="text-center">{{ product.manufacturer }}</td>
+                                  <td class="text-center">
+                                      {% if product.description is empty %}
+                                          {{ text_empty_description }}
+                                      {% else %}
+                                          {% if product.quantity > 0 %}
+                                              <a href="{{ product.href }}">{{ text_moreinfo }}{{ product.description }}</a>
+                                          {% else %}
+                                              {{ text_moreinfo }}
+                                          {% endif %}
+                                          {{ product.description }}
+                                      {% endif %}
+                                  </td>
+                                  <td class="text-center">
 
-                        {% if not product.special %}
-                            {{ product.price }}
-                        {% else %} <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span> {% endif %}
-                        {% if product.tax %} <span class="price-tax">{{ text_tax }} {{ product.tax }}</span> {% endif %} </p>
+                                      {% if not product.special %}
+                                          {{ product.price }}
+                                      {% else %} <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span> {% endif %}
+                                      {% if product.tax %} <span class="price-tax">{{ text_tax }} {{ product.tax }}</span> {% endif %} </p>
 
 
-                    </td>
-                 <!--   <td class="text-right">{% if product.quantity <= 0 %} <span class="warning">{{ product.quantity }}<br>{{ text_warning }}</span> {% elseif product.quantity <= 5 %} <span class="danger">{{ product.quantity }}<br>{{ text_danger }}</span> {% else %} <span class="success">{{ product.quantity }}<br>{{ text_success }}</span> {% endif %}</td>  -->
-                    <td class="text-center">{% if product.quantity <= 0 %} <span class="warning">{{ product.quantity }}</span> {% elseif product.quantity <= 5 %} <span class="danger">{{ product.quantity }}</span> {% else %} <span class="success">{{ product.quantity }}</span> {% endif %}</td>
-                    <td class="text-center">
-                      <div class="form-group">
-                        <input type="text" name="quantity" {% if product.quantity <= 0 %} disabled {% endif %} value="{{ product.minimum }}" size="2"  class="form-control" />
-                        <input type="hidden" name="product_id" value="{{ product_id }}" />
-                        <br />
-                      </div>
-                    </td>
-                    <td class="text-center">
-                      <div class="button-group">
-                        <button type="button" {% if product.quantity <= 0 %} disabled {% endif %} onclick="cart.add('{{ product.product_id }}',$(this).closest('tr').find('input[name=\'quantity\']').val()) "><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
-                        <button type="button" data-toggle="tooltip" {% if product.quantity <= 0 %} disabled {% endif %} title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i></button>
-                        <button type="button" data-toggle="tooltip" {% if product.quantity <= 0 %} disabled {% endif %} title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                {% endfor %}
-            {% else %}
-              <tr>
-                <td class="text-center" colspan="8">{{ text_no_results }}</td>
-              </tr>
-            {% endif %}
-            </tbody>
+                                  </td>
+                            <!--      <td class="text-right">{% if product.quantity <= 0 %} <span class="warning">{{ product.quantity }}<br>{{ text_warning }}</span> {% elseif product.quantity <= 5 %} <span class="danger">{{ product.quantity }}<br>{{ text_danger }}</span> {% else %} <span class="success">{{ product.quantity }}<br>{{ text_success }}</span> {% endif %}</td>   -->
+                                  <td class="text-center">{% if product.quantity <= 0 %} <span class="warning">{{ product.quantity }}</span> {% elseif product.quantity <= 5 %} <span class="danger">{{ product.quantity }}</span> {% else %} <span class="success">{{ product.quantity }}</span> {% endif %}</td>
+                                  <td class="text-center">
+                                      <div class="form-group">
+                                          <input type="text" name="quantity" {% if product.quantity <= 0 %} disabled {% endif %} value="{{ product.minimum }}" size="2"  class="form-control" />
+                                          <input type="hidden" name="product_id" value="{{ product_id }}" />
+                                          <br />
+                                      </div>
+                                  </td>
+                                  <td class="text-center">
+                                      <div class="button-group">
+                                          <button type="button" {% if product.quantity <= 0 %} disabled {% endif %} onclick="cart.add('{{ product.product_id }}',$(this).closest('tr').find('input[name=\'quantity\']').val()) "><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+                                          <button type="button" data-toggle="tooltip" {% if product.quantity <= 0 %} disabled {% endif %} title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i></button>
+                                          <button type="button" data-toggle="tooltip" {% if product.quantity <= 0 %} disabled {% endif %} title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>
+                                      </div>
+                                  </td>
+                              </tr>
+                          {% endfor %}
+                      {% else %}
+                          <tr>
+                              <td class="text-center" colspan="8">{{ text_no_results }}</td>
+                          </tr>
+                      {% endif %}
+                      </tbody>
 
-          </table>
-        </div>
-        </div>
-      </div>
+                  </table>
+              </div>
+          </div>
       <div class="row">
         <div class="col-sm-6 text-left">{{ pagination }}</div>
         <div class="col-sm-6 text-right">{{ results }}</div>

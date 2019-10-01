@@ -311,7 +311,7 @@ class ControllerCatalogCategory extends Controller {
 		} else {
 			$data['error_parent'] = '';
 		}
-		
+
 		$url = '';
 
 		if (isset($this->request->get['sort'])) {
@@ -380,7 +380,17 @@ class ControllerCatalogCategory extends Controller {
 			$data['parent_id'] = 0;
 		}
 
-		$this->load->model('catalog/filter');
+
+        if (isset($this->request->post['spp'])) {
+            $data['spp'] = $this->request->post['spp'];
+        } elseif (!empty( $category_info)) {
+            $data['spp'] = $category_info['spp'];
+        } else {
+            $data['spp'] = 1;
+        }
+
+
+        $this->load->model('catalog/filter');
 
 		if (isset($this->request->post['category_filter'])) {
 			$filters = $this->request->post['category_filter'];
@@ -456,6 +466,22 @@ class ControllerCatalogCategory extends Controller {
 		} else {
 			$data['top'] = 0;
 		}
+
+        if (isset($this->request->post['top1'])) {
+            $data['top1'] = $this->request->post['top1'];
+        } elseif (!empty($category_info)) {
+            $data['top1'] = $category_info['top1'];
+        } else {
+            $data['top1'] = 0;
+        }
+
+        if (isset($this->request->post['top2'])) {
+            $data['top2'] = $this->request->post['top2'];
+        } elseif (!empty($category_info)) {
+            $data['top2'] = $category_info['top2'];
+        } else {
+            $data['top2'] = 0;
+        }
 
 		if (isset($this->request->post['column'])) {
 			$data['column'] = $this->request->post['column'];
@@ -601,8 +627,9 @@ class ControllerCatalogCategory extends Controller {
 			foreach ($results as $result) {
 				$json[] = array(
 					'category_id' => $result['category_id'],
-					'name'        => strip_tags(html_entity_decode($result['name'], ENT_QUOTES, 'UTF-8'))
-				);
+					'name'        => strip_tags(html_entity_decode($result['name'], ENT_QUOTES, 'UTF-8')),
+				    'spp'         => $result['spp']
+                );
 			}
 		}
 

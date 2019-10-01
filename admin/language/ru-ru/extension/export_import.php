@@ -128,7 +128,7 @@ $_['tab_settings']                          = 'Настройки';
 $_['button_import']                         = 'Импорт';
 $_['button_export']                         = 'Экспорт';
 $_['button_settings']                       = 'Обновление настроек';
-$_['button_export_id']                      = 'По дыапазону id';
+$_['button_export_id']                      = 'По диапазону id';
 $_['button_export_page']                    = 'По партиям';
 
 // Help

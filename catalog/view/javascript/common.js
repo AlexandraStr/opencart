@@ -121,6 +121,8 @@ $(document).ready(function() {
 		localStorage.setItem('display', 'grid');
 	});
 
+    localStorage.setItem('display', 'list');
+
 	if (localStorage.getItem('display') == 'list') {
 		$('#list-view').trigger('click');
 		$('#list-view').addClass('active');

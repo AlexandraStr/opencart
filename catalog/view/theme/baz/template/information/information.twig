@@ -1,21 +1,95 @@
 {{ header }}
-<div id="information-information" class="container">
-  <ul class="breadcrumb">
-    {% for breadcrumb in breadcrumbs %}
-    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
-    {% endfor %}
-  </ul>
-  <div class="row">{{ column_left }}
-    {% if column_left and column_right %}
-    {% set class = 'col-sm-6' %}
-    {% elseif column_left or column_right %}
-    {% set class = 'col-sm-9' %}
+<div id="information-information" class="container container-information">
+    <!-- <ul class="breadcrumb">
+      {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+      {% endfor %}
+  </ul>  -->
+    {% if parallax %}
+
+    <div class="row parallax">
+     {% if information_id == 24 %}
+        {% set information_row = 1 %}
+        {% for parallax in parallax_info %}
+
+        <div id="dep{{ information_row }}" class="parallax__group">
+            {% if  parallax.image %}
+               <div class="parallax__layer--fore ">
+                        <a class="icon" href="#"> <img src="{{ parallax.image }}"> </a>
+               </div>
+            {% endif %}
+            {% if parallax.description %}
+                <div class="parallax__layer parallax__layer--base">
+                    <h1>{{ title }}</h1>
+                    <div>
+                        {{ parallax.description }}
+                    </div>
+                </div>
+            {% endif %}
+            {% if information_row%2 %}
+                <div class="parallax__layer parallax__layer--back">
+                    <img src="{{ parallax.image_background }}">
+                </div>
+            {% else %}
+                <div class="parallax__layer parallax__layer--deep">
+                    <img src="{{ parallax.image_background }}">
+                </div>
+            {% endif %}
+        </div>
+        {% set information_row = information_row + 1 %}
+        {% endfor %}
+     {% else %}
+         {% set information_row = 1 %}
+         {% for parallax in parallax_info %}
+        <div id="group{{ information_row }}" class="parallax__group">
+            {% if  parallax.image %}
+              <div class="parallax__layer--fore ">
+                 <img src="{{ parallax.image }}">
+              </div>
+            {% endif %}
+            {% if parallax.description %}
+                <div class="parallax__layer parallax__layer--base">
+                    <div>
+                        {{ parallax.description }}
+                    </div>
+                </div>
+            {% endif %}
+            {% if information_row%2 %}
+                <div class="parallax__layer parallax__layer--back">
+                    <img src="{{ parallax.image_background }}">
+                </div>
+            {% else %}
+                <div class="parallax__layer parallax__layer--deep">
+                    <img src="{{ parallax.image_background }}">
+                </div>
+            {% endif %}
+        </div>
+        {% set information_row = information_row + 1 %}
+        {% endfor %}
+     {% endif %}
+    </div>
+
     {% else %}
-    {% set class = 'col-sm-12' %}
+        <ul class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+                <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+            {% endfor %}
+        </ul>
+        <div class="row ">{{ column_left }}
+            {% if column_left and column_right %}
+                {% set class = 'col-sm-6' %}
+            {% elseif column_left or column_right %}
+                {% set class = 'col-sm-9' %}
+            {% else %}
+                {% set class = 'col-sm-12' %}
+            {% endif %}
+            <div id="content" class="no_parallax {{ class }}">
+                {{ content_top }}
+                <img src="{{ image }} ">
+                {{ description }}
+                {{ content_bottom }}
+            </div>
+            {{ column_right }}</div>
     {% endif %}
-    <div id="content" class="{{ class }}">{{ content_top }}
-      
-      {{ description }}{{ content_bottom }}</div>
-    {{ column_right }}</div>
-</div>
-{{ footer }}
+ </div>
+    {{ footer }}

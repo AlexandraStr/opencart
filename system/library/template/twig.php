@@ -17,7 +17,16 @@ final class Twig {
 	
 	public function render($template, $cache = false) {
 		// specify where to look for templates
-		$loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+				
+		$loader = new \Twig_Loader_Filesystem();
+		
+		if (defined('DIR_CATALOG') && is_dir(DIR_MODIFICATION . 'admin/view/template/')) {	
+			$loader->addPath(DIR_MODIFICATION . 'admin/view/template/');
+		} elseif (is_dir(DIR_MODIFICATION . 'catalog/view/theme/')) {
+			$loader->addPath(DIR_MODIFICATION . 'catalog/view/theme/');
+		}
+		
+		$loader->addPath(DIR_TEMPLATE);
 
 		// initialize Twig environment
 		$config = array('autoescape' => false);

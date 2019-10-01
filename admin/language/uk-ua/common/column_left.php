@@ -24,6 +24,7 @@ $_['text_extension']            = 'Модулі / Разширення';
 $_['text_filter']               = 'Фільтри';
 $_['text_geo_zone']             = 'Географічні зони';
 $_['text_information']          = 'Статті';
+$_['text_news']                 = 'Новини';
 $_['text_installer']            = 'Встановлення розширень';
 $_['text_language']             = 'Мови';
 $_['text_language_editor']      = 'Редактор мов';

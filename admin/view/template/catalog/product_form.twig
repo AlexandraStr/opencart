@@ -55,12 +55,23 @@
                       <div class="text-danger">{{ error_name[language.language_id] }}</div>
                       {% endif %} </div>
                   </div>
+
                   <div class="form-group">
                     <label class="col-sm-2 control-label" for="input-description{{ language.language_id }}">{{ entry_description }}</label>
                     <div class="col-sm-10">
                       <textarea name="product_description[{{ language.language_id }}][description]" placeholder="{{ entry_description }}" id="input-description{{ language.language_id }}" data-toggle="summernote" data-lang="{{ summernote }}" class="form-control">{{ product_description[language.language_id] ? product_description[language.language_id].description }}</textarea>
                     </div>
                   </div>
+
+                    {% if not spp %}
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-technical-description{{ language.language_id }}">{{ entry_technical_description }}</label>
+                    <div class="col-sm-10">
+                      <textarea name="product_description[{{ language.language_id }}][technical_description]" placeholder="{{ entry_technical_description }}" id="input-technical-description{{ language.language_id }}" data-toggle="summernote" data-lang="{{ summernote }}" class="form-control">{{ product_description[language.language_id] ? product_description[language.language_id].technical_description }}</textarea>
+                    </div>
+                  </div>
+                  {% endif %}
+
                   <div class="form-group required">
                     <label class="col-sm-2 control-label" for="input-meta-title{{ language.language_id }}">{{ entry_meta_title }}</label>
                     <div class="col-sm-10">
@@ -69,6 +80,7 @@
                       <div class="text-danger">{{ error_meta_title[language.language_id] }}</div>
                       {% endif %} </div>
                   </div>
+
                   <div class="form-group">
                     <label class="col-sm-2 control-label" for="input-meta-description{{ language.language_id }}">{{ entry_meta_description }}</label>
                     <div class="col-sm-10">
@@ -257,6 +269,7 @@
                     {% endif %} </label>
                 </div>
               </div>
+
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-date-available">{{ entry_date_available }}</label>
                 <div class="col-sm-3">
@@ -341,6 +354,7 @@
                   </select>
                 </div>
               </div>
+
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
                 <div class="col-sm-10">

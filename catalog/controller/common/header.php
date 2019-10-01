@@ -1,12 +1,14 @@
 <?php
 class ControllerCommonHeader extends Controller {
-	public function index() {
+	public function index(array $args=[]) {
 		// Analytics
 		$this->load->model('setting/extension');
 
 		$data['analytics'] = array();
 
 		$analytics = $this->model_setting_extension->getExtensions('analytics');
+
+        $is_information = isset($args['is_information']) ? (bool) $args['is_information'] : false;
 
 		foreach ($analytics as $analytic) {
 			if ($this->config->get('analytics_' . $analytic['code'] . '_status')) {
@@ -80,6 +82,6 @@ class ControllerCommonHeader extends Controller {
 		$data['cart'] = $this->load->controller('common/cart');
 		$data['menu'] = $this->load->controller('common/menu');
 
-		return $this->load->view('common/header', $data);
+		return $is_information ? $this->load->view('common/header_information', $data) : $this->load->view('common/header', $data);
 	}
 }

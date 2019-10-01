@@ -1,14 +1,14 @@
-<div class="swiper-viewport">
+<div class="swiper-viewport slider">
   <div id="slideshow{{ module }}" class="swiper-container" data-slide-effect="fade">
     <div class="swiper-wrapper"> {% for banner in banners %}
       <div class="swiper-slide text-center">{% if banner.link %}<a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>{% else %}<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />{% endif %}</div>
       {% endfor %} </div>
   </div>
-  <div class="swiper-pagination slideshow{{ module }}"></div>
-  <div class="swiper-pager">
+<!--  <div class="swiper-pagination slideshow{{ module }}"></div>  -->
+<!--  <div class="swiper-pager">
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-  </div>
+  </div>  -->
 </div>
 <script type="text/javascript"><!--
 $('#slideshow{{ module }}').swiper({
@@ -20,6 +20,7 @@ $('#slideshow{{ module }}').swiper({
     prevButton: '.swiper-button-prev',
     spaceBetween: 30,
 	autoplay: 4500,
+    autoHeight:true,
     autoplayDisableOnInteraction: true,
 	loop: true,
 	effect: 'coverflow',

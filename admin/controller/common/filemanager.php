@@ -1,7 +1,25 @@
 <?php
 class ControllerCommonFileManager extends Controller {
+
+			function translit ($text) {
+				$rus = array("а","А","б","Б","в","В","г","Г","д","Д","е","Е","ё","Ё","ж", "Ж", "з","З","и","И","й","Й","к","К","л","Л","м","М","н","Н","о","О","п","П","р","Р", "с","С","т","Т","у","У","ф","Ф","х","Х","ц","Ц","ч", "Ч", "ш", "Ш", "щ",  "Щ", "ъ","Ъ", "ы","Ы","ь","Ь","э","Э","ю", "Ю", "я","Я",'/',' ','—');
+				$eng =array("a","A","b","B","v","V","g","G","d","D","e","E","e","E", "zh","ZH","z","Z","i","I","j","J","k","K","l","L","m","M","n","N","o","O", "p","P","r","R","s","S","t","T","u","U","f","F","h","H","c","C","ch","CH", "sh","SH","sch","SCH","", "", "i","I","","","e","E","yu","YU","ya","YA",'','','-');
+				$text = str_replace($rus,$eng,$text);
+				return $text;
+			}
+		
 	public function index() {
 		$this->load->language('common/filemanager');
+
+		// Запоминае последней директории
+		if (!isset($this->request->get['directory']) && !isset($this->request->get['parent']) && !isset($this->request->get['page']) && !isset($this->request->get['go'])) {
+			$this->request->get['directory'] = isset($this->session->data['directory_file_manager']) ? $this->session->data['directory_file_manager'] : null;
+			$this->request->get['page'] = isset($this->session->data['page_file_manager']) ? $this->session->data['page_file_manager'] : null;
+		} else {
+			$this->session->data['directory_file_manager'] = isset($this->request->get['directory']) ? $this->request->get['directory'] : null;
+			$this->session->data['page_file_manager'] = isset($this->request->get['page']) ? $this->request->get['page'] : null;
+		}
+		
 
 		// Find which protocol to use to pass the full image link back
 		if ($this->request->server['HTTPS']) {
@@ -19,7 +37,13 @@ class ControllerCommonFileManager extends Controller {
 		// Make sure we have the correct directory
 		if (isset($this->request->get['directory'])) {
 			$directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+
+		$data['dirs'] = explode("/", $this->request->get['directory']);
+		
 		} else {
+
+		$data['dirs'] = false;
+		
 			$directory = DIR_IMAGE . 'catalog';
 		}
 
@@ -121,8 +145,10 @@ class ControllerCommonFileManager extends Controller {
 			$data['thumb'] = '';
 		}
 
+		
 		// Parent
-		$url = '';
+		$url = '&parent';
+		
 
 		if (isset($this->request->get['directory'])) {
 			$pos = strrpos($this->request->get['directory'], '/');
@@ -177,6 +203,9 @@ class ControllerCommonFileManager extends Controller {
 			$url .= '&thumb=' . $this->request->get['thumb'];
 		}
 
+
+		$url .= '&go';
+		
 		$pagination = new Pagination();
 		$pagination->total = $image_total;
 		$pagination->page = $page;
@@ -229,7 +258,9 @@ class ControllerCommonFileManager extends Controller {
 			foreach ($files as $file) {
 				if (is_file($file['tmp_name'])) {
 					// Sanitize the filename
-					$filename = basename(html_entity_decode($file['name'], ENT_QUOTES, 'UTF-8'));
+					
+			$filename = basename(html_entity_decode($this->translit($file['name']), ENT_QUOTES, 'UTF-8'));
+		
 
 					// Validate the filename length
 					if ((utf8_strlen($filename) < 3) || (utf8_strlen($filename) > 255)) {
@@ -307,7 +338,9 @@ class ControllerCommonFileManager extends Controller {
 
 		if ($this->request->server['REQUEST_METHOD'] == 'POST') {
 			// Sanitize the folder name
-			$folder = basename(html_entity_decode($this->request->post['folder'], ENT_QUOTES, 'UTF-8'));
+			
+			$folder = basename(html_entity_decode($this->translit($this->request->post['folder']), ENT_QUOTES, 'UTF-8'));
+		
 
 			// Validate the filename length
 			if ((utf8_strlen($folder) < 3) || (utf8_strlen($folder) > 128)) {

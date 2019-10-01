@@ -41,6 +41,7 @@ $_['entry_bad']                = 'Плохо';
 
 // Tabs
 $_['tab_description']          = 'Описание';
+$_['tab_technical_description'] = 'Техническое описание';
 $_['tab_attribute']            = 'Характеристики';
 $_['tab_review']               = 'Отзывов (%s)';
 

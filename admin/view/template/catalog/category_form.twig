@@ -151,6 +151,31 @@
                   <input type="text" name="column" value="{{ column }}" placeholder="{{ entry_column }}" id="input-column" class="form-control" />
                 </div>
               </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label">{{ entry_spp }}{{ spp }}</label>
+                <div class="col-sm-10">
+                  <label class="radio-inline">
+                      {% if spp %}
+                      <input type="radio" name="spp" value="1" checked="checked" />
+                          {{ text_spp }}
+                      {% else %}
+                        <input type="radio" name="spp" value="1" />
+                          {{ text_spp }}
+                      {% endif %}
+                  </label>
+                  <label class="radio-inline">
+                      {% if not spp %}
+                      <input type="radio" name="spp" value="0" checked="checked" />
+                          {{ text_bus }}
+                      {% else %}
+                        <input type="radio" name="spp" value="0" />
+                          {{ text_bus }}
+                      {% endif %}
+                  </label>
+                </div>
+              </div>
+
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-sort-order">{{ entry_sort_order }}</label>
                 <div class="col-sm-10">
