@@ -2,777 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c470353f-c510-4130-bd1f-76dcf7b198b5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/fonts/slick.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/fonts/slick.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/background_road.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/1280px-Zaz3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/fon_od.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/fon_od1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/fon_od11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/fon_od2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/fon_od3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/green-background3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/green-background5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/green1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/green2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/green5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/green_background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/green_background1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/background/grey.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/etalon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/garanty_service_obsl.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/info_o_zavode.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/kredut_luzung_rastrochka.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/mater_tex_postach.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/image/parallax/zapas_chastu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/background_road.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/baz901162.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/baz901163.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/baz901164.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/buses.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/1-13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/2_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/3_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/ashok.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/gruz.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/miski.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/mizmis.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/prmiski.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/spec.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/category/turist.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/10_20110713132938_road.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/10_20110713132944_road.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/12_20130302143903_bus_intercity_sonyashnik_bazA1481_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/12_20130302143903_bus_intercity_sonyashnik_bazA1481_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/12_20130302143904_bus_intercity_sonyashnik_bazA1481_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/12_20130302143904_bus_intercity_sonyashnik_bazA1481_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/12_20130302143905_bus_intercity_sonyashnik_bazA1481_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/12_20130302143905_bus_intercity_sonyashnik_bazA1481_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/13_20130302144401_bus_tourist_sonyashnik_bazA1482_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/13_20130302144401_bus_tourist_sonyashnik_bazA1482_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/13_20130302144404_bus_tourist_sonyashnik_bazA1482_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/13_20130302144404_bus_tourist_sonyashnik_bazA1482_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/13_20130302144405_bus_tourist_sonyashnik_bazA1482_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/13_20130302144405_bus_tourist_sonyashnik_bazA1482_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/14_20130302144707_bus_city_camomile_bazA11110_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/14_20130302144708_bus_city_camomile_bazA11110_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/14_20130302144708_bus_city_camomile_bazA11110_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/14_20130302144709_bus_city_camomile_bazA11110_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/14_20130302144709_bus_city_camomile_bazA11110_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/14_20130302144710_bus_city_camomile_bazA11110_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/14_20130302144710_bus_city_camomile_bazA11110_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/14_20130302144711_bus_city_camomile_bazA11110_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/15_20130302144827_bus_city_prolisok_bazA079.14_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/15_20130302144827_bus_city_prolisok_bazA079.14_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/15_20130302144828_bus_city_prolisok_bazA079.14_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/15_20130302144828_bus_city_prolisok_bazA079.14_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/15_20130302144829_bus_city_prolisok_bazA079.14_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/15_20130302144829_bus_city_prolisok_bazA079.14_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145005_bus_suburban_prolisok_bazA079.13_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145005_bus_suburban_prolisok_bazA079.13_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145008_bus_suburban_prolisok_bazA079.13_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145008_bus_suburban_prolisok_bazA079.13_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145009_bus_suburban_prolisok_bazA079.13_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145009_bus_suburban_prolisok_bazA079.13_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145010_bus_suburban_prolisok_bazA079.13_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145010_bus_suburban_prolisok_bazA079.13_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145011_bus_suburban_prolisok_bazA079.13_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/16_20130302145011_bus_suburban_prolisok_bazA079.13_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145139_bus_suburban_prolisok_bazA079.14_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145140_bus_suburban_prolisok_bazA079.14_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145140_bus_suburban_prolisok_bazA079.14_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145141_bus_suburban_prolisok_bazA079.14_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145141_bus_suburban_prolisok_bazA079.14_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145141_bus_suburban_prolisok_bazA079.14_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145142_bus_suburban_prolisok_bazA079.14_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145142_bus_suburban_prolisok_bazA079.14_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145143_bus_suburban_prolisok_bazA079.14_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145143_bus_suburban_prolisok_bazA079.14_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145144_bus_suburban_prolisok_bazA079.14_11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145144_bus_suburban_prolisok_bazA079.14_12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145145_bus_suburban_prolisok_bazA079.14_13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145145_bus_suburban_prolisok_bazA079.14_14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/17_20130302145145_bus_suburban_prolisok_bazA079.14_15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/18_20130302145314_bus_school_bazA079.13h_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/18_20130302145314_bus_school_bazA079.13h_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/18_20130302145314_bus_school_bazA079.13h_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/18_20130302145315_bus_school_bazA079.13h_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/19_20130302145355_bus_school_bazA079.24h_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/19_20130302145355_bus_school_bazA079.24h_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/19_20130302145356_bus_school_bazA079.24h_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/19_20130302145356_bus_school_bazA079.24h_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/20_20130302145505_bus_intercity_malva_bazA079.19_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/20_20130302145505_bus_intercity_malva_bazA079.19_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/20_20130302145506_bus_intercity_malva_bazA079.19_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/20_20130302145506_bus_intercity_malva_bazA079.19_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/20_20130302145506_bus_intercity_malva_bazA079.19_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/20_20130302145507_bus_intercity_malva_bazA079.19_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/20_20130302145507_bus_intercity_malva_bazA079.19_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/20_20130302145508_bus_intercity_malva_bazA079.19_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/21_20130302145604_bus_intercity_malva_bazA079.23_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/21_20130302145605_bus_intercity_malva_bazA079.23_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/21_20130302145605_bus_intercity_malva_bazA079.23_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/21_20130302145605_bus_intercity_malva_bazA079.23_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/21_20130302145606_bus_intercity_malva_bazA079.23_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/21_20130302145606_bus_intercity_malva_bazA079.23_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/21_20130302145607_bus_intercity_malva_bazA079.23_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/21_20130302145607_bus_intercity_malva_bazA079.23_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145700_bus_intercity_malva_bazA079.24_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145700_bus_intercity_malva_bazA079.24_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145701_bus_intercity_malva_bazA079.24_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145701_bus_intercity_malva_bazA079.24_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145701_bus_intercity_malva_bazA079.24_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145702_bus_intercity_malva_bazA079.24_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145703_bus_intercity_malva_bazA079.24_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145703_bus_intercity_malva_bazA079.24_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145704_bus_intercity_malva_bazA079.24_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145704_bus_intercity_malva_bazA079.24_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145705_bus_intercity_malva_bazA079.24_11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145705_bus_intercity_malva_bazA079.24_12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/22_20130302145706_bus_intercity_malva_bazA079.24_13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145919_bus_intercity_malva_bazA079.25_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145919_bus_intercity_malva_bazA079.25_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145919_bus_intercity_malva_bazA079.25_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145920_bus_intercity_malva_bazA079.25_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145921_bus_intercity_malva_bazA079.25_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145921_bus_intercity_malva_bazA079.25_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145921_bus_intercity_malva_bazA079.25_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145922_bus_intercity_malva_bazA079.25_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145922_bus_intercity_malva_bazA079.25_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/23_20130302145923_bus_intercity_malva_bazA079.25_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/24_20130302150104_bus_city_voloshka_bazA081.10_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/24_20130302150105_bus_city_voloshka_bazA081.10_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/24_20130302150105_bus_city_voloshka_bazA081.10_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/24_20130302150106_bus_city_voloshka_bazA081.10_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/24_20130302150106_bus_city_voloshka_bazA081.10_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/24_20130302150107_bus_city_voloshka_bazA081.10_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150303_bus_city_voloshka_bazA081.11_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150304_bus_city_voloshka_bazA081.11_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150304_bus_city_voloshka_bazA081.11_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150304_bus_city_voloshka_bazA081.11_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150305_bus_city_voloshka_bazA081.11_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150305_bus_city_voloshka_bazA081.11_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150306_bus_city_voloshka_bazA081.11_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150306_bus_city_voloshka_bazA081.11_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150306_bus_city_voloshka_bazA081.11_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150307_bus_city_voloshka_bazA081.11_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150307_bus_city_voloshka_bazA081.11_11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150308_bus_city_voloshka_bazA081.11_12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150308_bus_city_voloshka_bazA081.11_13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150308_bus_city_voloshka_bazA081.11_14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150309_bus_city_voloshka_bazA081.11_15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/25_20130302150309_bus_city_voloshka_bazA081.11_16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/26_20130302151221_bus_intercity_mak_chazA08310_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/26_20130302151221_bus_intercity_mak_chazA08310_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/26_20130302151222_bus_intercity_mak_chazA08310_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/26_20130302151222_bus_intercity_mak_chazA08310_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/26_20130302151223_bus_intercity_mak_chazA08310_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/26_20130302151223_bus_intercity_mak_chazA08310_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/26_20130302151223_bus_intercity_mak_chazA08310_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/26_20130302151224_bus_intercity_mak_chazA08310_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/27_20130302151911_bus_suburban_chornobrivets _chazA074_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/27_20130302151911_bus_suburban_chornobrivets _chazA074_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/27_20130302151912_bus_suburban_chornobrivets _chazA074_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/27_20130302151912_bus_suburban_chornobrivets _chazA074_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/27_20130302151913_bus_suburban_chornobrivets _chazA074_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/27_20130302151913_bus_suburban_chornobrivets _chazA074_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/28_20130303081155_bus_especially_people_require_baz_A079.45_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/28_20130303081155_bus_especially_people_require_baz_A079.45_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/28_20130303081156_bus_especially_people_require_baz_A079.45_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/28_20130303081156_bus_especially_people_require_baz_A079.45_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/28_20130303081157_bus_especially_people_require_baz_A079.45_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/28_20130303081157_bus_especially_people_require_baz_A079.45_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/28_20130303081158_bus_especially_people_require_baz_A079.45_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/28_20130303081158_bus_especially_people_require_baz_A079.45_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/29_20130303082510_bus_city_prolisok_baz_A079.32_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/29_20130303082510_bus_city_prolisok_baz_A079.32_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/29_20130303082511_bus_city_prolisok_baz_A079.32_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/29_20130303082511_bus_city_prolisok_baz_A079.32_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/29_20130303082511_bus_city_prolisok_baz_A079.32_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/29_20130303082512_bus_city_prolisok_baz_A079.32_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082348_bus_suburban_prolisok_bazA079.32_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082349_bus_suburban_prolisok_bazA079.32_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082349_bus_suburban_prolisok_bazA079.32_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082350_bus_suburban_prolisok_bazA079.32_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082350_bus_suburban_prolisok_bazA079.32_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082351_bus_suburban_prolisok_bazA079.32_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082351_bus_suburban_prolisok_bazA079.32_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082352_bus_suburban_prolisok_bazA079.32_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082353_bus_suburban_prolisok_bazA079.32_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082353_bus_suburban_prolisok_bazA079.32_11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082353_bus_suburban_prolisok_bazA079.32_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082354_bus_suburban_prolisok_bazA079.32_12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082354_bus_suburban_prolisok_bazA079.32_13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082355_bus_suburban_prolisok_bazA079.32_14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/30_20130303082355_bus_suburban_prolisok_bazA079.32_15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/31_20130303083153_bus_intercity_malva_bazA079.29_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/31_20130303083153_bus_intercity_malva_bazA079.29_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/31_20130303083154_bus_intercity_malva_bazA079.29_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/31_20130303083154_bus_intercity_malva_bazA079.29_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/31_20130303083155_bus_intercity_malva_bazA079.29_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/31_20130303083155_bus_intercity_malva_bazA079.29_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/31_20130303083156_bus_intercity_malva_bazA079.29_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/31_20130303083156_bus_intercity_malva_bazA079.29_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083625_bus_intercity_malva_bazA079.34_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083625_bus_intercity_malva_bazA079.34_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083626_bus_intercity_malva_bazA079.34_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083626_bus_intercity_malva_bazA079.34_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083626_bus_intercity_malva_bazA079.34_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083627_bus_intercity_malva_bazA079.34_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083627_bus_intercity_malva_bazA079.34_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083628_bus_intercity_malva_bazA079.34_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083628_bus_intercity_malva_bazA079.34_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083629_bus_intercity_malva_bazA079.34_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083629_bus_intercity_malva_bazA079.34_11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083630_bus_intercity_malva_bazA079.34_12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/32_20130303083630_bus_intercity_malva_bazA079.34_13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/33_20130303084244_bus_especially_people_require_school_bazA079.45h_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/33_20130303084245_bus_especially_people_require_school_bazA079.45h_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/33_20130303084245_bus_especially_people_require_school_bazA079.45h_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/33_20130303084246_bus_especially_people_require_school_bazA079.45h_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/33_20130303084246_bus_especially_people_require_school_bazA079.45h_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/34_20130303084634_bus_intercity_troyanda_bazA081.20_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/34_20130303084634_bus_intercity_troyanda_bazA081.20_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/34_20130303084635_bus_intercity_troyanda_bazA081.20_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/34_20130303084635_bus_intercity_troyanda_bazA081.20_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/34_20130303084635_bus_intercity_troyanda_bazA081.20_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/35_20130303085415_bus_tourist_sonyashnik_bazA1483_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/35_20130303085415_bus_tourist_sonyashnik_bazA1483_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/35_20130303085416_bus_tourist_sonyashnik_bazA1483_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/35_20130303085416_bus_tourist_sonyashnik_bazA1483_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/35_20130303085417_bus_tourist_sonyashnik_bazA1483_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/37_20130303095756_bus_intercity_malva_bazA079.33_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/37_20130303095757_bus_intercity_malva_bazA079.33_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/37_20130303095757_bus_intercity_malva_bazA079.33_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/37_20130303095758_bus_intercity_malva_bazA079.33_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/37_20130303095758_bus_intercity_malva_bazA079.33_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/37_20130303095758_bus_intercity_malva_bazA079.33_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/37_20130303095759_bus_intercity_malva_bazA079.33_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/37_20130303095759_bus_intercity_malva_bazA079.33_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100201_bus_intercity_malva_bazA079.35_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100201_bus_intercity_malva_bazA079.35_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100202_bus_intercity_malva_bazA079.35_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100202_bus_intercity_malva_bazA079.35_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100203_bus_intercity_malva_bazA079.35_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100203_bus_intercity_malva_bazA079.35_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100203_bus_intercity_malva_bazA079.35_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100204_bus_intercity_malva_bazA079.35_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100204_bus_intercity_malva_bazA079.35_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/38_20130303100205_bus_intercity_malva_bazA079.35_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/39_20130303131930_bus_especially_people_require_bazA079.32_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/39_20130303131930_bus_especially_people_require_bazA079.32_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/39_20130303131931_bus_especially_people_require_bazA079.32_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/39_20130303131931_bus_especially_people_require_bazA079.32_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/39_20130303131932_bus_especially_people_require_bazA079.32_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/39_20130303131932_bus_especially_people_require_bazA079.32_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/39_20130303131932_bus_especially_people_require_bazA079.32_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/39_20130303131933_bus_especially_people_require_bazA079.32_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/40_20130303132744_bus_especially_people_require_bazA079.32_4ps_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/40_20130303132744_bus_especially_people_require_bazA079.32_4ps_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/40_20130303132744_bus_especially_people_require_bazA079.32_4ps_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/40_20130303132745_bus_especially_people_require_bazA079.32_4ps_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/41_20130303132942_bus_especially_people_require_bazA079.32_4ms_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/41_20130303132943_bus_especially_people_require_bazA079.32_4ms_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/41_20130303132944_bus_especially_people_require_bazA079.32_4ms_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/41_20130303132944_bus_especially_people_require_bazA079.32_4ms_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/42_20140407171306_033.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/42_20140407171306_034.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/42_20140407171307_038.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/42_20140407171307_058.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/42_20140407171307_073.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/42_20140407171307_077.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/44_20140430131301_44 Travel 01 A08120.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/44_20140430131302_44 Travel 02 A08120.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/44_20140430131302_44 Travel 03 A08120.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/44_20140430131303_44 Travel 04 A08120.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/44_20140430131303_44 Travel 05 A08120.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/44_20140430131303_44 Travel 06 A08120.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/44_20140430131303_44 Travel 07 A08120.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/45_bus_sity_A08128_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/45_bus_sity_A08128_2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/45_bus_sity_A08128_3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/45_bus_sity_A08128_4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/45_bus_sity_A08128_5.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/45_bus_sity_A08128_6.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/45_bus_sity_A08128_7.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/45_bus_sity_A08128_8.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/46_bus_A079.51_suburban_prolisok_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/46_bus_A079.51_suburban_prolisok_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/46_bus_A079.51_suburban_prolisok_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/46_bus_A079.51_suburban_prolisok_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/46_bus_A079.51_suburban_prolisok_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/46_bus_A079.51_suburban_prolisok_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/49_20150731055931_baz_a079.51s_1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/49_20150731055941_baz_a079.51s_2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/49_20150731055947_baz_a079.51s_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/49_20150731055953_baz_a079.51s_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/49_20150731060000_baz_a079.51s_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/49_20150731060005_baz_a079.51s_6.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/49_20150731060012_baz_a079.51s_7.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/49_20150731060039_baz_a079.51s_8.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/53_20150730080651_baz_shtabnoj_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/53_20150730080717_baz_shtabnoj_2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/53_20150730080725_baz_shtabnoj_3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/53_20150730080733_baz_shtabnoj_4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/53_20150730080744_baz_shtabnoj_5.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/53_20150730080759_baz_shtabnoj_6.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/53_20150730083223_baz_shtabnoj_7.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/54_20150731083337_baz_a079.34s_1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/54_20150731083344_baz_a079.34s_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/54_20150731083359_baz_a079.34s_3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/54_20150731083406_baz_a079.34s_4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/54_20150731083413_baz_a079.34s_5.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/55_20151124140039_a08110s_1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/55_20151124140044_a08110s_2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/55_20151124140048_a08110s_3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/55_20151124140054_a08110s_4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/55_20151124140103_a08110s_5.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/56_20151124134451_a08111s_1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/56_20151124134509_a08111s_2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/56_20151124134515_a08111s_3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/56_20151124134521_a08111s_4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/56_20151124134528_a08111s_5.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/56_20151124134539_a08111s_6.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/57_20151126085702_A08129CNG_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/57_20151126085710_A08129CNG_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/57_20151126085718_A08129CNG_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/57_20151126134518_A08129CNG_4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/57_20151126134537_A08129CNG_5.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/57_20151126134545_A08129CNG_6.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/58_20160406112931_A08123_10_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/58_20160406112939_A08123_10_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/58_20160406112945_A08123_10_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/58_20160406112953_A08123_10_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/58_20160406113006_A08123_10_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/59_20170201130449_01_A08420.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/59_20170201130550_02_A08420.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/59_20170201130557_03_A08420.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/59_20170201130603_04_A08420.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/59_20170201130613_05_A08420.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/59_20170201130627_06_A08420.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/59_20170201130638_07_A08420.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/59_20170201130655_08_A08420.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/59_20170201130708_09_A08420.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/60_20170202115821_01_A08430.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/60_20170202115828_02_A08430.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/60_20170202115836_03_A08430.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/60_20170202115853_04_A08430.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/60_20170202115900_05_A08430.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/60_20170202115909_06_A08430.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/60_20170202115915_07_A08430.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/60_20170202115923_08_A08430.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/61_20180202141235_A08116s_1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/61_20180202141255_A08116s_2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/61_20180202141346_A08116s_3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/61_20180208124415_A08116s_4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/61_20180208124428_A08116s_5.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/61_20180208124436_A08116s_6.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/61_20180208124447_A08116s_7.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/62_20180215080340_baz_a08116_1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/62_20180215080346_baz_a08116_2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/62_20180215080352_baz_a08116_3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/62_20180215080357_baz_a08116_4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/62_20180215080402_baz_a08116_5.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/62_20180215080408_baz_a08116_6.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/62_20180215080418_baz_a08116_7.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125404_baz_a08128_1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125411_baz_a08128_2a.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125416_baz_a08128_3a.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125423_baz_a08128_4a.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125429_baz_a08128_5a.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125441_baz_a08128_6a.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125452_baz_a08128_7a.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125457_baz_a08128_8a.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125507_baz_a08128_9a.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/gallery/63_20180313125518_baz_a08128_99a.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/light-trucks.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_A08123_10_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_A08420.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_A08430.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_T15183_izotermichniy_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_T71331_bort_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_T71332_bort_tent_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_T71333_promtovarniy_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_ А08115_intercity_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_A079.51_suburban_prolisok_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_A08116s_372x279.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_A08129CNG_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1116_Podorognik_bort_max11_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1116_Podorognik_promtovarniy_max11_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1116_Podorognik_shasi_max11_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1518_Podorognik_bort_max16_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1518_Podorognik_samoskid_max16_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1518_Podorognik_shasi_max16_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1518_Podorognik_zernovoz_max16_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1618_Podorognik_bort-tent_max16_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1618_Podorognik_bort_max16_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T1618_Podorognik_shasi_max16_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.10_Podorognik_shasi_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.11_Podorognik_bort_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.12_Podorognik_bort_tent_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.12_Podorognik_bort_tent_75x56.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.13_Podorognik_promtovarniy_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.13_Podorognik_promtovarniy_75x56.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.24_Podorognik_izotermichniy_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.24_Podorognik_izotermichniy_75x56.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.25_Podorognik_hlibniy_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.26_Podorognik_samoskid_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.27_Podorognik_avtoevakuator_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T713.28_Podorognik_sendvichpanelniy_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T71334_izotermichniy_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T71335_jevakuator_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T71336_samosval_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T71337_Avtocisterna_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T71338_Avarijnaja_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T90161_bort_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_T9016_Podorognik_shasi_max11_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a074.10_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.13_suburban_prolisok_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.13h_school_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.14_city_prolisok_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.19_intercity_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.23_intercity_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.24_intercity_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.24h_school_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.25_intercity_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.29_intercity_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.32_city_prolisok_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.33_intercity_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.34_intercity_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.34s_2_372x279.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.35_intercity_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.45_people_with_disabilities_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.45_people_with_disabilities_school_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.51s_372x279.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.53_intercity_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a079.54_malva_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a081.10_city_volohka_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a081.11_city_volohka_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a081.20_intercity_troyanda_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a081.20_intercity_troyanda_75x56.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a081.20_tourist_troyanda_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a081.20_tourist_troyanda_75x56.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a081.23_50_tourist_troyanda_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a08110s_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a08111s_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a08116_372x279.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a08128_372x279a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a11110_city_romashka_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a1481_intercity_sonyahnuk_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a1481_intercity_sonyahnuk_75x56.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a1482_tourist_sonyahnuk_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a1482_tourist_sonyahnuk_75x57.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_a1485_tourist_sonyahnuk_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_baz_shtabnoj_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_bus_sity_A08128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_chaz_a074_suburban_chornobrivec_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mf_chaz_a08310_intercity_mak_372x279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mhcv-cargo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/mhcv-construck.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/10_20110713132944_road.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/1280px-Zaz3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/1499011-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/baz1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/baz3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/black-and-white-road-street-urban-travel-tram-298007-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/black-and-white-road-white-transportation-transport-vehicle-767661-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/bus.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/bus2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/etalon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/garanty_service_obsl.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/info_o_zavode.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/korpet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/kredut_luzung_rastrochka.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/man-transport-vehicle-aviation-volvo-buses-343113-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/man-transport-vehicle-public-transport-bus-volvo-342647-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/mater_tex_postach.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/plant-transport-repair-shop-vehicle-yellow-961188-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/transport-vehicle-public-transport-bus-passenger-minibus-160583-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/vintage-wheel-bicycle-vehicle-gear-motorcycle-8238-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/parallax/zapas_chastu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/prima.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/ultra.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/zapch/ashok1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/zapch/ashok11.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/zapch/ashok2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/zapch/images1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/zapch/tata1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/bus/zapch/tata2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/information/adress.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/information/buh.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/information/contact.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/information/garanty.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/information/kadry.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/information/mtp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/information/td-baz.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/information/urvid.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/information/zapchasti2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/logo/baz-LogoTip.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/logo/logotip---NDIA-Etalon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/logo/logotip---baztesh-service.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/logo/logotip---torgoviy-dom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/logo/logotip_CHAZ.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/menu3rdlevel/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/menu3rdlevel/arrow_w.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/19.04.2012.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/A07914_sm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/A08128 ttx.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/Interbuildexpo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/Interbuildexpo_sm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/Marvin_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/NagradaLogoTip_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/T713 26_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/T713_27_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/T713_28_sm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/Yvaga.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/Yvaga_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/baz-LogoTip.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/baz-LogoTip_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/logo-bosch.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/marka.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/photo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/news/umt_sm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/1280px-Zaz3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/1499011-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/160583-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/342647-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/343113-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/55581.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/767661-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/8238-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/961188-pxhere.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/TIR_2010_image7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/about-us-menu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/about_leadership_banner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/avto_baz.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/background/fon_od.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/background/fon_od1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/background/fon_od11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/background/fon_od2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/background/fon_od3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/background/green-background3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/background/green-background5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/background/green_background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/background/green_background1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/baz1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/baz3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/baz5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/bez1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/bus.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/bus2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/default_parallax.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/etalon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/fonbaz.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/fonbaz1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/fonbaz2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/garanty_service_obsl.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/header.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/info_o_zavode.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/korpet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/kredut_luzung_rastrochka.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/mater_tex_postach.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/   ZF Friedrichshafen AG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/   ZF Friedrichshafen AG1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/   ZF Friedrichshafen AG2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/  Hino Motors-648.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/  Hino Motors1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/ Deutz AG .jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/1474032424_consulting-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/FAW_Trucks_Expo1-800x500_c.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/SpicerDrivetrainProducts.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/Tata-770x433.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/TataPowerMint.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/ashok-background.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/ashok-leyland-2-638.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/ashok.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/ashok_fon.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/ashok_fon1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/ashok_img.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/deutz-ag-logo-203208.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/faw.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/partners.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/spicer-conjunto 2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/spicer-conjunto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/Партнёры-ЧП-Пунгин-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/partners/Поставщики-ЧП-Пунгин.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/sertificate/politikaBAZ.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/sertificate/sertificate_en_2015.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/sertificate/sertificate_ua_2015.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/parallax/zapas_chastu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/repair/Kaprem_01.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/repair/Kaprem_02.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/repair/Kaprem_03.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/repair/Kaprem_04.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/text/Etalon z ULF.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/text/TAC.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/catalog/text/TEKOM.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpfile/orders/order129.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpfile/orders/order131.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpfile/orders/order140.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/catalog/information_old.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/common/filemanager1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/extension/dashboard/d_seo_module_target_keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/extension/dashboard/d_seo_module_url_keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/extension/dashboard/d_seo_module_url_redirect.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/extension/module/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/extension/module/news_type.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/extension/module/parallax.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/marketplace/extension1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/controller/tool/import1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/en-gb/extension/dashboard/d_seo_module_target_keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/en-gb/extension/dashboard/d_seo_module_url_keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/en-gb/extension/dashboard/d_seo_module_url_redirect.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/en-gb/extension/module/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/en-gb/extension/module/parallax.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/en-gb/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/ru-ru/extension/module/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/ru-ru/extension/module/news_type.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/ru-ru/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/uk-ua/extension/module/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/uk-ua/extension/module/news_type.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/language/uk-ua/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/model/catalog/information_old.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/model/extension/dashboard/d_seo_module_target_keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/model/extension/dashboard/d_seo_module_url_keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/model/extension/dashboard/d_seo_module_url_redirect.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/model/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/stylesheet/d_bootstrap_extra/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/stylesheet/d_seo_module.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/catalog/inf_form.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/catalog/information_form0502.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/catalog/information_form_old.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/catalog/product_form1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/catalog/product_form2.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/catalog/product_list1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/dashboard/d_seo_module_target_keyword.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/dashboard/d_seo_module_target_keyword_info.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/dashboard/d_seo_module_target_keyword_refresh.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/dashboard/d_seo_module_url_keyword.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/dashboard/d_seo_module_url_keyword_info.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/dashboard/d_seo_module_url_keyword_refresh.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/dashboard/d_seo_module_url_redirect.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/dashboard/d_seo_module_url_redirect_info.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/dashboard/d_seo_module_url_redirect_refresh.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/module/news.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/module/news_type.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/news_form.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/extension/news_list.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/marketplace/marketplace_list1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/view/template/tool/import1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/checkout/checkout1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/common/arx/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/common/arx/menu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/common/header1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/extension/module/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/extension/module/news_type.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/information/information_old.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/product/category1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/controller/tool/upload1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/language/en-gb/extension/module/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/language/en-gb/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/language/ru-ru/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/language/uk-ua/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/model/extension/d_seo_module/d_seo_module.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/model/extension/d_seo_module/d_seo_module_url.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/model/extension/d_seo_module_adviser/d_seo_module.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/model/extension/d_seo_module_adviser/d_seo_module_url.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/model/extension/module/d_seo_module.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/model/extension/module/d_seo_module_url.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/model/extension/module/d_translit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/model/extension/news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/model/tool/image_old.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/font-awesome/fonts/readme-brands.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/jquery.rd-parallax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/parallax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/config.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/fonts/slick.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/fonts/slick.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/slick-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/slick-theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/slick-theme.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/slick-theme1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/slick.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/slick.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/slick.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/slick.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/javascript/jquery/slick/slick.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/arx/paralax-banner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/arx/top-banners.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/js/jquery.rd-parallax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/stylesheet/rd-parallax.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/common/arx/header.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/common/arx/menu.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/common/footer_information.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/common/header_information.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/extension/news_list_old.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/information/information1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/information/information_new.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/information/information_old.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/product/category1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/product/category_old.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/product/categorybus.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/product/categorybus1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/product/categorybus2.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/baz/template/product/categorybus_old.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/common/footer1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/extension/module/information_old.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/extension/module/news.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/extension/module/news_2010.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/extension/module/news_carusel.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/extension/module/news_type.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/extension/news.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/extension/news_list.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/information/contact1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/product/product1.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/product/product2.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/product/product_old.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/config/d_event_manager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/config/d_seo_module.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/config/d_seo_module_target_keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/config/d_seo_module_url.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/config/d_seo_module_url_keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/config/d_seo_module_url_redirect.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/config/d_translit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/engine/action1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/engine/loader1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/cart/tax1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/config1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_cache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_cache/file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_excel_reader_writer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_excel_reader_writer/spreadsheetreader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_excel_reader_writer/spreadsheetreader/spreadsheetreader_csv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_excel_reader_writer/spreadsheetreader/spreadsheetreader_ods.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_excel_reader_writer/spreadsheetreader/spreadsheetreader_xls.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_excel_reader_writer/spreadsheetreader/spreadsheetreader_xlsx.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_excel_reader_writer/xlsxwriter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_robots_txt_parser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_robots_txt_parser/robotstxtparser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_robots_txt_parser/robotstxtvalidator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/extension/d_bootstrap_extra.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/extension/d_cache.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/extension/d_event_manager.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/extension/d_excel_reader_writer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/extension/d_robots_txt_parser.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/extension/d_seo_module.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/extension/d_seo_module_url.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/extension/d_simple_html_dom.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/extension/d_translit.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/install/d_seo_module.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_shopunity/readme/d_seo_module.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/d_simple_html_dom.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/db/mysqli_new.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/image_old.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/language1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/template/template1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/template/twig1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opencartBaz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controller/tool/import.php" afterPath="$PROJECT_DIR$/admin/controller/tool/import.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -813,24 +45,24 @@
       <file leaf-file-name="import.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/controller/tool/import.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
-                <marker date="1534485020269" expanded="true" signature="7558:7659" ph="INSERT INTO ${DB_PREFIX}`manufacturer`... " />
-                <marker date="1534485020269" expanded="true" signature="7772:7885" ph="INSERT INTO ${DB_PREFIX}... " />
-                <marker date="1534485020269" expanded="true" signature="8184:8286" ph="INSERT INTO `seo_url`... " />
-                <marker date="1534485020269" expanded="true" signature="9298:9586" ph="INSERT INTO `product`... " />
-                <marker date="1534485020269" expanded="true" signature="9763:9923" ph="INSERT INTO `product_description`... " />
-                <marker date="1534485020269" expanded="true" signature="10236:10363" ph="INSERT INTO `seo_url`... " />
-                <marker date="1534485020269" expanded="true" signature="10436:10515" ph="INSERT INTO `product_to_store`... " />
-                <marker date="1534485020269" expanded="true" signature="10562:10657" ph="INSERT INTO `product_to_layout`... " />
-                <marker date="1534485020269" expanded="true" signature="10798:11188" ph="UPDATE `prod... " />
-                <marker date="1534485020269" expanded="true" signature="11235:11299" ph="DELETE FROM " />
-                <marker date="1534485020269" expanded="true" signature="11347:11426" ph="INSERT INTO `product_to_store`... " />
-                <marker date="1534485020269" expanded="true" signature="11473:11538" ph="DELETE FROM " />
-                <marker date="1534485020269" expanded="true" signature="11586:11681" ph="INSERT INTO `product_to_layout`... " />
-                <marker date="1534485020269" expanded="true" signature="11748:11814" ph="DELETE FROM " />
-                <marker date="1534485020269" expanded="true" signature="11917:12013" ph="INSERT INTO `product_to_category`... " />
+                <marker date="1570023211734" expanded="true" signature="7561:7662" ph="INSERT INTO ${DB_PREFIX}`manufacturer`... " />
+                <marker date="1570023211734" expanded="true" signature="7775:7888" ph="INSERT INTO ${DB_PREFIX}... " />
+                <marker date="1570023211734" expanded="true" signature="8187:8289" ph="INSERT INTO `seo_url`... " />
+                <marker date="1570023211734" expanded="true" signature="9301:9589" ph="INSERT INTO `product`... " />
+                <marker date="1570023211734" expanded="true" signature="9766:9926" ph="INSERT INTO `product_description`... " />
+                <marker date="1570023211734" expanded="true" signature="10239:10366" ph="INSERT INTO `seo_url`... " />
+                <marker date="1570023211734" expanded="true" signature="10439:10518" ph="INSERT INTO `product_to_store`... " />
+                <marker date="1570023211734" expanded="true" signature="10565:10660" ph="INSERT INTO `product_to_layout`... " />
+                <marker date="1570023211734" expanded="true" signature="10801:11191" ph="UPDATE `prod... " />
+                <marker date="1570023211734" expanded="true" signature="11238:11302" ph="DELETE FROM " />
+                <marker date="1570023211734" expanded="true" signature="11350:11429" ph="INSERT INTO `product_to_store`... " />
+                <marker date="1570023211734" expanded="true" signature="11476:11541" ph="DELETE FROM " />
+                <marker date="1570023211734" expanded="true" signature="11589:11684" ph="INSERT INTO `product_to_layout`... " />
+                <marker date="1570023211734" expanded="true" signature="11751:11817" ph="DELETE FROM " />
+                <marker date="1570023211734" expanded="true" signature="11920:12016" ph="INSERT INTO `product_to_category`... " />
               </folding>
             </state>
           </provider>
@@ -917,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/catalog/view/theme/baz/stylesheet/top-banners.html" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/common/header.twig" />
         <option value="$PROJECT_DIR$/catalog/view/theme/baz/js/jquery.rd-parallax.min.js" />
         <option value="$PROJECT_DIR$/catalog/view/javascript/jquery/parallax.min.js" />
@@ -968,6 +199,7 @@
         <option value="$PROJECT_DIR$/catalog/view/theme/baz/stylesheet/stylesheet.css" />
         <option value="$PROJECT_DIR$/catalog/view/theme/baz/template/information/information.twig" />
         <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/admin/controller/tool/import.php" />
       </list>
     </option>
   </component>
@@ -1063,6 +295,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -1100,18 +344,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1330,7 +562,8 @@
       <workItem from="1569566941227" duration="19000" />
       <workItem from="1569738904917" duration="1803000" />
       <workItem from="1569821973080" duration="272000" />
-      <workItem from="1569930803323" duration="1790000" />
+      <workItem from="1569930803323" duration="2603000" />
+      <workItem from="1569994406176" duration="757000" />
     </task>
     <task id="LOCAL-00001" summary="BazOpencart">
       <created>1569935603792</created>
@@ -1339,11 +572,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569935603793</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="BazOpencart">
+      <created>1569943247521</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569943247521</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1962834000" />
+    <option name="totallyTimeSpent" value="1964404000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1358,14 +598,14 @@
     <frame x="8" y="23" width="1280" height="777" extended-state="0" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29321486" sideWeight="0.47304347" order="0" side_tool="false" content_ui="tabs" x="44" y="94" width="274" height="655" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2980614" sideWeight="0.47304347" order="0" side_tool="false" content_ui="tabs" x="44" y="94" width="274" height="655" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.49353796" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35304347" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35304347" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3505311" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24878837" sideWeight="0.5269565" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4904348" sideWeight="0.48626816" order="3" side_tool="false" content_ui="tabs" x="21" y="268" width="1238" height="203" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2294,7 +1534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1269">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2302,9 +1541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-961">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1525982030000" expanded="true" signature="2336:2349" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2312,7 +1548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1019">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2341,7 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2355,24 +1589,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/controller/tool/import.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
-            <marker date="1534485020269" expanded="true" signature="7558:7659" ph="INSERT INTO ${DB_PREFIX}`manufacturer`... " />
-            <marker date="1534485020269" expanded="true" signature="7772:7885" ph="INSERT INTO ${DB_PREFIX}... " />
-            <marker date="1534485020269" expanded="true" signature="8184:8286" ph="INSERT INTO `seo_url`... " />
-            <marker date="1534485020269" expanded="true" signature="9298:9586" ph="INSERT INTO `product`... " />
-            <marker date="1534485020269" expanded="true" signature="9763:9923" ph="INSERT INTO `product_description`... " />
-            <marker date="1534485020269" expanded="true" signature="10236:10363" ph="INSERT INTO `seo_url`... " />
-            <marker date="1534485020269" expanded="true" signature="10436:10515" ph="INSERT INTO `product_to_store`... " />
-            <marker date="1534485020269" expanded="true" signature="10562:10657" ph="INSERT INTO `product_to_layout`... " />
-            <marker date="1534485020269" expanded="true" signature="10798:11188" ph="UPDATE `prod... " />
-            <marker date="1534485020269" expanded="true" signature="11235:11299" ph="DELETE FROM " />
-            <marker date="1534485020269" expanded="true" signature="11347:11426" ph="INSERT INTO `product_to_store`... " />
-            <marker date="1534485020269" expanded="true" signature="11473:11538" ph="DELETE FROM " />
-            <marker date="1534485020269" expanded="true" signature="11586:11681" ph="INSERT INTO `product_to_layout`... " />
-            <marker date="1534485020269" expanded="true" signature="11748:11814" ph="DELETE FROM " />
-            <marker date="1534485020269" expanded="true" signature="11917:12013" ph="INSERT INTO `product_to_category`... " />
+            <marker date="1570023211734" expanded="true" signature="7561:7662" ph="INSERT INTO ${DB_PREFIX}`manufacturer`... " />
+            <marker date="1570023211734" expanded="true" signature="7775:7888" ph="INSERT INTO ${DB_PREFIX}... " />
+            <marker date="1570023211734" expanded="true" signature="8187:8289" ph="INSERT INTO `seo_url`... " />
+            <marker date="1570023211734" expanded="true" signature="9301:9589" ph="INSERT INTO `product`... " />
+            <marker date="1570023211734" expanded="true" signature="9766:9926" ph="INSERT INTO `product_description`... " />
+            <marker date="1570023211734" expanded="true" signature="10239:10366" ph="INSERT INTO `seo_url`... " />
+            <marker date="1570023211734" expanded="true" signature="10439:10518" ph="INSERT INTO `product_to_store`... " />
+            <marker date="1570023211734" expanded="true" signature="10565:10660" ph="INSERT INTO `product_to_layout`... " />
+            <marker date="1570023211734" expanded="true" signature="10801:11191" ph="UPDATE `prod... " />
+            <marker date="1570023211734" expanded="true" signature="11238:11302" ph="DELETE FROM " />
+            <marker date="1570023211734" expanded="true" signature="11350:11429" ph="INSERT INTO `product_to_store`... " />
+            <marker date="1570023211734" expanded="true" signature="11476:11541" ph="DELETE FROM " />
+            <marker date="1570023211734" expanded="true" signature="11589:11684" ph="INSERT INTO `product_to_layout`... " />
+            <marker date="1570023211734" expanded="true" signature="11751:11817" ph="DELETE FROM " />
+            <marker date="1570023211734" expanded="true" signature="11920:12016" ph="INSERT INTO `product_to_category`... " />
           </folding>
         </state>
       </provider>

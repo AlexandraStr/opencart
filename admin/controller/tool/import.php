@@ -10,7 +10,7 @@ class ControllerToolImport extends Controller
 
         $data['entry_synchron_name ']=$this->language->get('entry_synchron_name ');
         $data['entry_synchron_flag ']=$this->language->get('entry_synchron_flag ');
-        $data['entry_incremental'] = $this->language->get( 'entry_incremental' );
+        $data['entry_incremental'] = $this->language->get( 'entry_incremental' );git
         $data['help_incremental_yes'] = $this->language->get( 'help_incremental_yes' );
         $data['help_incremental_no'] = $this->language->get( 'help_incremental_no' );
 
